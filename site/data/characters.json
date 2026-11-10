@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-10T18:20:57.965Z",
+  "generatedAt": "2026-11-10T23:12:20.397Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-10T18:20:57.965Z",
+      "lastSeen": "2026-11-10T23:12:20.397Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -55,7 +55,7 @@
         "levelsGained": 1,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0.72,
+        "daysTracked": 0.93,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -100,12 +100,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-10T18:20:57.965Z"
+      "lastChecked": "2026-11-10T23:12:20.397Z"
     },
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-10T18:20:57.965Z",
+      "lastSeen": "2026-11-10T23:12:20.397Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -113,7 +113,7 @@
         "race": "Undead",
         "className": "Mage",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-09T19:22:09Z",
+        "lastUpdated": "2026-11-10T21:11:35Z",
         "professions": [
           {
             "name": "Skinning",
@@ -126,8 +126,8 @@
             "max": 75
           }
         ],
-        "level": 11,
-        "itemLevel": 2,
+        "level": 13,
+        "itemLevel": 3,
         "honorableKills": 1
       },
       "stats": {
@@ -135,10 +135,10 @@
           "Skinning": 0,
           "Cooking": 0
         },
-        "levelsGained": 0,
-        "itemLevelGained": 0,
+        "levelsGained": 2,
+        "itemLevelGained": 1,
         "honorableKillsGained": 0,
-        "daysTracked": 0.69,
+        "daysTracked": 0.89,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -157,6 +157,16 @@
             "Skinning": 3,
             "Cooking": 1
           }
+        },
+        {
+          "t": "2026-11-10T23:12:20.397Z",
+          "level": 13,
+          "itemLevel": 3,
+          "honorableKills": 1,
+          "skills": {
+            "Skinning": 3,
+            "Cooking": 1
+          }
         }
       ],
       "person": "Richards",
@@ -167,12 +177,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-10T18:20:57.965Z"
+      "lastChecked": "2026-11-10T23:12:20.397Z"
     },
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-10T18:20:57.965Z",
+      "lastSeen": "2026-11-10T23:12:20.397Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -217,7 +227,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0.69,
+        "daysTracked": 0.89,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -248,12 +258,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-10T18:20:57.965Z"
+      "lastChecked": "2026-11-10T23:12:20.397Z"
     },
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-10T18:20:57.965Z",
+      "lastSeen": "2026-11-10T23:12:20.397Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -286,7 +296,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0.69,
+        "daysTracked": 0.89,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -324,7 +334,82 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-10T18:20:57.965Z"
+      "lastChecked": "2026-11-10T23:12:20.397Z"
+    },
+    {
+      "key": "us|ignivomous-defenestrata",
+      "firstSeen": "2026-11-10T23:12:20.397Z",
+      "lastSeen": "2026-11-10T23:12:20.397Z",
+      "slot": 4,
+      "profile": {
+        "name": "Ignivomous Defenestrata",
+        "faction": "Horde",
+        "race": "Undead",
+        "className": "Mage",
+        "ruleset": "PvP",
+        "lastUpdated": "2026-11-10T01:06:19Z",
+        "professions": [
+          {
+            "name": "Skinning",
+            "skill": 113,
+            "max": 150
+          },
+          {
+            "name": "Cooking",
+            "skill": 51,
+            "max": 150
+          },
+          {
+            "name": "Fishing",
+            "skill": 2,
+            "max": 75
+          },
+          {
+            "name": "First Aid",
+            "skill": 72,
+            "max": 150
+          }
+        ],
+        "level": 16,
+        "itemLevel": 8,
+        "honorableKills": 0
+      },
+      "stats": {
+        "skillsGained": {
+          "Skinning": 0,
+          "Cooking": 0,
+          "Fishing": 0,
+          "First Aid": 0
+        },
+        "levelsGained": 0,
+        "itemLevelGained": 0,
+        "honorableKillsGained": 0,
+        "daysTracked": 0,
+        "levelsPerDay": null
+      },
+      "snapshots": [
+        {
+          "t": "2026-11-10T23:12:20.397Z",
+          "level": 16,
+          "itemLevel": 8,
+          "honorableKills": 0,
+          "skills": {
+            "Skinning": 113,
+            "Cooking": 51,
+            "Fishing": 2,
+            "First Aid": 72
+          }
+        }
+      ],
+      "person": "Dan",
+      "name": "Ignivomous Defenestrata",
+      "slug": "ignivomous-defenestrata",
+      "region": "us",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/forever/us/armory/character/ignivomous-defenestrata",
+      "watched": true,
+      "status": "ok",
+      "message": null,
+      "lastChecked": "2026-11-10T23:12:20.397Z"
     }
   ]
 }
