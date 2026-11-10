@@ -1,46 +1,30 @@
 :root {
-  color-scheme: light;
-  --page: #f9f9f7;
-  --surface: #fcfcfb;
-  --ink: #0b0b0b;
-  --ink-2: #52514e;
-  --muted: #6f6d68;
-  --axis-ink: #898781;
-  --grid: #e1e0d9;
-  --axis: #c3c2b7;
-  --border: rgba(11, 11, 11, 0.1);
-  --wash: rgba(11, 11, 11, 0.06);
-  --series-0: #2a78d6;
-  --series-1: #eb6834;
-  --series-2: #1baf7a;
-  --series-3: #eda100;
-  --series-4: #e87ba4;
+  color-scheme: dark;
+  --page: #0b0908;
+  --surface: #17130e;
+  --ink: #f2e8d5;
+  --ink-2: #c9bda4;
+  --muted: #a3977f;
+  --axis-ink: #978b75;
+  --grid: #2b251c;
+  --axis: #4a3f2d;
+  --gold: #ffd100;
+  --gold-soft: #e6c56e;
+  --border: rgba(200, 160, 80, 0.38);
+  --wash: rgba(255, 209, 0, 0.08);
+  --button-top: #8e1a1a;
+  --button-bottom: #5a0f0f;
+  --tooltip: rgba(7, 10, 28, 0.97);
+  --tooltip-border: #6b7a9c;
+  --display: "Cinzel", "Trajan Pro", Georgia, serif;
+  --series-0: #3987e5;
+  --series-1: #d95926;
+  --series-2: #199e70;
+  --series-3: #c98500;
+  --series-4: #d55181;
   --series-5: #008300;
-  --series-6: #6250d6;
-  --series-7: #e34948;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    --page: #0d0d0d;
-    --surface: #1a1a19;
-    --ink: #f0efec;
-    --ink-2: #c3c2b7;
-    --muted: #a3a29a;
-    --grid: #2c2c2a;
-    --axis: #383835;
-    --border: rgba(255, 255, 255, 0.1);
-    --wash: rgba(255, 255, 255, 0.08);
-    --series-0: #3987e5;
-    --series-1: #d95926;
-    --series-2: #199e70;
-    --series-3: #c98500;
-    --series-4: #d55181;
-    --series-5: #008300;
-    --series-6: #9085e9;
-    --series-7: #e66767;
-  }
+  --series-6: #9085e9;
+  --series-7: #e66767;
 }
 
 * { box-sizing: border-box; }
@@ -48,7 +32,10 @@
 body {
   margin: 0;
   padding-inline: 16px;
-  background: var(--page);
+  background:
+    radial-gradient(1000px 420px at 50% -120px, rgba(190, 120, 30, 0.2), transparent 70%),
+    var(--page);
+  background-attachment: fixed;
   color: var(--ink);
   font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
 }
@@ -56,7 +43,7 @@ body {
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding-block: 32px 48px;
+  padding-block: 32px 24px;
 }
 
 header {
@@ -68,8 +55,23 @@ header {
   margin-bottom: 20px;
 }
 
-h1 { margin: 0; font-size: 24px; }
-h2 { margin: 0 0 12px; font-size: 15px; font-weight: 600; }
+h1 {
+  margin: 0;
+  color: var(--gold);
+  font: 700 34px/1.1 var(--display);
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 0 #000, 0 0 18px rgba(255, 180, 40, 0.3);
+}
+
+h2 {
+  margin: 0 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  color: var(--gold-soft);
+  font: 600 16px/1.3 var(--display);
+  letter-spacing: 0.05em;
+}
+
 p { margin: 0; }
 .muted { color: var(--muted); }
 
@@ -84,33 +86,42 @@ p { margin: 0; }
   display: inline-flex;
   padding: 2px;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 6px;
   background: var(--surface);
 }
 
 .segmented button {
   min-height: 32px;
   padding: 4px 12px;
-  border: 0;
-  border-radius: 6px;
+  border: 1px solid transparent;
+  border-radius: 4px;
   background: transparent;
   color: var(--ink-2);
   font: inherit;
   cursor: pointer;
 }
 
-.segmented button:hover { background: var(--wash); }
+.segmented button:hover { background: var(--wash); color: var(--gold-soft); }
 
 .segmented button[aria-pressed="true"] {
-  background: var(--ink);
-  color: var(--surface);
+  border-color: #c79c4b;
+  background: linear-gradient(var(--button-top), var(--button-bottom));
+  color: var(--gold);
+  text-shadow: 0 1px 0 #000;
+}
+
+button:focus-visible,
+select:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 1px;
 }
 
 select {
   min-height: 38px;
   padding: 4px 8px;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 6px;
   background: var(--surface);
   color: var(--ink-2);
   font: inherit;
@@ -121,8 +132,9 @@ select {
   margin-bottom: 16px;
   padding: 16px;
   border: 1px solid var(--border);
-  border-radius: 10px;
-  background: var(--surface);
+  border-radius: 8px;
+  background: linear-gradient(rgba(255, 220, 150, 0.03), transparent 120px), var(--surface);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.7), 0 8px 24px rgba(0, 0, 0, 0.45);
 }
 
 .chart { position: relative; }
@@ -145,7 +157,7 @@ select {
 
 .end-label { fill: var(--ink-2); font-size: 12px; }
 
-.hit:focus-visible { outline: none; stroke: var(--ink); stroke-width: 1; }
+.hit:focus-visible { outline: none; stroke: var(--gold); stroke-width: 1; }
 
 .tooltip {
   position: absolute;
@@ -154,14 +166,14 @@ select {
   min-width: 150px;
   max-width: 260px;
   padding: 8px 10px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--surface);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
+  border: 2px solid var(--tooltip-border);
+  border-radius: 6px;
+  background: var(--tooltip);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
   pointer-events: none;
 }
 
-.tooltip-title { margin-bottom: 4px; color: var(--muted); font-size: 12px; }
+.tooltip-title { margin-bottom: 4px; color: #fff; font-size: 12px; font-weight: 600; }
 
 .tooltip-row {
   display: flex;
@@ -170,7 +182,7 @@ select {
   font-size: 12px;
 }
 
-.tooltip-row strong { font-variant-numeric: tabular-nums; }
+.tooltip-row strong { color: #fff; font-variant-numeric: tabular-nums; }
 .tooltip-row span:last-child { overflow: hidden; color: var(--ink-2); text-overflow: ellipsis; white-space: nowrap; }
 
 .line-key {
@@ -208,10 +220,19 @@ th, td {
   text-align: left;
 }
 
-th { color: var(--muted); font-size: 12px; font-weight: 500; }
+th { color: var(--gold-soft); font-size: 12px; font-weight: 500; }
+tbody tr:hover { background: var(--wash); }
 tbody tr:last-child td { border-bottom: 0; }
 .num { text-align: right; font-variant-numeric: tabular-nums; }
-td a { color: inherit; }
+td a { color: inherit; font-weight: 600; text-decoration-thickness: 1px; text-underline-offset: 2px; }
 td.wrap { min-width: 190px; white-space: normal; }
 td .sub { display: block; color: var(--muted); font-size: 12px; }
 td .line-key { margin-right: 8px; }
+
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-block: 0 32px;
+  color: var(--muted);
+  font-size: 12px;
+}

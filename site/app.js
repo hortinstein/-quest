@@ -8,6 +8,22 @@ const METRICS = {
   itemLevel: { label: 'Item level' },
   honorableKills: { label: 'Honorable kills' },
 };
+const CLASS_COLORS = {
+  'Death Knight': '#c41e3a',
+  'Demon Hunter': '#a330c9',
+  Druid: '#ff7c0a',
+  Evoker: '#33937f',
+  Hunter: '#aad372',
+  Mage: '#3fc7eb',
+  Monk: '#00ff98',
+  Paladin: '#f48cba',
+  Priest: '#ffffff',
+  Rogue: '#fff468',
+  Shaman: '#2f8fe8',
+  Warlock: '#8788ee',
+  Warrior: '#c69b6d',
+};
+
 const SKILL_PREFIX = 'skill:';
 const skillName = () => (state.metric.startsWith(SKILL_PREFIX) ? state.metric.slice(SKILL_PREFIX.length) : null);
 const metricLabel = () => {
@@ -352,12 +368,14 @@ function renderTable() {
         return `${prof.name} ${prof.skill}/${prof.max}${gained > 0 ? ` (+${gained})` : ''}`;
       })
       .join(', ');
+    const link = el('a', { href: c.url, textContent: p.name ?? c.name });
+    link.style.color = CLASS_COLORS[p.className] ?? '';
     const cell = (text, numeric) => el('td', { textContent: text, className: numeric ? 'num' : '' });
     return el(
       'tr',
       {},
       person,
-      el('td', {}, el('a', { href: c.url, textContent: p.name ?? c.name }), el('span', { className: 'sub', textContent: details })),
+      el('td', {}, link, el('span', { className: 'sub', textContent: details })),
       cell(formatValue(p.level), true),
       cell(formatValue(p.itemLevel), true),
       cell(formatValue(p.honorableKills), true),
