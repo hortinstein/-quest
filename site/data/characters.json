@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-10T02:55:48.942Z",
+  "generatedAt": "2026-11-10T03:49:05.372Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-10T02:55:48.942Z",
+      "lastSeen": "2026-11-10T03:49:05.372Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -55,7 +55,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0.08,
+        "daysTracked": 0.12,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -87,12 +87,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-10T02:55:48.942Z"
+      "lastChecked": "2026-11-10T03:49:05.372Z"
     },
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-10T02:55:48.942Z",
+      "lastSeen": "2026-11-10T03:49:05.372Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -125,7 +125,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0.04,
+        "daysTracked": 0.08,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -154,12 +154,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-10T02:55:48.942Z"
+      "lastChecked": "2026-11-10T03:49:05.372Z"
     },
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-10T02:55:48.942Z",
+      "lastSeen": "2026-11-10T03:49:05.372Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -204,7 +204,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0.04,
+        "daysTracked": 0.08,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -235,12 +235,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-10T02:55:48.942Z"
+      "lastChecked": "2026-11-10T03:49:05.372Z"
     },
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-10T02:55:48.942Z",
+      "lastSeen": "2026-11-10T03:49:05.372Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -248,11 +248,16 @@
         "race": "Undead",
         "className": "Paladin",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-10T01:41:19Z",
+        "lastUpdated": "2026-11-10T03:21:15Z",
         "professions": [
           {
-            "name": "Herbalism",
-            "skill": 5,
+            "name": "Mining",
+            "skill": 1,
+            "max": 75
+          },
+          {
+            "name": "Blacksmithing",
+            "skill": 1,
             "max": 75
           }
         ],
@@ -262,12 +267,13 @@
       },
       "stats": {
         "skillsGained": {
-          "Herbalism": 0
+          "Mining": 0,
+          "Blacksmithing": 0
         },
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0.04,
+        "daysTracked": 0.08,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -285,6 +291,16 @@
           "skills": {
             "Herbalism": 5
           }
+        },
+        {
+          "t": "2026-11-10T03:49:05.372Z",
+          "level": 12,
+          "itemLevel": 4,
+          "honorableKills": 0,
+          "skills": {
+            "Mining": 1,
+            "Blacksmithing": 1
+          }
         }
       ],
       "person": "Alexis",
@@ -295,7 +311,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-10T02:55:48.942Z"
+      "lastChecked": "2026-11-10T03:49:05.372Z"
     }
   ]
 }
