@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-10T17:12:25.587Z",
+  "generatedAt": "2026-11-10T18:20:57.965Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-10T17:12:25.587Z",
+      "lastSeen": "2026-11-10T18:20:57.965Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -55,7 +55,7 @@
         "levelsGained": 1,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0.68,
+        "daysTracked": 0.72,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -100,12 +100,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-10T17:12:25.587Z"
+      "lastChecked": "2026-11-10T18:20:57.965Z"
     },
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-10T17:12:25.587Z",
+      "lastSeen": "2026-11-10T18:20:57.965Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -138,7 +138,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0.64,
+        "daysTracked": 0.69,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -167,12 +167,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-10T17:12:25.587Z"
+      "lastChecked": "2026-11-10T18:20:57.965Z"
     },
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-10T17:12:25.587Z",
+      "lastSeen": "2026-11-10T18:20:57.965Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -217,7 +217,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0.64,
+        "daysTracked": 0.69,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -248,12 +248,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-10T17:12:25.587Z"
+      "lastChecked": "2026-11-10T18:20:57.965Z"
     },
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-10T17:12:25.587Z",
+      "lastSeen": "2026-11-10T18:20:57.965Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -286,7 +286,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0.64,
+        "daysTracked": 0.69,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -324,7 +324,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-10T17:12:25.587Z"
+      "lastChecked": "2026-11-10T18:20:57.965Z"
     }
   ]
 }
