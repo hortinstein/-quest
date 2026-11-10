@@ -1,0 +1,301 @@
+{
+  "generatedAt": "2026-11-10T01:58:47.333Z",
+  "characters": [
+    {
+      "key": "us|thè-demiurge",
+      "firstSeen": "2026-11-10T00:57:24.989Z",
+      "lastSeen": "2026-11-10T01:58:47.333Z",
+      "slot": 0,
+      "profile": {
+        "name": "Thè Demiurge",
+        "faction": "Horde",
+        "race": "Undead",
+        "className": "Priest",
+        "ruleset": "PvP",
+        "lastUpdated": "2026-11-09T02:40:51Z",
+        "professions": [
+          {
+            "name": "Tailoring",
+            "skill": 41,
+            "max": 75
+          },
+          {
+            "name": "Enchanting",
+            "skill": 21,
+            "max": 75
+          },
+          {
+            "name": "Cooking",
+            "skill": 24,
+            "max": 75
+          },
+          {
+            "name": "Fishing",
+            "skill": 4,
+            "max": 75
+          },
+          {
+            "name": "First Aid",
+            "skill": 2,
+            "max": 75
+          }
+        ],
+        "level": 12,
+        "itemLevel": 4,
+        "honorableKills": 0
+      },
+      "stats": {
+        "skillsGained": {
+          "Tailoring": 0,
+          "Enchanting": 0,
+          "Cooking": 0,
+          "Fishing": 0,
+          "First Aid": 0
+        },
+        "levelsGained": 0,
+        "itemLevelGained": 0,
+        "honorableKillsGained": 0,
+        "daysTracked": 0.04,
+        "levelsPerDay": null
+      },
+      "snapshots": [
+        {
+          "t": "2026-11-10T00:57:24.989Z",
+          "level": 12,
+          "itemLevel": 4,
+          "honorableKills": 0
+        },
+        {
+          "t": "2026-11-10T01:57:03.761Z",
+          "level": 12,
+          "itemLevel": 4,
+          "honorableKills": 0,
+          "skills": {
+            "Tailoring": 41,
+            "Enchanting": 21,
+            "Cooking": 24,
+            "Fishing": 4,
+            "First Aid": 2
+          }
+        }
+      ],
+      "person": "Alex",
+      "name": "Thè Demiurge",
+      "slug": "thè-demiurge",
+      "region": "us",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/forever/us/armory/character/th%C3%A8-demiurge",
+      "watched": true,
+      "status": "ok",
+      "message": null,
+      "lastChecked": "2026-11-10T01:58:47.333Z"
+    },
+    {
+      "key": "us|scout-zknivez",
+      "firstSeen": "2026-11-10T01:53:57.147Z",
+      "lastSeen": "2026-11-10T01:58:47.333Z",
+      "slot": 1,
+      "profile": {
+        "name": "Scout Zknivez",
+        "faction": "Horde",
+        "race": "Undead",
+        "className": "Mage",
+        "ruleset": "PvP",
+        "lastUpdated": "2026-11-09T19:22:09Z",
+        "professions": [
+          {
+            "name": "Skinning",
+            "skill": 3,
+            "max": 75
+          },
+          {
+            "name": "Cooking",
+            "skill": 1,
+            "max": 75
+          }
+        ],
+        "level": 11,
+        "itemLevel": 2,
+        "honorableKills": 1
+      },
+      "stats": {
+        "skillsGained": {
+          "Skinning": 0,
+          "Cooking": 0
+        },
+        "levelsGained": 0,
+        "itemLevelGained": 0,
+        "honorableKillsGained": 0,
+        "daysTracked": 0,
+        "levelsPerDay": null
+      },
+      "snapshots": [
+        {
+          "t": "2026-11-10T01:53:57.147Z",
+          "level": 11,
+          "itemLevel": 2,
+          "honorableKills": 1
+        },
+        {
+          "t": "2026-11-10T01:57:03.761Z",
+          "level": 11,
+          "itemLevel": 2,
+          "honorableKills": 1,
+          "skills": {
+            "Skinning": 3,
+            "Cooking": 1
+          }
+        }
+      ],
+      "person": "Richards",
+      "name": "Scout Zknivez",
+      "slug": "scout-zknivez",
+      "region": "us",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/forever/us/armory/character/scout-zknivez",
+      "watched": true,
+      "status": "ok",
+      "message": null,
+      "lastChecked": "2026-11-10T01:58:47.333Z"
+    },
+    {
+      "key": "us|ravtar-bonejaw",
+      "firstSeen": "2026-11-10T01:53:57.147Z",
+      "lastSeen": "2026-11-10T01:58:47.333Z",
+      "slot": 2,
+      "profile": {
+        "name": "Ravtar Bonejaw",
+        "faction": "Horde",
+        "race": "Undead",
+        "className": "Rogue",
+        "ruleset": "PvP",
+        "lastUpdated": "2026-11-08T15:08:35Z",
+        "professions": [
+          {
+            "name": "Leatherworking",
+            "skill": 75,
+            "max": 150
+          },
+          {
+            "name": "Skinning",
+            "skill": 110,
+            "max": 150
+          },
+          {
+            "name": "Cooking",
+            "skill": 23,
+            "max": 75
+          },
+          {
+            "name": "First Aid",
+            "skill": 78,
+            "max": 150
+          }
+        ],
+        "level": 15,
+        "itemLevel": 7,
+        "honorableKills": 0
+      },
+      "stats": {
+        "skillsGained": {
+          "Leatherworking": 0,
+          "Skinning": 0,
+          "Cooking": 0,
+          "First Aid": 0
+        },
+        "levelsGained": 0,
+        "itemLevelGained": 0,
+        "honorableKillsGained": 0,
+        "daysTracked": 0,
+        "levelsPerDay": null
+      },
+      "snapshots": [
+        {
+          "t": "2026-11-10T01:53:57.147Z",
+          "level": 15,
+          "itemLevel": 7,
+          "honorableKills": 0
+        },
+        {
+          "t": "2026-11-10T01:57:03.761Z",
+          "level": 15,
+          "itemLevel": 7,
+          "honorableKills": 0,
+          "skills": {
+            "Leatherworking": 75,
+            "Skinning": 110,
+            "Cooking": 23,
+            "First Aid": 78
+          }
+        }
+      ],
+      "person": "Whalen",
+      "name": "Ravtar Bonejaw",
+      "slug": "ravtar-bonejaw",
+      "region": "us",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/forever/us/armory/character/ravtar-bonejaw",
+      "watched": true,
+      "status": "ok",
+      "message": null,
+      "lastChecked": "2026-11-10T01:58:47.333Z"
+    },
+    {
+      "key": "us|atlasian-nwen",
+      "firstSeen": "2026-11-10T01:54:28.327Z",
+      "lastSeen": "2026-11-10T01:58:47.333Z",
+      "slot": 3,
+      "profile": {
+        "name": "Atlasian Nwen",
+        "faction": "Horde",
+        "race": "Undead",
+        "className": "Paladin",
+        "ruleset": "PvP",
+        "lastUpdated": "2026-11-10T01:41:19Z",
+        "professions": [
+          {
+            "name": "Herbalism",
+            "skill": 5,
+            "max": 75
+          }
+        ],
+        "level": 12,
+        "itemLevel": 4,
+        "honorableKills": 0
+      },
+      "stats": {
+        "skillsGained": {
+          "Herbalism": 0
+        },
+        "levelsGained": 0,
+        "itemLevelGained": 0,
+        "honorableKillsGained": 0,
+        "daysTracked": 0,
+        "levelsPerDay": null
+      },
+      "snapshots": [
+        {
+          "t": "2026-11-10T01:54:28.327Z",
+          "level": 12,
+          "itemLevel": 4,
+          "honorableKills": 0
+        },
+        {
+          "t": "2026-11-10T01:58:47.333Z",
+          "level": 12,
+          "itemLevel": 4,
+          "honorableKills": 0,
+          "skills": {
+            "Herbalism": 5
+          }
+        }
+      ],
+      "person": "Alexis",
+      "name": "Atlasian Nwen",
+      "slug": "atlasian-nwen",
+      "region": "us",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/forever/us/armory/character/atlasian-nwen",
+      "watched": true,
+      "status": "ok",
+      "message": null,
+      "lastChecked": "2026-11-10T01:58:47.333Z"
+    }
+  ]
+}

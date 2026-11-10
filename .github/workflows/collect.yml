@@ -1,0 +1,66 @@
+name: Collect and deploy
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - watched.txt
+      - site/**
+      - scripts/**
+      - .github/workflows/collect.yml
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      - run: npm test
+
+      - name: Collect character data
+        id: collect
+        continue-on-error: true
+        run: node scripts/collect.mjs
+
+      - name: Commit data
+        run: |
+          git add site/data/characters.json
+          if git diff --cached --quiet; then
+            echo "No data changes."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Update character data'
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+
+      - id: deploy
+        uses: actions/deploy-pages@v5
+
+      - name: Report collection failure
+        if: steps.collect.outcome == 'failure'
+        run: exit 1

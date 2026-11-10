@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>♾️quest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>♾️quest</h1>
+      <p id="updated" class="muted">Loading…</p>
+    </header>
+
+    <div class="controls">
+      <div class="segmented" id="metric" role="group" aria-label="Metric"></div>
+      <select id="skill" aria-label="Profession skill"></select>
+      <div class="segmented" id="axis" role="group" aria-label="Time axis"></div>
+    </div>
+
+    <section class="card">
+      <h2 id="chart-title"></h2>
+      <div id="chart" class="chart"></div>
+      <div id="legend" class="legend"></div>
+      <p id="chart-note" class="muted" hidden></p>
+    </section>
+
+    <section id="attention" class="card" hidden>
+      <h2>Needs attention</h2>
+      <ul id="attention-list"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Comparison</h2>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Person</th>
+              <th>Character</th>
+              <th class="num">Level</th>
+              <th class="num">Item level</th>
+              <th class="num">Honorable kills</th>
+              <th class="num">Levels gained</th>
+              <th class="num">Levels / day</th>
+              <th>First seen</th>
+              <th>Armory updated</th>
+              <th>Professions</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <p id="empty-table" class="muted" hidden>No characters have been found yet.</p>
+    </section>
+  </main>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

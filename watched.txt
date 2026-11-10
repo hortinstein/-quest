@@ -1,0 +1,6 @@
+# person, character[, region]
+# Character is the full Forever name, first and last. Region defaults to us (eu, kr, tw also work).
+Alex, Thè Demiurge
+Alexis, Atlasian Nwen
+Richards, Scout Zknivez
+Whalen, Ravtar Bonejaw
