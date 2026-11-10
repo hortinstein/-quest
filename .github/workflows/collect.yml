@@ -28,7 +28,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
+      # Use the latest main, not the commit that triggered the run. A queued or
+      # re-run job would otherwise rebuild on data that a newer run has replaced.
       - uses: actions/checkout@v7
+        with:
+          ref: main
 
       - uses: actions/setup-node@v7
         with:
@@ -51,7 +55,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git commit -m 'Update character data'
-          git pull --rebase origin main
+          git pull --rebase -X theirs origin main
           git push origin HEAD:main
 
       - uses: actions/upload-pages-artifact@v5
