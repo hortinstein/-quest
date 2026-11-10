@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-10T03:49:05.372Z",
+  "generatedAt": "2026-11-10T06:27:14.854Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-10T03:49:05.372Z",
+      "lastSeen": "2026-11-10T06:27:14.854Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -12,7 +12,7 @@
         "race": "Undead",
         "className": "Priest",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-10T01:59:58Z",
+        "lastUpdated": "2026-11-10T03:49:11Z",
         "professions": [
           {
             "name": "Tailoring",
@@ -36,11 +36,11 @@
           },
           {
             "name": "First Aid",
-            "skill": 2,
+            "skill": 11,
             "max": 75
           }
         ],
-        "level": 12,
+        "level": 13,
         "itemLevel": 4,
         "honorableKills": 0
       },
@@ -50,12 +50,12 @@
           "Enchanting": 0,
           "Cooking": 0,
           "Fishing": 0,
-          "First Aid": 0
+          "First Aid": 9
         },
-        "levelsGained": 0,
+        "levelsGained": 1,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0.12,
+        "daysTracked": 0.23,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -77,6 +77,19 @@
             "Fishing": 4,
             "First Aid": 2
           }
+        },
+        {
+          "t": "2026-11-10T06:27:14.854Z",
+          "level": 13,
+          "itemLevel": 4,
+          "honorableKills": 0,
+          "skills": {
+            "Tailoring": 41,
+            "Enchanting": 21,
+            "Cooking": 24,
+            "Fishing": 4,
+            "First Aid": 11
+          }
         }
       ],
       "person": "Alex",
@@ -87,12 +100,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-10T03:49:05.372Z"
+      "lastChecked": "2026-11-10T06:27:14.854Z"
     },
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-10T03:49:05.372Z",
+      "lastSeen": "2026-11-10T06:27:14.854Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -125,7 +138,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0.08,
+        "daysTracked": 0.19,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -154,12 +167,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-10T03:49:05.372Z"
+      "lastChecked": "2026-11-10T06:27:14.854Z"
     },
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-10T03:49:05.372Z",
+      "lastSeen": "2026-11-10T06:27:14.854Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -204,7 +217,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0.08,
+        "daysTracked": 0.19,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -235,12 +248,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-10T03:49:05.372Z"
+      "lastChecked": "2026-11-10T06:27:14.854Z"
     },
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-10T03:49:05.372Z",
+      "lastSeen": "2026-11-10T06:27:14.854Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -273,7 +286,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0.08,
+        "daysTracked": 0.19,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -311,7 +324,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-10T03:49:05.372Z"
+      "lastChecked": "2026-11-10T06:27:14.854Z"
     }
   ]
 }
