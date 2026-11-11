@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-11T04:41:26.884Z",
+  "generatedAt": "2026-11-11T06:28:13.565Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-11T04:41:26.884Z",
+      "lastSeen": "2026-11-11T06:28:13.565Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -12,7 +12,7 @@
         "race": "Undead",
         "className": "Priest",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-11T02:55:52Z",
+        "lastUpdated": "2026-11-11T05:12:48Z",
         "professions": [
           {
             "name": "Tailoring",
@@ -21,7 +21,7 @@
           },
           {
             "name": "Enchanting",
-            "skill": 21,
+            "skill": 25,
             "max": 75
           },
           {
@@ -40,23 +40,23 @@
             "max": 75
           }
         ],
-        "level": 13,
-        "itemLevel": 4,
+        "level": 14,
+        "itemLevel": 5,
         "honorableKills": 0
       },
       "stats": {
         "skillsGained": {
           "Tailoring": 0,
-          "Enchanting": 0,
+          "Enchanting": 4,
           "Cooking": 0,
           "Fishing": 0,
           "First Aid": 9
         },
-        "levelsGained": 1,
-        "itemLevelGained": 0,
+        "levelsGained": 2,
+        "itemLevelGained": 1,
         "honorableKillsGained": 0,
-        "daysTracked": 1.16,
-        "levelsPerDay": 0.87
+        "daysTracked": 1.23,
+        "levelsPerDay": 1.63
       },
       "snapshots": [
         {
@@ -90,6 +90,19 @@
             "Fishing": 4,
             "First Aid": 11
           }
+        },
+        {
+          "t": "2026-11-11T06:28:13.565Z",
+          "level": 14,
+          "itemLevel": 5,
+          "honorableKills": 0,
+          "skills": {
+            "Tailoring": 41,
+            "Enchanting": 25,
+            "Cooking": 24,
+            "Fishing": 4,
+            "First Aid": 11
+          }
         }
       ],
       "person": "Alex",
@@ -100,12 +113,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-11T04:41:26.884Z"
+      "lastChecked": "2026-11-11T06:28:13.565Z"
     },
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-11T04:41:26.884Z",
+      "lastSeen": "2026-11-11T06:28:13.565Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -144,8 +157,8 @@
         "levelsGained": 3,
         "itemLevelGained": 1,
         "honorableKillsGained": 0,
-        "daysTracked": 1.12,
-        "levelsPerDay": 2.69
+        "daysTracked": 1.19,
+        "levelsPerDay": 2.52
       },
       "snapshots": [
         {
@@ -194,12 +207,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-11T04:41:26.884Z"
+      "lastChecked": "2026-11-11T06:28:13.565Z"
     },
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-11T04:41:26.884Z",
+      "lastSeen": "2026-11-11T06:28:13.565Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -244,7 +257,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 1.12,
+        "daysTracked": 1.19,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -275,12 +288,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-11T04:41:26.884Z"
+      "lastChecked": "2026-11-11T06:28:13.565Z"
     },
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-11T04:41:26.884Z",
+      "lastSeen": "2026-11-11T06:28:13.565Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -288,7 +301,7 @@
         "race": "Undead",
         "className": "Paladin",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-11T01:23:50Z",
+        "lastUpdated": "2026-11-11T04:56:05Z",
         "professions": [
           {
             "name": "Mining",
@@ -301,8 +314,8 @@
             "max": 75
           }
         ],
-        "level": 12,
-        "itemLevel": 4,
+        "level": 14,
+        "itemLevel": 5,
         "honorableKills": 0
       },
       "stats": {
@@ -310,11 +323,11 @@
           "Mining": 0,
           "Blacksmithing": 0
         },
-        "levelsGained": 0,
-        "itemLevelGained": 0,
+        "levelsGained": 2,
+        "itemLevelGained": 1,
         "honorableKillsGained": 0,
-        "daysTracked": 1.12,
-        "levelsPerDay": 0
+        "daysTracked": 1.19,
+        "levelsPerDay": 1.68
       },
       "snapshots": [
         {
@@ -341,6 +354,16 @@
             "Mining": 1,
             "Blacksmithing": 1
           }
+        },
+        {
+          "t": "2026-11-11T06:28:13.565Z",
+          "level": 14,
+          "itemLevel": 5,
+          "honorableKills": 0,
+          "skills": {
+            "Mining": 1,
+            "Blacksmithing": 1
+          }
         }
       ],
       "person": "Alexis",
@@ -351,12 +374,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-11T04:41:26.884Z"
+      "lastChecked": "2026-11-11T06:28:13.565Z"
     },
     {
       "key": "us|ignivomous-defenestrata",
       "firstSeen": "2026-11-10T23:12:20.397Z",
-      "lastSeen": "2026-11-11T04:41:26.884Z",
+      "lastSeen": "2026-11-11T06:28:13.565Z",
       "slot": 4,
       "profile": {
         "name": "Ignivomous Defenestrata",
@@ -401,7 +424,7 @@
         "levelsGained": 2,
         "itemLevelGained": 2,
         "honorableKillsGained": 0,
-        "daysTracked": 0.23,
+        "daysTracked": 0.3,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -438,25 +461,82 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-11T04:41:26.884Z"
+      "lastChecked": "2026-11-11T06:28:13.565Z"
     },
     {
       "key": "us|ravzar-goldhorn",
-      "firstSeen": null,
-      "lastSeen": null,
-      "slot": null,
-      "profile": null,
-      "stats": null,
-      "snapshots": [],
+      "firstSeen": "2026-11-11T06:28:13.565Z",
+      "lastSeen": "2026-11-11T06:28:13.565Z",
+      "slot": 5,
+      "profile": {
+        "name": "Ravzar Goldhorn",
+        "faction": "Horde",
+        "race": "Tauren",
+        "className": "Warrior",
+        "ruleset": "PvP",
+        "lastUpdated": "2026-11-11T05:22:16Z",
+        "professions": [
+          {
+            "name": "Mining",
+            "skill": 56,
+            "max": 75
+          },
+          {
+            "name": "Blacksmithing",
+            "skill": 37,
+            "max": 75
+          },
+          {
+            "name": "Cooking",
+            "skill": 1,
+            "max": 75
+          },
+          {
+            "name": "First Aid",
+            "skill": 54,
+            "max": 150
+          }
+        ],
+        "level": 11,
+        "itemLevel": 3,
+        "honorableKills": 0
+      },
+      "stats": {
+        "skillsGained": {
+          "Mining": 0,
+          "Blacksmithing": 0,
+          "Cooking": 0,
+          "First Aid": 0
+        },
+        "levelsGained": 0,
+        "itemLevelGained": 0,
+        "honorableKillsGained": 0,
+        "daysTracked": 0,
+        "levelsPerDay": null
+      },
+      "snapshots": [
+        {
+          "t": "2026-11-11T06:28:13.565Z",
+          "level": 11,
+          "itemLevel": 3,
+          "honorableKills": 0,
+          "skills": {
+            "Mining": 56,
+            "Blacksmithing": 37,
+            "Cooking": 1,
+            "First Aid": 54
+          }
+        }
+      ],
       "person": "Whalen",
       "name": "Ravzar Goldhorn",
       "slug": "ravzar-goldhorn",
       "region": "us",
       "url": "https://worldofwarcraft.blizzard.com/en-us/forever/us/armory/character/ravzar-goldhorn",
       "watched": true,
-      "status": "error",
-      "message": "Armory returned HTTP 500. Check the spelling, or the armory may be down.",
-      "lastChecked": "2026-11-11T04:41:26.884Z"
+      "status": "ok",
+      "message": null,
+      "lastChecked": "2026-11-11T06:28:13.565Z"
     }
   ]
 }
