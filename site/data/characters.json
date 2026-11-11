@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-11T06:28:13.565Z",
+  "generatedAt": "2026-11-11T12:25:39.998Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-11T06:28:13.565Z",
+      "lastSeen": "2026-11-11T12:25:39.998Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -55,8 +55,8 @@
         "levelsGained": 2,
         "itemLevelGained": 1,
         "honorableKillsGained": 0,
-        "daysTracked": 1.23,
-        "levelsPerDay": 1.63
+        "daysTracked": 1.48,
+        "levelsPerDay": 1.35
       },
       "snapshots": [
         {
@@ -113,12 +113,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-11T06:28:13.565Z"
+      "lastChecked": "2026-11-11T12:25:39.998Z"
     },
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-11T06:28:13.565Z",
+      "lastSeen": "2026-11-11T12:25:39.998Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -157,8 +157,8 @@
         "levelsGained": 3,
         "itemLevelGained": 1,
         "honorableKillsGained": 0,
-        "daysTracked": 1.19,
-        "levelsPerDay": 2.52
+        "daysTracked": 1.44,
+        "levelsPerDay": 2.09
       },
       "snapshots": [
         {
@@ -207,12 +207,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-11T06:28:13.565Z"
+      "lastChecked": "2026-11-11T12:25:39.998Z"
     },
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-11T06:28:13.565Z",
+      "lastSeen": "2026-11-11T12:25:39.998Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -257,7 +257,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 1.19,
+        "daysTracked": 1.44,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -288,12 +288,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-11T06:28:13.565Z"
+      "lastChecked": "2026-11-11T12:25:39.998Z"
     },
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-11T06:28:13.565Z",
+      "lastSeen": "2026-11-11T12:25:39.998Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -326,8 +326,8 @@
         "levelsGained": 2,
         "itemLevelGained": 1,
         "honorableKillsGained": 0,
-        "daysTracked": 1.19,
-        "levelsPerDay": 1.68
+        "daysTracked": 1.44,
+        "levelsPerDay": 1.39
       },
       "snapshots": [
         {
@@ -374,12 +374,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-11T06:28:13.565Z"
+      "lastChecked": "2026-11-11T12:25:39.998Z"
     },
     {
       "key": "us|ignivomous-defenestrata",
       "firstSeen": "2026-11-10T23:12:20.397Z",
-      "lastSeen": "2026-11-11T06:28:13.565Z",
+      "lastSeen": "2026-11-11T12:25:39.998Z",
       "slot": 4,
       "profile": {
         "name": "Ignivomous Defenestrata",
@@ -424,7 +424,7 @@
         "levelsGained": 2,
         "itemLevelGained": 2,
         "honorableKillsGained": 0,
-        "daysTracked": 0.3,
+        "daysTracked": 0.55,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -461,12 +461,12 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-11T06:28:13.565Z"
+      "lastChecked": "2026-11-11T12:25:39.998Z"
     },
     {
       "key": "us|ravzar-goldhorn",
       "firstSeen": "2026-11-11T06:28:13.565Z",
-      "lastSeen": "2026-11-11T06:28:13.565Z",
+      "lastSeen": "2026-11-11T12:25:39.998Z",
       "slot": 5,
       "profile": {
         "name": "Ravzar Goldhorn",
@@ -511,7 +511,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0,
+        "daysTracked": 0.25,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -536,7 +536,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-11T06:28:13.565Z"
+      "lastChecked": "2026-11-11T12:25:39.998Z"
     }
   ]
 }
