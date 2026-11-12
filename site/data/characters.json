@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-12T03:35:12.156Z",
+  "generatedAt": "2026-11-12T06:28:46.228Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-12T03:35:12.156Z",
+      "lastSeen": "2026-11-12T06:28:46.228Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -55,8 +55,8 @@
         "levelsGained": 4,
         "itemLevelGained": 5,
         "honorableKillsGained": 0,
-        "daysTracked": 2.11,
-        "levelsPerDay": 1.9
+        "daysTracked": 2.23,
+        "levelsPerDay": 1.79
       },
       "snapshots": [
         {
@@ -139,7 +139,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T03:35:12.156Z",
+      "lastChecked": "2026-11-12T06:28:46.228Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -152,7 +152,7 @@
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-12T03:35:12.156Z",
+      "lastSeen": "2026-11-12T06:28:46.228Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -160,7 +160,7 @@
         "race": "Undead",
         "className": "Mage",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-12T03:21:28Z",
+        "lastUpdated": "2026-11-12T04:24:11Z",
         "professions": [
           {
             "name": "Tailoring",
@@ -169,30 +169,36 @@
           },
           {
             "name": "Skinning",
-            "skill": 8,
+            "skill": 10,
             "max": 75
           },
           {
             "name": "Cooking",
             "skill": 32,
             "max": 75
+          },
+          {
+            "name": "First Aid",
+            "skill": 31,
+            "max": 75
           }
         ],
         "level": 17,
-        "itemLevel": 8,
+        "itemLevel": 6,
         "honorableKills": 1
       },
       "stats": {
         "skillsGained": {
           "Tailoring": 1,
-          "Skinning": 5,
-          "Cooking": 31
+          "Skinning": 7,
+          "Cooking": 31,
+          "First Aid": 0
         },
         "levelsGained": 6,
-        "itemLevelGained": 6,
+        "itemLevelGained": 4,
         "honorableKillsGained": 0,
-        "daysTracked": 2.07,
-        "levelsPerDay": 2.9
+        "daysTracked": 2.19,
+        "levelsPerDay": 2.74
       },
       "snapshots": [
         {
@@ -253,6 +259,18 @@
             "Skinning": 8,
             "Cooking": 32
           }
+        },
+        {
+          "t": "2026-11-12T06:28:46.228Z",
+          "level": 17,
+          "itemLevel": 6,
+          "honorableKills": 1,
+          "skills": {
+            "Tailoring": 51,
+            "Skinning": 10,
+            "Cooking": 32,
+            "First Aid": 31
+          }
         }
       ],
       "person": "Richards",
@@ -263,7 +281,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T03:35:12.156Z",
+      "lastChecked": "2026-11-12T06:28:46.228Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -276,7 +294,7 @@
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-12T03:35:12.156Z",
+      "lastSeen": "2026-11-12T06:28:46.228Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -321,7 +339,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 2.07,
+        "daysTracked": 2.19,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -352,7 +370,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T03:35:12.156Z",
+      "lastChecked": "2026-11-12T06:28:46.228Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -365,7 +383,7 @@
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-12T03:35:12.156Z",
+      "lastSeen": "2026-11-12T06:28:46.228Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -398,8 +416,8 @@
         "levelsGained": 4,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 2.07,
-        "levelsPerDay": 1.93
+        "daysTracked": 2.19,
+        "levelsPerDay": 1.83
       },
       "snapshots": [
         {
@@ -456,7 +474,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T03:35:12.156Z",
+      "lastChecked": "2026-11-12T06:28:46.228Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -469,7 +487,7 @@
     {
       "key": "us|ignivomous-defenestrata",
       "firstSeen": "2026-11-10T23:12:20.397Z",
-      "lastSeen": "2026-11-12T03:35:12.156Z",
+      "lastSeen": "2026-11-12T06:28:46.228Z",
       "slot": 4,
       "profile": {
         "name": "Ignivomous Defenestrata",
@@ -514,8 +532,8 @@
         "levelsGained": 3,
         "itemLevelGained": 6,
         "honorableKillsGained": 132,
-        "daysTracked": 1.18,
-        "levelsPerDay": 2.54
+        "daysTracked": 1.3,
+        "levelsPerDay": 2.3
       },
       "snapshots": [
         {
@@ -563,7 +581,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T03:35:12.156Z",
+      "lastChecked": "2026-11-12T06:28:46.228Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -576,7 +594,7 @@
     {
       "key": "us|ravzar-goldhorn",
       "firstSeen": "2026-11-11T06:28:13.565Z",
-      "lastSeen": "2026-11-12T03:35:12.156Z",
+      "lastSeen": "2026-11-12T06:28:46.228Z",
       "slot": 5,
       "profile": {
         "name": "Ravzar Goldhorn",
@@ -621,8 +639,8 @@
         "levelsGained": 2,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0.88,
-        "levelsPerDay": null
+        "daysTracked": 1,
+        "levelsPerDay": 2
       },
       "snapshots": [
         {
@@ -658,7 +676,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T03:35:12.156Z",
+      "lastChecked": "2026-11-12T06:28:46.228Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
