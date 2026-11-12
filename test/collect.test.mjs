@@ -37,6 +37,50 @@ function site(handler) {
 const entries = parseWatched('Alex, Thè Demiurge');
 const run = (fetchImpl, previous, iso) => collect({ entries, previous, fetchImpl, sleep, now: new Date(iso) });
 
+test('seeds gear captures for existing characters, captures level differences only, and keeps history', async () => {
+  const existing = (await run(site(() => page(character(10))).fetchImpl, null, '2026-01-01T00:00:00Z')).data;
+  const levels = [];
+  const captureGear = async (c) => {
+    levels.push(c.profile.level);
+    return `screenshots/test/level${c.profile.level}.png`;
+  };
+  const capture = async (level, previous, extra = {}) => (await collect({
+    entries, previous, fetchImpl: site(() => page(character(level, extra))).fetchImpl,
+    sleep, captureGear, now: new Date('2026-01-02T00:00:00Z'),
+  })).data;
+  const seeded = await capture(10, existing);
+  assert.deepEqual(seeded.characters[0].gearCaptures, [{
+    t: '2026-01-02T00:00:00.000Z', level: 10, path: 'screenshots/test/level10.png',
+  }]);
+  const same = await capture(10, seeded, { averageItemLevel: 99 });
+  const up = await capture(12, same);
+  const down = await capture(11, up);
+  assert.deepEqual(levels, [10, 12, 11]);
+  assert.deepEqual(down.characters[0].gearCaptures.map((c) => c.level), [10, 12, 11]);
+});
+
+test('failed screenshots preserve profile data and retry even without another level change', async () => {
+  const options = { entries, sleep, fetchImpl: site(() => page(character(10))).fetchImpl };
+  const failed = await collect({ ...options, previous: null, captureGear: async () => { throw new Error('model unavailable'); } });
+  assert.equal(failed.capturesFailed, 1);
+  assert.equal(failed.data.characters[0].profile.level, 10);
+  assert.match(failed.data.characters[0].captureError, /model unavailable/);
+  assert.equal(failed.data.characters[0].gearCaptures, undefined);
+  const retried = await collect({ ...options, previous: failed.data, captureGear: async () => 'screenshots/test.png' });
+  assert.equal(retried.capturesFailed, 0);
+  assert.equal(retried.data.characters[0].captureError, null);
+  assert.equal(retried.data.characters[0].gearCaptures.length, 1);
+});
+
+test('failed armory lookups never trigger a screenshot', async () => {
+  const result = await collect({ entries, previous: null, sleep,
+    fetchImpl: site(() => new Response('', { status: 404 })).fetchImpl,
+    captureGear: async () => { assert.fail('must not capture a failed lookup'); },
+  });
+  assert.equal(result.failed, 1);
+  assert.equal(result.capturesFailed, 0);
+});
+
 test('parses comments, optional region and duplicates', () => {
   const parsed = parseWatched('# note\n\nA, One Two\nA, One Two\nB, Three Four, EU\n');
   assert.deepEqual(parsed.map((e) => [e.slug, e.region]), [['one-two', 'us'], ['three-four', 'eu']]);

@@ -11,6 +11,8 @@ on:
       - site/**
       - scripts/**
       - .github/workflows/collect.yml
+      - package.json
+      - package-lock.json
 
 permissions:
   contents: write
@@ -38,6 +40,8 @@ jobs:
         with:
           node-version: 24
 
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
       - run: npm test
 
       - name: Collect character data
@@ -47,7 +51,7 @@ jobs:
 
       - name: Commit data
         run: |
-          git add site/data/characters.json
+          git add site/data/characters.json site/screenshots
           if git diff --cached --quiet; then
             echo "No data changes."
             exit 0
