@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-12T00:40:00.337Z",
+  "generatedAt": "2026-11-12T03:35:12.156Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-12T00:40:00.337Z",
+      "lastSeen": "2026-11-12T03:35:12.156Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -12,11 +12,11 @@
         "race": "Undead",
         "className": "Priest",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-11T15:28:35Z",
+        "lastUpdated": "2026-11-12T03:08:38Z",
         "professions": [
           {
             "name": "Tailoring",
-            "skill": 44,
+            "skill": 48,
             "max": 75
           },
           {
@@ -31,32 +31,32 @@
           },
           {
             "name": "Fishing",
-            "skill": 4,
+            "skill": 10,
             "max": 75
           },
           {
             "name": "First Aid",
-            "skill": 21,
+            "skill": 51,
             "max": 75
           }
         ],
-        "level": 15,
-        "itemLevel": 7,
+        "level": 16,
+        "itemLevel": 9,
         "honorableKills": 0
       },
       "stats": {
         "skillsGained": {
-          "Tailoring": 3,
+          "Tailoring": 7,
           "Enchanting": 6,
           "Cooking": 2,
-          "Fishing": 0,
-          "First Aid": 19
+          "Fishing": 6,
+          "First Aid": 49
         },
-        "levelsGained": 3,
-        "itemLevelGained": 3,
+        "levelsGained": 4,
+        "itemLevelGained": 5,
         "honorableKillsGained": 0,
-        "daysTracked": 1.99,
-        "levelsPerDay": 1.51
+        "daysTracked": 2.11,
+        "levelsPerDay": 1.9
       },
       "snapshots": [
         {
@@ -116,6 +116,19 @@
             "Fishing": 4,
             "First Aid": 21
           }
+        },
+        {
+          "t": "2026-11-12T03:35:12.156Z",
+          "level": 16,
+          "itemLevel": 9,
+          "honorableKills": 0,
+          "skills": {
+            "Tailoring": 48,
+            "Enchanting": 27,
+            "Cooking": 26,
+            "Fishing": 10,
+            "First Aid": 51
+          }
         }
       ],
       "person": "Alex",
@@ -126,12 +139,20 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T00:40:00.337Z"
+      "lastChecked": "2026-11-12T03:35:12.156Z",
+      "gearCaptures": [
+        {
+          "t": "2026-11-12T03:35:12.156Z",
+          "level": 16,
+          "path": "screenshots/thè-demiurge_us/20261112_thè-demiurge_LEVEL16.png"
+        }
+      ],
+      "captureError": null
     },
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-12T00:40:00.337Z",
+      "lastSeen": "2026-11-12T03:35:12.156Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -139,7 +160,7 @@
         "race": "Undead",
         "className": "Mage",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-11T19:09:15Z",
+        "lastUpdated": "2026-11-12T03:21:28Z",
         "professions": [
           {
             "name": "Tailoring",
@@ -148,30 +169,30 @@
           },
           {
             "name": "Skinning",
-            "skill": 7,
+            "skill": 8,
             "max": 75
           },
           {
             "name": "Cooking",
-            "skill": 31,
+            "skill": 32,
             "max": 75
           }
         ],
-        "level": 14,
-        "itemLevel": 3,
+        "level": 17,
+        "itemLevel": 8,
         "honorableKills": 1
       },
       "stats": {
         "skillsGained": {
           "Tailoring": 1,
-          "Skinning": 4,
-          "Cooking": 30
+          "Skinning": 5,
+          "Cooking": 31
         },
-        "levelsGained": 3,
-        "itemLevelGained": 1,
+        "levelsGained": 6,
+        "itemLevelGained": 6,
         "honorableKillsGained": 0,
-        "daysTracked": 1.95,
-        "levelsPerDay": 1.54
+        "daysTracked": 2.07,
+        "levelsPerDay": 2.9
       },
       "snapshots": [
         {
@@ -221,6 +242,17 @@
             "Skinning": 7,
             "Cooking": 31
           }
+        },
+        {
+          "t": "2026-11-12T03:35:12.156Z",
+          "level": 17,
+          "itemLevel": 8,
+          "honorableKills": 1,
+          "skills": {
+            "Tailoring": 51,
+            "Skinning": 8,
+            "Cooking": 32
+          }
         }
       ],
       "person": "Richards",
@@ -231,12 +263,20 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T00:40:00.337Z"
+      "lastChecked": "2026-11-12T03:35:12.156Z",
+      "gearCaptures": [
+        {
+          "t": "2026-11-12T03:35:12.156Z",
+          "level": 17,
+          "path": "screenshots/scout-zknivez_us/20261112_scout-zknivez_LEVEL17.png"
+        }
+      ],
+      "captureError": null
     },
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-12T00:40:00.337Z",
+      "lastSeen": "2026-11-12T03:35:12.156Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -281,7 +321,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 1.95,
+        "daysTracked": 2.07,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -312,12 +352,20 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T00:40:00.337Z"
+      "lastChecked": "2026-11-12T03:35:12.156Z",
+      "gearCaptures": [
+        {
+          "t": "2026-11-12T03:35:12.156Z",
+          "level": 15,
+          "path": "screenshots/ravtar-bonejaw_us/20261112_ravtar-bonejaw_LEVEL15.png"
+        }
+      ],
+      "captureError": null
     },
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-12T00:40:00.337Z",
+      "lastSeen": "2026-11-12T03:35:12.156Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -325,11 +373,11 @@
         "race": "Undead",
         "className": "Paladin",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-11T22:51:48Z",
+        "lastUpdated": "2026-11-12T03:08:51Z",
         "professions": [
           {
             "name": "Mining",
-            "skill": 1,
+            "skill": 4,
             "max": 75
           },
           {
@@ -338,20 +386,20 @@
             "max": 75
           }
         ],
-        "level": 14,
-        "itemLevel": 5,
+        "level": 16,
+        "itemLevel": 4,
         "honorableKills": 0
       },
       "stats": {
         "skillsGained": {
-          "Mining": 0,
+          "Mining": 3,
           "Blacksmithing": 0
         },
-        "levelsGained": 2,
-        "itemLevelGained": 1,
+        "levelsGained": 4,
+        "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 1.95,
-        "levelsPerDay": 1.03
+        "daysTracked": 2.07,
+        "levelsPerDay": 1.93
       },
       "snapshots": [
         {
@@ -388,6 +436,16 @@
             "Mining": 1,
             "Blacksmithing": 1
           }
+        },
+        {
+          "t": "2026-11-12T03:35:12.156Z",
+          "level": 16,
+          "itemLevel": 4,
+          "honorableKills": 0,
+          "skills": {
+            "Mining": 4,
+            "Blacksmithing": 1
+          }
         }
       ],
       "person": "Alexis",
@@ -398,12 +456,20 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T00:40:00.337Z"
+      "lastChecked": "2026-11-12T03:35:12.156Z",
+      "gearCaptures": [
+        {
+          "t": "2026-11-12T03:35:12.156Z",
+          "level": 16,
+          "path": "screenshots/atlasian-nwen_us/20261112_atlasian-nwen_LEVEL16.png"
+        }
+      ],
+      "captureError": null
     },
     {
       "key": "us|ignivomous-defenestrata",
       "firstSeen": "2026-11-10T23:12:20.397Z",
-      "lastSeen": "2026-11-12T00:40:00.337Z",
+      "lastSeen": "2026-11-12T03:35:12.156Z",
       "slot": 4,
       "profile": {
         "name": "Ignivomous Defenestrata",
@@ -411,16 +477,16 @@
         "race": "Undead",
         "className": "Mage",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-11T04:20:32Z",
+        "lastUpdated": "2026-11-12T02:04:45Z",
         "professions": [
           {
             "name": "Skinning",
-            "skill": 118,
+            "skill": 125,
             "max": 150
           },
           {
             "name": "Cooking",
-            "skill": 51,
+            "skill": 57,
             "max": 150
           },
           {
@@ -434,22 +500,22 @@
             "max": 150
           }
         ],
-        "level": 18,
-        "itemLevel": 10,
-        "honorableKills": 0
+        "level": 19,
+        "itemLevel": 14,
+        "honorableKills": 132
       },
       "stats": {
         "skillsGained": {
-          "Skinning": 5,
-          "Cooking": 0,
+          "Skinning": 12,
+          "Cooking": 6,
           "Fishing": 15,
           "First Aid": 3
         },
-        "levelsGained": 2,
-        "itemLevelGained": 2,
-        "honorableKillsGained": 0,
-        "daysTracked": 1.06,
-        "levelsPerDay": 1.89
+        "levelsGained": 3,
+        "itemLevelGained": 6,
+        "honorableKillsGained": 132,
+        "daysTracked": 1.18,
+        "levelsPerDay": 2.54
       },
       "snapshots": [
         {
@@ -475,6 +541,18 @@
             "Fishing": 17,
             "First Aid": 75
           }
+        },
+        {
+          "t": "2026-11-12T03:35:12.156Z",
+          "level": 19,
+          "itemLevel": 14,
+          "honorableKills": 132,
+          "skills": {
+            "Skinning": 125,
+            "Cooking": 57,
+            "Fishing": 17,
+            "First Aid": 75
+          }
         }
       ],
       "person": "Dan",
@@ -485,12 +563,20 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T00:40:00.337Z"
+      "lastChecked": "2026-11-12T03:35:12.156Z",
+      "gearCaptures": [
+        {
+          "t": "2026-11-12T03:35:12.156Z",
+          "level": 19,
+          "path": "screenshots/ignivomous-defenestrata_us/20261112_ignivomous-defenestrata_LEVEL19.png"
+        }
+      ],
+      "captureError": null
     },
     {
       "key": "us|ravzar-goldhorn",
       "firstSeen": "2026-11-11T06:28:13.565Z",
-      "lastSeen": "2026-11-12T00:40:00.337Z",
+      "lastSeen": "2026-11-12T03:35:12.156Z",
       "slot": 5,
       "profile": {
         "name": "Ravzar Goldhorn",
@@ -535,7 +621,7 @@
         "levelsGained": 2,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0.76,
+        "daysTracked": 0.88,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -572,7 +658,15 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T00:40:00.337Z"
+      "lastChecked": "2026-11-12T03:35:12.156Z",
+      "gearCaptures": [
+        {
+          "t": "2026-11-12T03:35:12.156Z",
+          "level": 13,
+          "path": "screenshots/ravzar-goldhorn_us/20261112_ravzar-goldhorn_LEVEL13.png"
+        }
+      ],
+      "captureError": null
     }
   ]
 }
