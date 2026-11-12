@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-12T06:28:46.228Z",
+  "generatedAt": "2026-11-12T12:26:49.549Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-12T06:28:46.228Z",
+      "lastSeen": "2026-11-12T12:26:49.549Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -55,8 +55,8 @@
         "levelsGained": 4,
         "itemLevelGained": 5,
         "honorableKillsGained": 0,
-        "daysTracked": 2.23,
-        "levelsPerDay": 1.79
+        "daysTracked": 2.48,
+        "levelsPerDay": 1.61
       },
       "snapshots": [
         {
@@ -139,7 +139,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T06:28:46.228Z",
+      "lastChecked": "2026-11-12T12:26:49.549Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -152,7 +152,7 @@
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-12T06:28:46.228Z",
+      "lastSeen": "2026-11-12T12:26:49.549Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -197,8 +197,8 @@
         "levelsGained": 6,
         "itemLevelGained": 4,
         "honorableKillsGained": 0,
-        "daysTracked": 2.19,
-        "levelsPerDay": 2.74
+        "daysTracked": 2.44,
+        "levelsPerDay": 2.46
       },
       "snapshots": [
         {
@@ -281,7 +281,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T06:28:46.228Z",
+      "lastChecked": "2026-11-12T12:26:49.549Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -294,7 +294,7 @@
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-12T06:28:46.228Z",
+      "lastSeen": "2026-11-12T12:26:49.549Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -339,7 +339,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 2.19,
+        "daysTracked": 2.44,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -370,7 +370,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T06:28:46.228Z",
+      "lastChecked": "2026-11-12T12:26:49.549Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -383,7 +383,7 @@
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-12T06:28:46.228Z",
+      "lastSeen": "2026-11-12T12:26:49.549Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -391,7 +391,7 @@
         "race": "Undead",
         "className": "Paladin",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-12T03:08:51Z",
+        "lastUpdated": "2026-11-12T08:06:52Z",
         "professions": [
           {
             "name": "Mining",
@@ -402,22 +402,28 @@
             "name": "Blacksmithing",
             "skill": 1,
             "max": 75
+          },
+          {
+            "name": "First Aid",
+            "skill": 1,
+            "max": 75
           }
         ],
         "level": 16,
-        "itemLevel": 4,
+        "itemLevel": 7,
         "honorableKills": 0
       },
       "stats": {
         "skillsGained": {
           "Mining": 3,
-          "Blacksmithing": 0
+          "Blacksmithing": 0,
+          "First Aid": 0
         },
         "levelsGained": 4,
-        "itemLevelGained": 0,
+        "itemLevelGained": 3,
         "honorableKillsGained": 0,
-        "daysTracked": 2.19,
-        "levelsPerDay": 1.83
+        "daysTracked": 2.44,
+        "levelsPerDay": 1.64
       },
       "snapshots": [
         {
@@ -464,6 +470,17 @@
             "Mining": 4,
             "Blacksmithing": 1
           }
+        },
+        {
+          "t": "2026-11-12T12:26:49.549Z",
+          "level": 16,
+          "itemLevel": 7,
+          "honorableKills": 0,
+          "skills": {
+            "Mining": 4,
+            "Blacksmithing": 1,
+            "First Aid": 1
+          }
         }
       ],
       "person": "Alexis",
@@ -474,7 +491,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T06:28:46.228Z",
+      "lastChecked": "2026-11-12T12:26:49.549Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -487,7 +504,7 @@
     {
       "key": "us|ignivomous-defenestrata",
       "firstSeen": "2026-11-10T23:12:20.397Z",
-      "lastSeen": "2026-11-12T06:28:46.228Z",
+      "lastSeen": "2026-11-12T12:26:49.549Z",
       "slot": 4,
       "profile": {
         "name": "Ignivomous Defenestrata",
@@ -532,8 +549,8 @@
         "levelsGained": 3,
         "itemLevelGained": 6,
         "honorableKillsGained": 132,
-        "daysTracked": 1.3,
-        "levelsPerDay": 2.3
+        "daysTracked": 1.55,
+        "levelsPerDay": 1.93
       },
       "snapshots": [
         {
@@ -581,7 +598,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T06:28:46.228Z",
+      "lastChecked": "2026-11-12T12:26:49.549Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -594,7 +611,7 @@
     {
       "key": "us|ravzar-goldhorn",
       "firstSeen": "2026-11-11T06:28:13.565Z",
-      "lastSeen": "2026-11-12T06:28:46.228Z",
+      "lastSeen": "2026-11-12T12:26:49.549Z",
       "slot": 5,
       "profile": {
         "name": "Ravzar Goldhorn",
@@ -639,8 +656,8 @@
         "levelsGained": 2,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 1,
-        "levelsPerDay": 2
+        "daysTracked": 1.25,
+        "levelsPerDay": 1.6
       },
       "snapshots": [
         {
@@ -676,7 +693,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T06:28:46.228Z",
+      "lastChecked": "2026-11-12T12:26:49.549Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
