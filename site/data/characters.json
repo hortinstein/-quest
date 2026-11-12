@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-12T12:26:49.549Z",
+  "generatedAt": "2026-11-12T18:23:45.796Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-12T12:26:49.549Z",
+      "lastSeen": "2026-11-12T18:23:45.796Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -55,8 +55,8 @@
         "levelsGained": 4,
         "itemLevelGained": 5,
         "honorableKillsGained": 0,
-        "daysTracked": 2.48,
-        "levelsPerDay": 1.61
+        "daysTracked": 2.73,
+        "levelsPerDay": 1.47
       },
       "snapshots": [
         {
@@ -139,7 +139,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T12:26:49.549Z",
+      "lastChecked": "2026-11-12T18:23:45.796Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -152,7 +152,7 @@
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-12T12:26:49.549Z",
+      "lastSeen": "2026-11-12T18:23:45.796Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -197,8 +197,8 @@
         "levelsGained": 6,
         "itemLevelGained": 4,
         "honorableKillsGained": 0,
-        "daysTracked": 2.44,
-        "levelsPerDay": 2.46
+        "daysTracked": 2.69,
+        "levelsPerDay": 2.23
       },
       "snapshots": [
         {
@@ -281,7 +281,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T12:26:49.549Z",
+      "lastChecked": "2026-11-12T18:23:45.796Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -294,7 +294,7 @@
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-12T12:26:49.549Z",
+      "lastSeen": "2026-11-12T18:23:45.796Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -339,7 +339,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 2.44,
+        "daysTracked": 2.69,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -370,7 +370,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T12:26:49.549Z",
+      "lastChecked": "2026-11-12T18:23:45.796Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -383,7 +383,7 @@
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-12T12:26:49.549Z",
+      "lastSeen": "2026-11-12T18:23:45.796Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -422,8 +422,8 @@
         "levelsGained": 4,
         "itemLevelGained": 3,
         "honorableKillsGained": 0,
-        "daysTracked": 2.44,
-        "levelsPerDay": 1.64
+        "daysTracked": 2.69,
+        "levelsPerDay": 1.49
       },
       "snapshots": [
         {
@@ -491,7 +491,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T12:26:49.549Z",
+      "lastChecked": "2026-11-12T18:23:45.796Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -504,7 +504,7 @@
     {
       "key": "us|ignivomous-defenestrata",
       "firstSeen": "2026-11-10T23:12:20.397Z",
-      "lastSeen": "2026-11-12T12:26:49.549Z",
+      "lastSeen": "2026-11-12T18:23:45.796Z",
       "slot": 4,
       "profile": {
         "name": "Ignivomous Defenestrata",
@@ -549,8 +549,8 @@
         "levelsGained": 3,
         "itemLevelGained": 6,
         "honorableKillsGained": 132,
-        "daysTracked": 1.55,
-        "levelsPerDay": 1.93
+        "daysTracked": 1.8,
+        "levelsPerDay": 1.67
       },
       "snapshots": [
         {
@@ -598,7 +598,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T12:26:49.549Z",
+      "lastChecked": "2026-11-12T18:23:45.796Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -611,7 +611,7 @@
     {
       "key": "us|ravzar-goldhorn",
       "firstSeen": "2026-11-11T06:28:13.565Z",
-      "lastSeen": "2026-11-12T12:26:49.549Z",
+      "lastSeen": "2026-11-12T18:23:45.796Z",
       "slot": 5,
       "profile": {
         "name": "Ravzar Goldhorn",
@@ -656,8 +656,8 @@
         "levelsGained": 2,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 1.25,
-        "levelsPerDay": 1.6
+        "daysTracked": 1.5,
+        "levelsPerDay": 1.34
       },
       "snapshots": [
         {
@@ -693,7 +693,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-12T12:26:49.549Z",
+      "lastChecked": "2026-11-12T18:23:45.796Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
