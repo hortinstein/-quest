@@ -189,12 +189,14 @@ export async function collect({
   now = new Date(),
   fetchImpl = fetch,
   sleep = (ms) => new Promise((done) => setTimeout(done, ms)),
+  captureGear,
 }) {
   const timestamp = now.toISOString();
   const http = { fetchImpl, sleep };
   const known = new Map((previous?.characters ?? []).map((c) => [c.key, c]));
 
   let failed = 0;
+  let capturesFailed = 0;
   for (const entry of entries) {
     const character = known.get(entry.key) ?? {
       key: entry.key,
@@ -216,7 +218,22 @@ export async function collect({
       message: outcome.message ?? null,
       lastChecked: timestamp,
     });
-    if (outcome.profile) applyProfile(character, outcome.profile, timestamp);
+    if (outcome.profile) {
+      applyProfile(character, outcome.profile, timestamp);
+      const level = character.profile.level;
+      // Missing history seeds existing characters too. Compare with the last
+      // successful capture so a failed screenshot is retried on the next run.
+      if (captureGear && Number.isInteger(level) && character.gearCaptures?.at(-1)?.level !== level) {
+        try {
+          const path = await captureGear(character, now);
+          (character.gearCaptures ??= []).push({ t: timestamp, level, path });
+          character.captureError = null;
+        } catch (error) {
+          capturesFailed += 1;
+          character.captureError = `Gear capture failed: ${error.message}`;
+        }
+      }
+    }
   }
 
   const watchedKeys = new Set(entries.map((entry) => entry.key));
@@ -226,7 +243,7 @@ export async function collect({
   });
   assignSlots(characters);
 
-  return { data: { generatedAt: timestamp, characters }, attempted: entries.length, failed };
+  return { data: { generatedAt: timestamp, characters }, attempted: entries.length, failed, capturesFailed };
 }
 
 async function readJson(path) {
@@ -243,11 +260,20 @@ async function main() {
   const dataPath = resolve(root, 'site/data/characters.json');
 
   const entries = parseWatched(await readFile(resolve(root, 'watched.txt'), 'utf8'));
-  const { data, attempted, failed } = await collect({ entries, previous: await readJson(dataPath) });
+  const { createGearCapturer } = await import('./screenshots.mjs');
+  const capturer = createGearCapturer(resolve(root, 'site'));
+  let result;
+  try {
+    result = await collect({ entries, previous: await readJson(dataPath), captureGear: capturer.capture });
+  } finally {
+    await capturer.close();
+  }
+  const { data, attempted, failed, capturesFailed } = result;
 
   for (const c of data.characters.filter((character) => character.watched)) {
     const detail = c.message ?? `level ${c.profile.level}`;
     console.log(`${c.status.padEnd(6)} ${c.person} / ${c.name}: ${detail}`);
+    if (c.captureError) console.error(`${c.name}: ${c.captureError}`);
   }
   await mkdir(dirname(dataPath), { recursive: true });
   await writeFile(dataPath, `${JSON.stringify(data, null, 2)}\n`);
@@ -257,6 +283,7 @@ async function main() {
   if (attempted > 0 && failed === attempted) {
     throw new Error(`All ${attempted} armory lookups failed.`);
   }
+  if (capturesFailed) throw new Error(`${capturesFailed} gear captures failed; character data was saved. Captures will retry next run.`);
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {

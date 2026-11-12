@@ -236,3 +236,32 @@ footer {
   color: var(--muted);
   font-size: 12px;
 }
+
+.gear-button, #gear-close {
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--gold-soft);
+  font: inherit;
+  cursor: pointer;
+}
+.gear-button:hover, #gear-close:hover { background: var(--wash); }
+#gear-dialog {
+  width: min(1120px, calc(100% - 24px));
+  max-height: 92vh;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+}
+#gear-dialog::backdrop { background: rgba(0, 0, 0, 0.8); }
+.gear-header { display: flex; align-items: start; justify-content: space-between; gap: 16px; }
+.gear-header h2 { flex: 1; }
+.gear-picker { display: block; margin-block: 16px; }
+.gear-picker[hidden] { display: none; }
+#gear-figure { margin: 16px 0 0; }
+#gear-caption { overflow-wrap: anywhere; }
+#gear-original { display: inline-block; margin-block: 6px 12px; color: var(--gold-soft); }
+#gear-image { display: block; width: 100%; height: auto; }

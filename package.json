@@ -2,10 +2,15 @@
   "name": "infinity-quest",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "collect": "node scripts/collect.mjs",
     "preview": "npx --yes serve site",
     "test": "node --test"
+  },
+  "devDependencies": {
+    "playwright": "^1.65.0"
   }
 }

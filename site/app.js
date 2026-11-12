@@ -371,11 +371,15 @@ function renderTable() {
     const link = el('a', { href: c.url, textContent: p.name ?? c.name });
     link.style.color = CLASS_COLORS[p.className] ?? '';
     const cell = (text, numeric) => el('td', { textContent: text, className: numeric ? 'num' : '' });
+    const gearButton = el('button', { type: 'button', className: 'gear-button', textContent: `Gear history (${c.gearCaptures?.length ?? 0})` });
+    gearButton.setAttribute('aria-label', `Gear history for ${p.name ?? c.name}`);
+    gearButton.addEventListener('click', () => openGearHistory(c));
     return el(
       'tr',
       {},
       person,
       el('td', {}, link, el('span', { className: 'sub', textContent: details })),
+      el('td', {}, gearButton),
       cell(formatValue(p.level), true),
       cell(formatValue(p.itemLevel), true),
       cell(formatValue(p.honorableKills), true),
@@ -388,14 +392,44 @@ function renderTable() {
   }));
 }
 
+function openGearHistory(character) {
+  const captures = [...(character.gearCaptures ?? [])].reverse();
+  $('gear-title').textContent = `${character.profile?.name ?? character.name} · Gear progression`;
+  $('gear-note').textContent = character.captureError
+    ? `${character.captureError} The next collection will retry the current level.`
+    : captures.length
+      ? 'Saved at the first capture and each observed level change. Levels between checks may be skipped.'
+      : 'The first screenshot will appear after a successful capture in the next collection.';
+  const picker = $('gear-level');
+  picker.replaceChildren(...captures.map((capture, index) => el('option', {
+    value: String(index), textContent: `Level ${capture.level} · ${dateTime.format(new Date(capture.t))}`,
+  })));
+  picker.parentElement.hidden = !captures.length;
+  $('gear-figure').hidden = !captures.length;
+  const showCapture = () => {
+    const capture = captures[Number(picker.value)];
+    if (!capture) return;
+    const title = capture.path.split('/').at(-1).replace(/\.png$/, '');
+    const url = capture.path.split('/').map(encodeURIComponent).join('/');
+    $('gear-caption').textContent = title;
+    $('gear-original').href = url;
+    $('gear-image-error').hidden = true;
+    $('gear-image').alt = `${character.profile?.name ?? character.name}, level ${capture.level}, captured ${formatDate(capture.t)}`;
+    $('gear-image').src = url;
+  };
+  picker.onchange = showCapture;
+  showCapture();
+  $('gear-dialog').showModal();
+}
+
 function renderAttention() {
-  const problems = state.characters.filter((c) => c.watched && c.status !== 'ok');
+  const problems = state.characters.filter((c) => c.watched && (c.status !== 'ok' || c.captureError));
   $('attention').hidden = problems.length === 0;
   $('attention-list').replaceChildren(...problems.map((c) => el(
     'li',
     {},
     `${c.person} · ${c.name}`,
-    el('span', { className: 'muted', textContent: c.message ?? c.status }),
+    el('span', { className: 'muted', textContent: [c.message, c.captureError].filter(Boolean).join(' · ') || c.status }),
   )));
 }
 
@@ -432,6 +466,13 @@ function renderControls() {
 }
 
 async function start() {
+  $('gear-close').addEventListener('click', () => $('gear-dialog').close());
+  $('gear-dialog').addEventListener('click', (event) => {
+    if (event.target !== $('gear-dialog')) return;
+    const rect = event.target.getBoundingClientRect();
+    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) event.target.close();
+  });
+  $('gear-image').addEventListener('error', () => { $('gear-image-error').hidden = false; });
   $('skill').addEventListener('change', (event) => {
     state.metric = event.target.value ? `${SKILL_PREFIX}${event.target.value}` : 'level';
     renderControls();
