@@ -232,6 +232,8 @@ export async function collect({
           capturesFailed += 1;
           character.captureError = `Gear capture failed: ${error.message}`;
         }
+      } else if (captureGear && character.gearCaptures?.at(-1)?.level === level) {
+        character.captureError = null;
       }
     }
   }
