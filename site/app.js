@@ -478,7 +478,7 @@ function setupTabs() {
     }
     if (tab === tabs[1] && !$('world-art').hasAttribute('href')) {
       $('world-art').addEventListener('error', () => { $('map-error').hidden = false; });
-      $('world-art').setAttribute('href', 'https://cdn.mobalytics.gg/assets/wow-forever/maps/wow%20forever%20faction%20map.jpg');
+      $('world-art').setAttribute('href', 'assets/world-map.jpg');
     }
   }
 
