@@ -518,6 +518,7 @@ function renderLeveling() {
     });
     $('map-character').textContent = active ? active.name : 'World map';
     const markers = [];
+    const labels = [];
     for (const [kind, places] of Object.entries(active?.places ?? {})) {
       for (const place of places) {
         if (!place.position) continue;
@@ -528,9 +529,26 @@ function renderLeveling() {
           ? svg('circle', { r: 12 })
           : svg('path', { d: 'M0 -10 L10 0 L0 10 L-10 0 Z' }));
         markers.push(marker);
+        labels.push({ name: place.name, x, y, kind, position: place.position });
       }
     }
-    $('map-markers').replaceChildren(...markers);
+    // Fit labels in each continent's half of the map and keep their baselines apart.
+    const annotations = [];
+    for (const side of [labels.filter((p) => p.x < 748), labels.filter((p) => p.x >= 748)]) {
+      spreadLabels(side, 30, 25, 830);
+      for (const label of side) {
+        const west = label.x < 748;
+        const [pinX, pinY] = label.position;
+        const anchor = west ? 'start' : 'end';
+        const x = pinX + (west ? 18 : -18);
+        annotations.push(
+          svg('line', { x1: pinX, y1: pinY, x2: x, y2: label.y, class: 'map-label-line' }),
+          svg('text', { x, y: label.y, 'text-anchor': anchor, 'dominant-baseline': 'central',
+            class: `map-label ${label.kind}` }, label.name),
+        );
+      }
+    }
+    $('map-markers').replaceChildren(...annotations, ...markers);
     $('map-title').textContent = active
       ? `Recommended locations for ${active.name}. See the character table for names.`
       : 'Kalimdor and the Eastern Kingdoms';

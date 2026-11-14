@@ -314,3 +314,15 @@ footer {
   #leveling h2, .leveling-sources { grid-column: 1 / -1; }
   .leveling-map { position: sticky; top: 12px; margin: 0; }
 }
+
+.map-label {
+  font: 700 26px system-ui, sans-serif;
+  paint-order: stroke;
+  stroke: #100d0a;
+  stroke-width: 6;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.map-label.zones { fill: var(--zone-pin); }
+.map-label.dungeons { fill: var(--dungeon-pin); }
+.map-label-line { stroke: #fff0d4; stroke-width: 2; pointer-events: none; }
