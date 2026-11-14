@@ -17,47 +17,79 @@
       <p id="updated" class="muted">Loading…</p>
     </header>
 
-    <div class="controls">
-      <div class="segmented" id="metric" role="group" aria-label="Metric"></div>
-      <select id="skill" aria-label="Profession skill"></select>
-      <div class="segmented" id="axis" role="group" aria-label="Time axis"></div>
+    <div class="segmented page-tabs" role="tablist" aria-label="Dashboard views">
+      <button id="progress-tab" type="button" role="tab" aria-selected="true" aria-controls="progress">Progress</button>
+      <button id="leveling-tab" type="button" role="tab" aria-selected="false" aria-controls="leveling" tabindex="-1">Where to quest</button>
     </div>
 
-    <section class="card">
-      <h2 id="chart-title"></h2>
-      <div id="chart" class="chart"></div>
-      <div id="legend" class="legend"></div>
-      <p id="chart-note" class="muted" hidden></p>
-    </section>
+    <div id="progress" role="tabpanel" aria-labelledby="progress-tab">
+      <div class="controls">
+        <div class="segmented" id="metric" role="group" aria-label="Metric"></div>
+        <select id="skill" aria-label="Profession skill"></select>
+        <div class="segmented" id="axis" role="group" aria-label="Time axis"></div>
+      </div>
 
-    <section id="attention" class="card" hidden>
-      <h2>Needs attention</h2>
-      <ul id="attention-list"></ul>
-    </section>
+      <section class="card">
+        <h2 id="chart-title"></h2>
+        <div id="chart" class="chart"></div>
+        <div id="legend" class="legend"></div>
+        <p id="chart-note" class="muted" hidden></p>
+      </section>
 
-    <section class="card">
-      <h2>Comparison</h2>
+      <section id="attention" class="card" hidden>
+        <h2>Needs attention</h2>
+        <ul id="attention-list"></ul>
+      </section>
+
+      <section class="card">
+        <h2>Comparison</h2>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Person</th>
+                <th>Character</th>
+                <th>Gear history</th>
+                <th class="num">Level</th>
+                <th class="num">Item level</th>
+                <th class="num">Honorable kills</th>
+                <th class="num">Levels gained</th>
+                <th class="num">Levels / day</th>
+                <th>First seen</th>
+                <th>Armory updated</th>
+                <th>Professions</th>
+              </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+          </table>
+        </div>
+        <p id="empty-table" class="muted" hidden>No characters have been found yet.</p>
+      </section>
+    </div>
+
+    <section id="leveling" class="card" role="tabpanel" aria-labelledby="leveling-tab" hidden>
+      <h2>Where to quest</h2>
+      <div class="leveling-map">
+        <p id="map-character" class="map-character"></p>
+        <svg id="world-map" viewBox="0 0 1497 855" role="img" aria-labelledby="map-title">
+          <title id="map-title">Recommended locations in Kalimdor and the Eastern Kingdoms</title>
+          <image id="world-art" width="1497" height="855" />
+          <g id="map-markers"></g>
+        </svg>
+        <p id="map-error" class="muted" hidden>The world map could not load. Recommendations are listed below.</p>
+        <div class="map-key"><span>● Questing zones</span><span>◆ Dungeons</span></div>
+      </div>
+      <p id="leveling-empty" class="muted">Loading watched characters…</p>
       <div class="table-scroll">
-        <table>
-          <thead>
-            <tr>
-              <th>Person</th>
-              <th>Character</th>
-              <th>Gear history</th>
-              <th class="num">Level</th>
-              <th class="num">Item level</th>
-              <th class="num">Honorable kills</th>
-              <th class="num">Levels gained</th>
-              <th class="num">Levels / day</th>
-              <th>First seen</th>
-              <th>Armory updated</th>
-              <th>Professions</th>
-            </tr>
-          </thead>
-          <tbody id="rows"></tbody>
+        <table class="leveling-table">
+          <thead><tr><th>Character</th><th class="num">Level</th><th>Questing next</th><th>Dungeons</th></tr></thead>
+          <tbody id="leveling-rows"></tbody>
         </table>
       </div>
-      <p id="empty-table" class="muted" hidden>No characters have been found yet.</p>
+      <p class="leveling-sources muted">Mobalytics guides:
+        <a href="https://mobalytics.gg/wow-forever/guides/zone-map-level-ranges">Questing zones</a> ·
+        <a href="https://mobalytics.gg/wow-forever/guides/dungeon-raid-map">World map and dungeon ranges</a>
+      </p>
     </section>
   </main>
   <dialog id="gear-dialog" aria-labelledby="gear-title">

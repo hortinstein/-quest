@@ -265,3 +265,64 @@ footer {
 #gear-caption { overflow-wrap: anywhere; }
 #gear-original { display: inline-block; margin-block: 6px 12px; color: var(--gold-soft); }
 #gear-image { display: block; width: 100%; height: auto; }
+
+.page-tabs { margin-bottom: 14px; }
+.segmented button[aria-selected="true"] {
+  border-color: #c79c4b;
+  background: linear-gradient(var(--button-top), var(--button-bottom));
+  color: var(--gold);
+}
+
+.leveling-map {
+  --zone-pin: #ffd86b;
+  --dungeon-pin: #9bd7ff;
+  max-width: 850px;
+  margin: 0 auto 16px;
+}
+
+.map-character { color: var(--gold-soft); font-weight: 700; margin-bottom: 6px; }
+#world-map { display: block; width: 100%; background: #26201a; border: 1px solid var(--border); border-radius: 6px; }
+.map-pin { stroke: #100d0a; stroke-width: 3; }
+.map-pin.zones { fill: var(--zone-pin); }
+.map-pin.dungeons { fill: var(--dungeon-pin); }
+.map-key { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 6px; }
+.map-key span:first-child { color: var(--zone-pin); }
+.map-key span:last-child { color: var(--dungeon-pin); }
+.leveling-table td { white-space: normal; vertical-align: top; }
+.leveling-table ul { margin: 0; padding: 0; list-style: none; }
+.leveling-table .map-active { background: var(--wash); }
+.map-character-button {
+  background: transparent;
+  color: var(--gold-soft);
+  border: 0;
+  padding: 0;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+}
+.leveling-sources { margin-top: 12px; }
+
+@media (min-width: 850px) {
+  #leveling {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 20px;
+    align-items: start;
+  }
+  #leveling[hidden] { display: none; }
+  #leveling h2, .leveling-sources { grid-column: 1 / -1; }
+  .leveling-map { position: sticky; top: 12px; margin: 0; }
+}
+
+.map-label {
+  font: 700 26px system-ui, sans-serif;
+  paint-order: stroke;
+  stroke: #100d0a;
+  stroke-width: 6;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.map-label.zones { fill: var(--zone-pin); }
+.map-label.dungeons { fill: var(--dungeon-pin); }
+.map-label-line { stroke: #fff0d4; stroke-width: 2; pointer-events: none; }

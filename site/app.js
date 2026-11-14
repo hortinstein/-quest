@@ -1,3 +1,5 @@
+import { recommendations } from './leveling.js';
+
 const DAY_MS = 86_400_000;
 const MAX_SERIES = 8;
 const MAX_END_LABELS = 4;
@@ -465,7 +467,130 @@ function renderControls() {
   renderSkillPicker();
 }
 
+function setupTabs() {
+  const tabs = [$('progress-tab'), $('leveling-tab')];
+  function select(tab) {
+    for (const candidate of tabs) {
+      const active = candidate === tab;
+      candidate.setAttribute('aria-selected', String(active));
+      candidate.tabIndex = active ? 0 : -1;
+      $(candidate.getAttribute('aria-controls')).hidden = !active;
+    }
+    if (tab === tabs[1] && !$('world-art').hasAttribute('href')) {
+      $('world-art').addEventListener('error', () => { $('map-error').hidden = false; });
+      $('world-art').setAttribute('href', 'https://cdn.mobalytics.gg/assets/wow-forever/maps/wow%20forever%20faction%20map.jpg');
+    }
+  }
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => select(tab));
+    tab.addEventListener('keydown', (event) => {
+      const next = { ArrowLeft: 1 - index, ArrowRight: 1 - index, Home: 0, End: 1 }[event.key];
+      if (next == null) return;
+      event.preventDefault();
+      select(tabs[next]);
+      tabs[next].focus();
+    });
+  });
+}
+
+function renderLeveling() {
+  const entries = state.characters.filter((c) => c.watched)
+    .sort((a, b) => (b.profile?.level ?? -1) - (a.profile?.level ?? -1))
+    .map((c) => ({
+      name: c.profile?.name ?? c.name,
+      level: c.profile?.level,
+      faction: c.profile?.faction,
+      places: recommendations(c.profile),
+    }));
+  $('leveling-empty').hidden = entries.length > 0;
+  $('leveling-empty').textContent = 'No watched characters available.';
+  let selected = entries[0];
+  let hovered;
+  let focused;
+  const buttons = new Map();
+
+  function updateMap() {
+    const active = hovered ?? focused ?? selected;
+    buttons.forEach((button, entry) => {
+      button.setAttribute('aria-pressed', String(entry === selected));
+      button.closest('tr').classList.toggle('map-active', entry === active);
+    });
+    $('map-character').textContent = active ? active.name : 'World map';
+    const markers = [];
+    const labels = [];
+    for (const [kind, places] of Object.entries(active?.places ?? {})) {
+      for (const place of places) {
+        if (!place.position) continue;
+        const [x, y] = place.position;
+        const marker = svg('g', { class: `map-pin ${kind}`, transform: `translate(${x} ${y})` });
+        marker.append(svg('title', {}, place.name));
+        marker.append(kind === 'zones'
+          ? svg('circle', { r: 12 })
+          : svg('path', { d: 'M0 -10 L10 0 L0 10 L-10 0 Z' }));
+        markers.push(marker);
+        labels.push({ name: place.name, x, y, kind, position: place.position });
+      }
+    }
+    // Fit labels in each continent's half of the map and keep their baselines apart.
+    const annotations = [];
+    for (const side of [labels.filter((p) => p.x < 748), labels.filter((p) => p.x >= 748)]) {
+      spreadLabels(side, 30, 25, 830);
+      for (const label of side) {
+        const west = label.x < 748;
+        const [pinX, pinY] = label.position;
+        const anchor = west ? 'start' : 'end';
+        const x = pinX + (west ? 18 : -18);
+        annotations.push(
+          svg('line', { x1: pinX, y1: pinY, x2: x, y2: label.y, class: 'map-label-line' }),
+          svg('text', { x, y: label.y, 'text-anchor': anchor, 'dominant-baseline': 'central',
+            class: `map-label ${label.kind}` }, label.name),
+        );
+      }
+    }
+    $('map-markers').replaceChildren(...annotations, ...markers);
+    $('map-title').textContent = active
+      ? `Recommended locations for ${active.name}. See the character table for names.`
+      : 'Kalimdor and the Eastern Kingdoms';
+  }
+
+  function placeList(places, format, fallback) {
+    if (!places?.length) return fallback;
+    return el('ul', {}, ...places.map((place) => el('li', { textContent: format(place) })));
+  }
+
+  $('leveling-rows').replaceChildren(...entries.map((entry) => {
+    const button = el('button', { type: 'button', className: 'map-character-button', textContent: entry.name });
+    button.setAttribute('aria-controls', 'world-map');
+    buttons.set(entry, button);
+    const row = el('tr', {},
+      el('td', {}, button, el('span', { className: 'sub', textContent: entry.faction ?? '' })),
+      el('td', { className: 'num', textContent: formatValue(entry.level) }),
+      el('td', {}, placeList(entry.places?.zones,
+        (p) => p.position ? p.name : `${p.name} (off map)`,
+        entry.places ? 'No route for this character' : 'Level unavailable')),
+      el('td', {}, placeList(entry.places?.dungeons,
+        (p) => `${p.name} (${p.low}–${p.high})`, '—')),
+    );
+    row.addEventListener('pointerenter', (event) => {
+      if (event.pointerType === 'touch') return;
+      hovered = entry;
+      updateMap();
+    });
+    row.addEventListener('pointerleave', () => {
+      if (hovered === entry) hovered = undefined;
+      updateMap();
+    });
+    button.addEventListener('focus', () => { focused = entry; updateMap(); });
+    button.addEventListener('blur', () => { focused = undefined; updateMap(); });
+    button.addEventListener('click', () => { selected = entry; updateMap(); });
+    return row;
+  }));
+  updateMap();
+}
+
 async function start() {
+  setupTabs();
   $('gear-close').addEventListener('click', () => $('gear-dialog').close());
   $('gear-dialog').addEventListener('click', (event) => {
     if (event.target !== $('gear-dialog')) return;
@@ -492,6 +617,7 @@ async function start() {
   renderChart();
   renderTable();
   renderAttention();
+  renderLeveling();
 
   let lastWidth = $('chart').clientWidth;
   new ResizeObserver(() => {
