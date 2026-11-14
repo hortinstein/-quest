@@ -402,25 +402,47 @@ function openGearHistory(character) {
     : captures.length
       ? 'Saved at the first capture and each observed level change. Levels between checks may be skipped.'
       : 'The first screenshot will appear after a successful capture in the next collection.';
-  const picker = $('gear-level');
-  picker.replaceChildren(...captures.map((capture, index) => el('option', {
-    value: String(index), textContent: `Level ${capture.level} · ${dateTime.format(new Date(capture.t))}`,
-  })));
-  picker.parentElement.hidden = !captures.length;
-  $('gear-figure').hidden = !captures.length;
-  const showCapture = () => {
-    const capture = captures[Number(picker.value)];
-    if (!capture) return;
-    const title = capture.path.split('/').at(-1).replace(/\.png$/, '');
-    const url = capture.path.split('/').map(encodeURIComponent).join('/');
-    $('gear-caption').textContent = title;
-    $('gear-original').href = url;
+  const gallery = $('gear-gallery');
+  const figure = $('gear-figure');
+  const back = $('gear-back');
+  const multiple = captures.length > 1;
+  let selectedThumbnail;
+
+  const captureUrl = (capture) => capture.path.split('/').map(encodeURIComponent).join('/');
+  const captureLabel = (capture) => `Level ${capture.level} · ${dateTime.format(new Date(capture.t))}`;
+  function showCapture(capture) {
+    gallery.hidden = true;
+    figure.hidden = false;
+    back.hidden = !multiple;
+    $('gear-caption').textContent = captureLabel(capture);
+    $('gear-original').href = captureUrl(capture);
     $('gear-image-error').hidden = true;
     $('gear-image').alt = `${character.profile?.name ?? character.name}, level ${capture.level}, captured ${formatDate(capture.t)}`;
-    $('gear-image').src = url;
+    $('gear-image').src = captureUrl(capture);
+  }
+
+  back.onclick = () => {
+    figure.hidden = true;
+    back.hidden = true;
+    gallery.hidden = false;
+    selectedThumbnail.focus();
   };
-  picker.onchange = showCapture;
-  showCapture();
+  gallery.replaceChildren(...(multiple ? captures.map((capture) => {
+    const button = el('button', { type: 'button', className: 'gear-thumbnail' },
+      el('img', { src: captureUrl(capture), alt: '', loading: 'lazy' }),
+      el('span', { textContent: captureLabel(capture) }),
+    );
+    button.addEventListener('click', () => {
+      selectedThumbnail = button;
+      showCapture(capture);
+      back.focus();
+    });
+    return button;
+  }) : []));
+  gallery.hidden = !multiple;
+  figure.hidden = true;
+  back.hidden = true;
+  if (captures.length === 1) showCapture(captures[0]);
   $('gear-dialog').showModal();
 }
 

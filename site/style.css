@@ -259,8 +259,28 @@ footer {
 #gear-dialog::backdrop { background: rgba(0, 0, 0, 0.8); }
 .gear-header { display: flex; align-items: start; justify-content: space-between; gap: 16px; }
 .gear-header h2 { flex: 1; }
-.gear-picker { display: block; margin-block: 16px; }
-.gear-picker[hidden] { display: none; }
+.gear-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+.gear-gallery[hidden] { display: none; }
+.gear-thumbnail {
+  display: grid;
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--page);
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: zoom-in;
+}
+.gear-thumbnail:hover { border-color: var(--gold-soft); }
+.gear-thumbnail img { width: 100%; aspect-ratio: 16 / 10; object-fit: contain; }
+#gear-back { margin-top: 16px; }
 #gear-figure { margin: 16px 0 0; }
 #gear-caption { overflow-wrap: anywhere; }
 #gear-original { display: inline-block; margin-block: 6px 12px; color: var(--gold-soft); }
