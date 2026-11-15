@@ -32,8 +32,8 @@ export function setupAreaQuests(recommendations, characters, initialSelection) {
     const { completed, history } = character.questLog ?? {};
     const ids = new Set([...(completed ?? []), ...(history ?? [])].map((quest) => quest.id));
     for (const id of ids) {
-      if (!completions.has(id)) completions.set(id, []);
-      completions.get(id).push(character.profile?.name ?? character.name);
+      if (!completions.has(id)) completions.set(id, new Set());
+      completions.get(id).add(character.key);
     }
   }
 
@@ -42,7 +42,8 @@ export function setupAreaQuests(recommendations, characters, initialSelection) {
     details.open = true;
     const summary = element('summary', `${area} · ${quests.length} catalog quests`);
     const recommended = element('p');
-    sections.push({ details, recommended, recommendedFor });
+    const completionCells = [];
+    sections.push({ details, recommended, recommendedFor, completionCells });
     details.append(summary, recommended);
     if (!quests.length) {
       details.append(element('p', 'No quests are assigned to this area in the catalog.'));
@@ -63,7 +64,7 @@ export function setupAreaQuests(recommendations, characters, initialSelection) {
       link.href = `https://foreverdb.net/quest/${quest.id}`;
       row.insertCell().append(link);
       row.insertCell().textContent = quest.level > 0 ? quest.level : '—';
-      row.insertCell().textContent = completions.get(quest.id)?.join(', ') ?? 'None reported';
+      completionCells.push({ cell: row.insertCell(), done: completions.get(quest.id) });
     }
     const scroll = element('div');
     scroll.className = 'table-scroll';
@@ -76,16 +77,22 @@ export function setupAreaQuests(recommendations, characters, initialSelection) {
   let loaded = false;
   function applySelection() {
     let visible = 0;
-    for (const { details, recommended, recommendedFor } of sections) {
-      const names = recommendedFor.filter((entry) => selected.has(entry)).map(({ name }) => name);
-      details.hidden = !names.length;
-      if (names.length) {
-        visible++;
-        recommended.textContent = `Recommended for ${names.join(', ')}`;
+    const group = [...selected];
+    for (const { details, recommended, recommendedFor, completionCells } of sections) {
+      details.hidden = !group.length || !group.every((entry) => recommendedFor.includes(entry));
+      if (details.hidden) continue;
+      visible++;
+      recommended.textContent = `Recommended for ${group.map(({ name }) => name).join(', ')}`;
+      for (const { cell, done } of completionCells) {
+        const names = group.filter(({ key }) => done?.has(key)).map(({ name }) => name);
+        cell.textContent = group.length === 1
+          ? names[0] ?? 'None reported'
+          : `${names.length} of ${group.length} completed${names.length ? ` · ${names.join(', ')}` : ''}`;
       }
     }
     status.textContent = visible ? ''
-      : selected.size ? 'No recommended areas for the selected characters.'
+      : selected.size > 1 ? 'No recommended areas are shared by all selected characters.'
+      : selected.size ? 'No recommended areas for the selected character.'
       : 'Select a character above to show their recommended areas.';
   }
   async function render() {

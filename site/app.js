@@ -527,6 +527,7 @@ function renderLeveling() {
   const entries = state.characters.filter((c) => c.watched)
     .sort((a, b) => (b.profile?.level ?? -1) - (a.profile?.level ?? -1))
     .map((c) => ({
+      key: c.key,
       name: c.profile?.name ?? c.name,
       level: c.profile?.level,
       faction: c.profile?.faction,
@@ -547,12 +548,15 @@ function renderLeveling() {
       button.setAttribute('aria-pressed', String(entry === active));
       button.closest('tr').classList.toggle('map-active', entry === active);
     }
-    $('map-character').textContent = active ? active.name : 'World map';
+    $('map-character').textContent = checked.size > 1
+      ? 'Shared recommended areas'
+      : active?.name ?? 'World map';
     const markers = [];
     const labels = [];
     for (const [kind, places] of Object.entries(active?.places ?? {})) {
       for (const place of places) {
-        if (!place.position) continue;
+        if (!place.position || [...checked].some((entry) =>
+          !entry.places?.[kind]?.some(({ name }) => name === place.name))) continue;
         const [x, y] = place.position;
         const marker = svg('g', { class: `map-pin ${kind}`, transform: `translate(${x} ${y})` });
         marker.append(svg('title', {}, place.name));
@@ -581,7 +585,7 @@ function renderLeveling() {
     }
     $('map-markers').replaceChildren(...annotations, ...markers);
     $('map-title').textContent = active
-      ? `Recommended locations for ${active.name}. See the character table for names.`
+      ? `Recommended locations for ${$('map-character').textContent}. See the character table for names.`
       : 'Kalimdor and the Eastern Kingdoms';
   }
 
