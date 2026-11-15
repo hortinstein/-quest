@@ -48,6 +48,15 @@ function canStart(quest, character, completed) {
   return !!race && (mask & BigInt(race)) !== 0n;
 }
 
+export function eligibleIncompleteQuests(quests, character) {
+  const log = character?.questLog;
+  const profile = character?.profile;
+  if (!Array.isArray(log?.completed) || !Number.isInteger(profile?.level)
+      || !Object.hasOwn(factionRaces, profile.faction)) return [];
+  const completed = new Set([...log.completed, ...(log.history ?? [])].map(({ id }) => id));
+  return quests.filter((quest) => canStart(quest, character, completed));
+}
+
 export function questPartners(leader, characters) {
   if (!Array.isArray(leader?.questLog?.completed) || leader.questLog.error
       || !Number.isInteger(leader.profile?.level) || !leader.profile.ruleset

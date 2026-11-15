@@ -1,4 +1,4 @@
-import { questChains, questPartners, sharedQuests } from './quest-planner.js';
+import { eligibleIncompleteQuests, questChains, questPartners, sharedQuests } from './quest-planner.js';
 import { zonePositions } from './leveling-data.js';
 
 function node(tag, text, props = {}) {
@@ -59,6 +59,7 @@ export function setupQuestLog(characters) {
   let first = 0;
   const groupBy = $('quest-group');
   const zoneFilter = $('quest-zone');
+  const eligibleOnly = $('quest-eligible');
   const viewNote = $('quest-view-note');
   const retryCatalog = $('quest-catalog-retry');
   const selectedCharacter = () => characters[select.selectedIndex];
@@ -78,7 +79,19 @@ export function setupQuestLog(characters) {
     const planner = view === 'open' || view === 'party';
     const known = new Set([...quests, ...(current?.history ?? [])].map(({ id }) => id));
     let records = timeline ? current?.history ?? quests : quests;
-    if (view === 'open') records = current?.completed ? (catalog ?? []).filter((quest) => !known.has(quest.id)) : [];
+    const eligible = view === 'open' && eligibleOnly.checked;
+    $('quest-eligible-control').hidden = view !== 'open';
+    eligibleOnly.disabled = !catalog || !current?.completed;
+    if (view === 'open') {
+      records = eligible ? eligibleIncompleteQuests(catalog ?? [], selectedCharacter())
+        : current?.completed ? (catalog ?? []).filter((quest) => !known.has(quest.id)) : [];
+    }
+    const zones = [...new Set((eligible ? records : catalog ?? []).map((quest) => quest.zone).filter(Boolean))]
+      .sort((a, b) => a.localeCompare(b));
+    const zone = zoneFilter.value;
+    zoneFilter.replaceChildren(node('option', eligible ? 'All eligible zones' : 'All zones', { value: '' }),
+      ...zones.map((name) => node('option', name, { value: name })));
+    if (zones.includes(zone)) zoneFilter.value = zone;
     if (view === 'party') records = sharedQuests(catalog ?? [], selectedCharacter(), characters);
     const matches = records.map((quest) => ({ ...byId.get(quest.id), ...quest,
       name: quest.name ?? byId.get(quest.id)?.name }))
@@ -107,6 +120,7 @@ export function setupQuestLog(characters) {
     retryCatalog.hidden = !catalogError;
     viewNote.textContent = catalogError ? 'Could not load the quest catalog. Retry to load quest grouping and planning.'
       : !catalog && planner ? 'Loading the quest catalog…'
+      : eligible ? 'Zones with incomplete quests that meet known level, faction, race, and prerequisite checks.'
       : view === 'open' ? 'Catalog quests with no completion recorded for this character. Some have eligibility requirements.'
       : view === 'party' ? 'Suggested for characters on the same region, ruleset, and faction who meet known level and prerequisite checks. Check availability in-game.'
       : timeline ? 'First seen during a sync. Dates are shown in your local time.' : '';
@@ -143,7 +157,7 @@ export function setupQuestLog(characters) {
       list.append(paging);
     }
     if (!matches.length && current?.completed && (!planner || catalog)) {
-      const message = view !== 'party' ? 'No matching quests.'
+      const message = view !== 'party' ? (eligible ? 'No eligible incomplete quests match these filters.' : 'No matching quests.')
         : !questPartners(selectedCharacter(), characters).length
           ? 'No other tracked player with a successful quest sync matches this character’s region, ruleset, and faction.'
           : 'No shared suggestions for these filters.';
@@ -242,6 +256,7 @@ export function setupQuestLog(characters) {
   filter.addEventListener('input', resetList);
   groupBy.addEventListener('change', resetList);
   zoneFilter.addEventListener('change', resetList);
+  eligibleOnly.addEventListener('change', resetList);
   select.addEventListener('change', () => {
     requestVersion++;
     selection = undefined;
@@ -265,8 +280,6 @@ export function setupQuestLog(characters) {
       catalog = records;
       byId = new Map(catalog.map((quest) => [quest.id, quest]));
       chains = questChains(catalog);
-      const zones = [...new Set(catalog.map((quest) => quest.zone).filter(Boolean))].sort((a, b) => a.localeCompare(b));
-      zoneFilter.append(...zones.map((zone) => node('option', zone, { value: zone })));
       if (selection) show(selection);
     } catch {
       catalog = undefined;

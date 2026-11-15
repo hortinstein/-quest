@@ -357,6 +357,16 @@ footer {
   gap: .35rem;
 }
 
+.quest-controls .quest-eligible-control {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+}
+
+.quest-controls .quest-eligible-control[hidden] {
+  display: none;
+}
+
 .quest-controls input {
   max-width: 100%;
   padding: .45rem;
