@@ -539,6 +539,7 @@ function renderLeveling() {
   let hovered;
   let focused;
   const buttons = new Map();
+  const checked = new Set(entries);
 
   function updateMap() {
     const active = hovered ?? focused ?? selected;
@@ -596,7 +597,19 @@ function renderLeveling() {
     const checkbox = el('input', { type: 'checkbox', checked: true });
     checkbox.setAttribute('aria-label', `Show recommended areas for ${entry.name}`);
     checkbox.setAttribute('aria-controls', 'area-quest-tables');
-    checkbox.addEventListener('change', () => setAreaCharacter(entry, checkbox.checked));
+    checkbox.addEventListener('change', () => {
+      setAreaCharacter(entry, checkbox.checked);
+      if (checkbox.checked) {
+        checked.add(entry);
+        selected = entry;
+      } else {
+        checked.delete(entry);
+        if (selected === entry) selected = entries.find((candidate) => checked.has(candidate));
+      }
+      hovered = undefined;
+      focused = undefined;
+      updateMap();
+    });
     const row = el('tr', {},
       el('td', {}, el('div', { className: 'leveling-character' }, checkbox, button), el('span', { className: 'sub', textContent: entry.faction ?? '' })),
       el('td', { className: 'num', textContent: formatValue(entry.level) }),
