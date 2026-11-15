@@ -443,3 +443,9 @@ footer {
   cursor: pointer;
   font-weight: 600;
 }
+
+.leveling-character {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+}

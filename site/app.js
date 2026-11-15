@@ -532,7 +532,7 @@ function renderLeveling() {
       faction: c.profile?.faction,
       places: recommendations(c.profile),
     }));
-  setupAreaQuests(entries, state.characters.filter((character) => character.watched));
+  const setAreaCharacter = setupAreaQuests(entries, state.characters.filter((character) => character.watched));
   $('leveling-empty').hidden = entries.length > 0;
   $('leveling-empty').textContent = 'No watched characters available.';
   let selected = entries[0];
@@ -593,8 +593,12 @@ function renderLeveling() {
     const button = el('button', { type: 'button', className: 'map-character-button', textContent: entry.name });
     button.setAttribute('aria-controls', 'world-map');
     buttons.set(entry, button);
+    const checkbox = el('input', { type: 'checkbox', checked: true });
+    checkbox.setAttribute('aria-label', `Show recommended areas for ${entry.name}`);
+    checkbox.setAttribute('aria-controls', 'area-quest-tables');
+    checkbox.addEventListener('change', () => setAreaCharacter(entry, checkbox.checked));
     const row = el('tr', {},
-      el('td', {}, button, el('span', { className: 'sub', textContent: entry.faction ?? '' })),
+      el('td', {}, el('div', { className: 'leveling-character' }, checkbox, button), el('span', { className: 'sub', textContent: entry.faction ?? '' })),
       el('td', { className: 'num', textContent: formatValue(entry.level) }),
       el('td', {}, placeList(entry.places?.zones,
         (p) => p.position ? p.name : `${p.name} (off map)`,
