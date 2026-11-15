@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-15T22:15:17.260Z",
+  "generatedAt": "2026-11-15T22:45:27.309Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-15T22:15:17.260Z",
+      "lastSeen": "2026-11-15T22:45:27.309Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -55,8 +55,8 @@
         "levelsGained": 9,
         "itemLevelGained": 8,
         "honorableKillsGained": 3,
-        "daysTracked": 5.89,
-        "levelsPerDay": 1.53
+        "daysTracked": 5.91,
+        "levelsPerDay": 1.52
       },
       "snapshots": [
         {
@@ -204,7 +204,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T22:15:17.260Z",
+      "lastChecked": "2026-11-15T22:45:27.309Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -1859,7 +1859,7 @@
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-15T22:15:17.260Z",
+      "lastSeen": "2026-11-15T22:45:27.309Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -1867,7 +1867,7 @@
         "race": "Undead",
         "className": "Mage",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-15T04:24:24Z",
+        "lastUpdated": "2026-11-15T22:30:08Z",
         "professions": [
           {
             "name": "Tailoring",
@@ -1890,8 +1890,8 @@
             "max": 75
           }
         ],
-        "level": 20,
-        "itemLevel": 12,
+        "level": 21,
+        "itemLevel": 15,
         "honorableKills": 1
       },
       "stats": {
@@ -1901,11 +1901,11 @@
           "Cooking": 31,
           "First Aid": 1
         },
-        "levelsGained": 9,
-        "itemLevelGained": 10,
+        "levelsGained": 10,
+        "itemLevelGained": 13,
         "honorableKillsGained": 0,
-        "daysTracked": 5.85,
-        "levelsPerDay": 1.54
+        "daysTracked": 5.87,
+        "levelsPerDay": 1.7
       },
       "snapshots": [
         {
@@ -2014,6 +2014,18 @@
             "Cooking": 32,
             "First Aid": 32
           }
+        },
+        {
+          "t": "2026-11-15T22:45:27.309Z",
+          "level": 21,
+          "itemLevel": 15,
+          "honorableKills": 1,
+          "skills": {
+            "Tailoring": 51,
+            "Skinning": 10,
+            "Cooking": 32,
+            "First Aid": 32
+          }
         }
       ],
       "person": "Richards",
@@ -2024,7 +2036,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T22:15:17.260Z",
+      "lastChecked": "2026-11-15T22:45:27.309Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -2045,6 +2057,11 @@
           "t": "2026-11-15T04:36:36.883Z",
           "level": 20,
           "path": "screenshots/scout-zknivez_us/20261115_scout-zknivez_LEVEL20.png"
+        },
+        {
+          "t": "2026-11-15T22:45:27.309Z",
+          "level": 21,
+          "path": "screenshots/scout-zknivez_us/20261115_scout-zknivez_LEVEL21.png"
         }
       ],
       "captureError": null,
@@ -3445,7 +3462,7 @@
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-15T22:15:17.260Z",
+      "lastSeen": "2026-11-15T22:45:27.309Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -3490,7 +3507,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 5.85,
+        "daysTracked": 5.87,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -3521,7 +3538,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T22:15:17.260Z",
+      "lastChecked": "2026-11-15T22:45:27.309Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -4585,7 +4602,7 @@
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-15T22:15:17.260Z",
+      "lastSeen": "2026-11-15T22:45:27.309Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -4593,7 +4610,7 @@
         "race": "Undead",
         "className": "Paladin",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-13T03:53:35Z",
+        "lastUpdated": "2026-11-15T22:38:12Z",
         "professions": [
           {
             "name": "Mining",
@@ -4611,8 +4628,8 @@
             "max": 75
           }
         ],
-        "level": 18,
-        "itemLevel": 8,
+        "level": 19,
+        "itemLevel": 9,
         "honorableKills": 0
       },
       "stats": {
@@ -4621,11 +4638,11 @@
           "Blacksmithing": 0,
           "First Aid": 0
         },
-        "levelsGained": 6,
-        "itemLevelGained": 4,
+        "levelsGained": 7,
+        "itemLevelGained": 5,
         "honorableKillsGained": 0,
-        "daysTracked": 5.85,
-        "levelsPerDay": 1.03
+        "daysTracked": 5.87,
+        "levelsPerDay": 1.19
       },
       "snapshots": [
         {
@@ -4694,6 +4711,17 @@
             "Blacksmithing": 1,
             "First Aid": 1
           }
+        },
+        {
+          "t": "2026-11-15T22:45:27.309Z",
+          "level": 19,
+          "itemLevel": 9,
+          "honorableKills": 0,
+          "skills": {
+            "Mining": 7,
+            "Blacksmithing": 1,
+            "First Aid": 1
+          }
         }
       ],
       "person": "Alexis",
@@ -4704,7 +4732,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T22:15:17.260Z",
+      "lastChecked": "2026-11-15T22:45:27.309Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -4715,6 +4743,11 @@
           "t": "2026-11-13T04:26:38.175Z",
           "level": 18,
           "path": "screenshots/atlasian-nwen_us/20261113_atlasian-nwen_LEVEL18.png"
+        },
+        {
+          "t": "2026-11-15T22:45:27.309Z",
+          "level": 19,
+          "path": "screenshots/atlasian-nwen_us/20261115_atlasian-nwen_LEVEL19.png"
         }
       ],
       "captureError": null,
@@ -5764,7 +5797,7 @@
     {
       "key": "us|ignivomous-defenestrata",
       "firstSeen": "2026-11-10T23:12:20.397Z",
-      "lastSeen": "2026-11-15T22:15:17.260Z",
+      "lastSeen": "2026-11-15T22:45:27.309Z",
       "slot": 4,
       "profile": {
         "name": "Ignivomous Defenestrata",
@@ -5815,7 +5848,7 @@
         "levelsGained": 7,
         "itemLevelGained": 10,
         "honorableKillsGained": 442,
-        "daysTracked": 4.96,
+        "daysTracked": 4.98,
         "levelsPerDay": 1.41
       },
       "snapshots": [
@@ -5914,7 +5947,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T22:15:17.260Z",
+      "lastChecked": "2026-11-15T22:45:27.309Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -7627,7 +7660,7 @@
     {
       "key": "us|ravzar-goldhorn",
       "firstSeen": "2026-11-11T06:28:13.565Z",
-      "lastSeen": "2026-11-15T22:15:17.260Z",
+      "lastSeen": "2026-11-15T22:45:27.309Z",
       "slot": 5,
       "profile": {
         "name": "Ravzar Goldhorn",
@@ -7672,7 +7705,7 @@
         "levelsGained": 5,
         "itemLevelGained": 4,
         "honorableKillsGained": 0,
-        "daysTracked": 4.66,
+        "daysTracked": 4.68,
         "levelsPerDay": 1.07
       },
       "snapshots": [
@@ -7745,7 +7778,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T22:15:17.260Z",
+      "lastChecked": "2026-11-15T22:45:27.309Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -8887,7 +8920,7 @@
     {
       "key": "us|holojack-natesdad",
       "firstSeen": "2026-11-12T22:59:23.163Z",
-      "lastSeen": "2026-11-15T22:15:17.260Z",
+      "lastSeen": "2026-11-15T22:45:27.309Z",
       "slot": 6,
       "profile": {
         "name": "Holojack Natesdad",
@@ -8895,11 +8928,11 @@
         "race": "Undead",
         "className": "Paladin",
         "ruleset": "Normal",
-        "lastUpdated": "2026-11-15T20:17:39Z",
+        "lastUpdated": "2026-11-15T22:31:52Z",
         "professions": [
           {
             "name": "Mining",
-            "skill": 215,
+            "skill": 218,
             "max": 225
           },
           {
@@ -8924,7 +8957,7 @@
       },
       "stats": {
         "skillsGained": {
-          "Mining": 16,
+          "Mining": 19,
           "Blacksmithing": 0,
           "Cooking": 0,
           "First Aid": 0
@@ -8932,8 +8965,8 @@
         "levelsGained": 7,
         "itemLevelGained": 11,
         "honorableKillsGained": 0,
-        "daysTracked": 2.97,
-        "levelsPerDay": 2.36
+        "daysTracked": 2.99,
+        "levelsPerDay": 2.34
       },
       "snapshots": [
         {
@@ -9031,6 +9064,18 @@
             "Cooking": 15,
             "First Aid": 150
           }
+        },
+        {
+          "t": "2026-11-15T22:45:27.309Z",
+          "level": 53,
+          "itemLevel": 46,
+          "honorableKills": 0,
+          "skills": {
+            "Mining": 218,
+            "Blacksmithing": 156,
+            "Cooking": 15,
+            "First Aid": 150
+          }
         }
       ],
       "person": "Howard",
@@ -9041,7 +9086,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T22:15:17.260Z",
+      "lastChecked": "2026-11-15T22:45:27.309Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T22:59:23.163Z",
@@ -14778,7 +14823,7 @@
       "watched": true,
       "status": "error",
       "message": "Armory returned HTTP 500. Check the spelling, or the armory may be down.",
-      "lastChecked": "2026-11-15T22:15:17.260Z",
+      "lastChecked": "2026-11-15T22:45:27.309Z",
       "questLog": {
         "error": "HTTP 404"
       }
