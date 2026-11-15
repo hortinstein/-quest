@@ -527,32 +527,36 @@ function renderLeveling() {
   const entries = state.characters.filter((c) => c.watched)
     .sort((a, b) => (b.profile?.level ?? -1) - (a.profile?.level ?? -1))
     .map((c) => ({
+      key: c.key,
       name: c.profile?.name ?? c.name,
       level: c.profile?.level,
       faction: c.profile?.faction,
       places: recommendations(c.profile),
     }));
-  const setAreaCharacter = setupAreaQuests(entries, state.characters.filter((character) => character.watched));
+
   $('leveling-empty').hidden = entries.length > 0;
   $('leveling-empty').textContent = 'No watched characters available.';
   let selected = entries[0];
-  let hovered;
-  let focused;
-  const buttons = new Map();
-  const checked = new Set(entries);
+  const checked = new Set(entries.slice(0, 1));
+  const controls = new Map();
+  const setAreaCharacters = setupAreaQuests(entries, state.characters.filter((character) => character.watched), checked);
 
   function updateMap() {
-    const active = hovered ?? focused ?? selected;
-    buttons.forEach((button, entry) => {
-      button.setAttribute('aria-pressed', String(entry === selected));
+    const active = selected;
+    for (const [entry, { button, checkbox }] of controls) {
+      checkbox.checked = checked.has(entry);
+      button.setAttribute('aria-pressed', String(entry === active));
       button.closest('tr').classList.toggle('map-active', entry === active);
-    });
-    $('map-character').textContent = active ? active.name : 'World map';
+    }
+    $('map-character').textContent = checked.size > 1
+      ? 'Shared recommended areas'
+      : active?.name ?? 'World map';
     const markers = [];
     const labels = [];
     for (const [kind, places] of Object.entries(active?.places ?? {})) {
       for (const place of places) {
-        if (!place.position) continue;
+        if (!place.position || [...checked].some((entry) =>
+          !entry.places?.[kind]?.some(({ name }) => name === place.name))) continue;
         const [x, y] = place.position;
         const marker = svg('g', { class: `map-pin ${kind}`, transform: `translate(${x} ${y})` });
         marker.append(svg('title', {}, place.name));
@@ -581,7 +585,7 @@ function renderLeveling() {
     }
     $('map-markers').replaceChildren(...annotations, ...markers);
     $('map-title').textContent = active
-      ? `Recommended locations for ${active.name}. See the character table for names.`
+      ? `Recommended locations for ${$('map-character').textContent}. See the character table for names.`
       : 'Kalimdor and the Eastern Kingdoms';
   }
 
@@ -593,12 +597,11 @@ function renderLeveling() {
   $('leveling-rows').replaceChildren(...entries.map((entry) => {
     const button = el('button', { type: 'button', className: 'map-character-button', textContent: entry.name });
     button.setAttribute('aria-controls', 'world-map');
-    buttons.set(entry, button);
-    const checkbox = el('input', { type: 'checkbox', checked: true });
+    const checkbox = el('input', { type: 'checkbox' });
+    controls.set(entry, { button, checkbox });
     checkbox.setAttribute('aria-label', `Show recommended areas for ${entry.name}`);
     checkbox.setAttribute('aria-controls', 'area-quest-tables');
     checkbox.addEventListener('change', () => {
-      setAreaCharacter(entry, checkbox.checked);
       if (checkbox.checked) {
         checked.add(entry);
         selected = entry;
@@ -606,8 +609,7 @@ function renderLeveling() {
         checked.delete(entry);
         if (selected === entry) selected = entries.find((candidate) => checked.has(candidate));
       }
-      hovered = undefined;
-      focused = undefined;
+      setAreaCharacters(checked);
       updateMap();
     });
     const row = el('tr', {},
@@ -619,18 +621,13 @@ function renderLeveling() {
       el('td', {}, placeList(entry.places?.dungeons,
         (p) => `${p.name} (${p.low}–${p.high})`, '—')),
     );
-    row.addEventListener('pointerenter', (event) => {
-      if (event.pointerType === 'touch') return;
-      hovered = entry;
+    button.addEventListener('click', () => {
+      checked.clear();
+      checked.add(entry);
+      selected = entry;
+      setAreaCharacters(checked);
       updateMap();
     });
-    row.addEventListener('pointerleave', () => {
-      if (hovered === entry) hovered = undefined;
-      updateMap();
-    });
-    button.addEventListener('focus', () => { focused = entry; updateMap(); });
-    button.addEventListener('blur', () => { focused = undefined; updateMap(); });
-    button.addEventListener('click', () => { selected = entry; updateMap(); });
     return row;
   }));
   updateMap();
