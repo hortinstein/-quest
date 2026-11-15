@@ -94,6 +94,7 @@
       </p>
       <section class="area-quests" aria-labelledby="area-quest-title">
         <h3 id="area-quest-title">Quest completions by recommended area</h3>
+        <label><input id="area-quest-eligible" type="checkbox" checked> Completed or available only</label>
         <p id="area-quest-status" class="muted" role="status"></p>
         <button id="area-quest-retry" type="button" hidden>Retry catalog</button>
         <div id="area-quest-tables"></div>
@@ -126,7 +127,7 @@
         </select></label>
         <label>Zone <select id="quest-zone"><option value="">All zones</option></select></label>
         <label id="quest-eligible-control" class="quest-eligible-control" hidden>
-          <input id="quest-eligible" type="checkbox"> Eligible areas only
+          <input id="quest-eligible" type="checkbox" checked> Completed or available only
         </label>
       </div>
       <p id="quest-view-note" class="muted" role="status"></p>

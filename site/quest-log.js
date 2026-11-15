@@ -86,9 +86,13 @@ export function setupQuestLog(characters) {
         .filter(({ id }) => !byId.has(id)).map((quest) => [quest.id, quest]));
       records = [...(catalog ?? []), ...uncataloged.values()];
     }
-    const eligible = view === 'open' && eligibleOnly.checked;
-    $('quest-eligible-control').hidden = view !== 'open';
-    eligibleOnly.disabled = !catalog || !current?.completed;
+    const eligible = (all || view === 'open') && eligibleOnly.checked;
+    $('quest-eligible-control').hidden = !all && view !== 'open';
+    eligibleOnly.disabled = !catalog;
+    if (all && eligible) {
+      const available = new Set(eligibleIncompleteQuests(catalog ?? [], selectedCharacter()).map(({ id }) => id));
+      records = records.filter(({ id }) => known.has(id) || available.has(id));
+    }
     if (view === 'open') {
       records = eligible ? eligibleIncompleteQuests(catalog ?? [], selectedCharacter())
         : current?.completed ? (catalog ?? []).filter((quest) => !known.has(quest.id)) : [];
@@ -128,7 +132,7 @@ export function setupQuestLog(characters) {
     viewNote.textContent = catalogError ? 'Could not load the quest catalog. Retry to load quest grouping and planning.'
       : !catalog && planner ? 'Loading the quest catalog…'
       : all && !current?.completed ? 'Completion status is unavailable until this character syncs.'
-      : eligible ? 'Zones with incomplete quests that meet known level, faction, race, and prerequisite checks.'
+      : eligible ? 'Showing quests that meet known faction, level, race, and prerequisite checks, plus recorded completions in All quests.'
       : view === 'open' ? 'Catalog quests with no completion recorded for this character. Some have eligibility requirements.'
       : view === 'party' ? 'Suggested for characters on the same region, ruleset, and faction who meet known level and prerequisite checks. Check availability in-game.'
       : timeline ? 'First seen during a sync. Dates are shown in your local time.' : '';
