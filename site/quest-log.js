@@ -1,4 +1,4 @@
-import { questChains, sharedQuests } from './quest-planner.js';
+import { questChains, questPartners, sharedQuests } from './quest-planner.js';
 import { zonePositions } from './leveling-data.js';
 
 function node(tag, text, props = {}) {
@@ -60,6 +60,7 @@ export function setupQuestLog(characters) {
   const groupBy = $('quest-group');
   const zoneFilter = $('quest-zone');
   const viewNote = $('quest-view-note');
+  const retryCatalog = $('quest-catalog-retry');
   const selectedCharacter = () => characters[select.selectedIndex];
   let requestVersion = 0;
 
@@ -103,7 +104,8 @@ export function setupQuestLog(characters) {
     else if (groupBy.value !== 'none') matches.sort((a, b) => group(a).localeCompare(group(b)));
     groupBy.disabled = timeline || !catalog;
     zoneFilter.disabled = !catalog;
-    viewNote.textContent = catalogError ? 'The quest catalog could not load.'
+    retryCatalog.hidden = !catalogError;
+    viewNote.textContent = catalogError ? 'Could not load the quest catalog. Retry to load quest grouping and planning.'
       : !catalog && planner ? 'Loading the quest catalog…'
       : view === 'open' ? 'Catalog quests with no completion recorded for this character. Some have eligibility requirements.'
       : view === 'party' ? 'Suggested for characters on the same region, ruleset, and faction who meet known level and prerequisite checks. Check availability in-game.'
@@ -141,7 +143,13 @@ export function setupQuestLog(characters) {
       list.append(paging);
     }
     if (!matches.length && current?.completed && (!planner || catalog)) {
-      list.append(node('p', view === 'party' ? 'No shared suggestions for these filters.' : 'No matching quests.'));
+      const message = view !== 'party' ? 'No matching quests.'
+        : !questPartners(selectedCharacter(), characters).length
+          ? 'No other tracked player with a successful quest sync matches this character’s region, ruleset, and faction.'
+          : 'No shared suggestions for these filters.';
+      list.append(node('p', message));
+    } else if (!current?.completed && planner && catalog) {
+      list.append(node('p', 'This character needs a successful Blizzard quest sync.'));
     }
   }
 
@@ -245,21 +253,30 @@ export function setupQuestLog(characters) {
   let loading = false;
   async function loadCatalog() {
     if (loading) return;
+    if (catalog) return;
     loading = true;
+    catalogError = false;
+    renderList();
     try {
-      const response = await fetch('data/quest-catalog.json.gz');
+      const response = await fetch('data/quest-catalog.json', { cache: 'no-cache' });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      catalog = await new Response(response.body.pipeThrough(new DecompressionStream('gzip'))).json();
+      const records = await response.json();
+      if (!Array.isArray(records) || !records.length) throw new Error('Empty quest catalog');
+      catalog = records;
       byId = new Map(catalog.map((quest) => [quest.id, quest]));
       chains = questChains(catalog);
       const zones = [...new Set(catalog.map((quest) => quest.zone).filter(Boolean))].sort((a, b) => a.localeCompare(b));
       zoneFilter.append(...zones.map((zone) => node('option', zone, { value: zone })));
       if (selection) show(selection);
     } catch {
+      catalog = undefined;
       catalogError = true;
+    } finally {
+      loading = false;
+      resetList();
     }
-    resetList();
   }
+  retryCatalog.addEventListener('click', loadCatalog);
   const questTab = $('quest-tab');
   questTab.addEventListener('click', loadCatalog, { once: true });
   questTab.addEventListener('focus', loadCatalog, { once: true });

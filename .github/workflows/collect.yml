@@ -65,6 +65,9 @@ jobs:
           git pull --rebase -X theirs origin main
           git push origin HEAD:main
 
+      - name: Prepare quest catalog
+        run: npm run prepare:quests
+
       - uses: actions/upload-pages-artifact@v5
         with:
           path: site
