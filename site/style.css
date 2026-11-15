@@ -346,3 +346,86 @@ footer {
 .map-label.zones { fill: var(--zone-pin); }
 .map-label.dungeons { fill: var(--dungeon-pin); }
 .map-label-line { stroke: #fff0d4; stroke-width: 2; pointer-events: none; }
+
+.quest-controls {
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.quest-controls label {
+  display: grid;
+  gap: .35rem;
+}
+
+.quest-controls input {
+  max-width: 100%;
+  padding: .45rem;
+  font: inherit;
+}
+
+.quest-layout {
+  display: grid;
+  grid-template-columns: minmax(10rem, 1fr) minmax(0, 2fr);
+  gap: 1rem;
+}
+
+#quest-list {
+  display: grid;
+  align-content: start;
+  gap: .4rem;
+  max-height: 34rem;
+  overflow: auto;
+}
+
+#quest-list button {
+  text-align: start;
+}
+
+#quest-list button[aria-pressed="true"] {
+  outline: 1px solid currentColor;
+  outline-offset: -2px;
+}
+
+.quest-map {
+  margin: .75rem 0;
+}
+
+.quest-map-image {
+  position: relative;
+}
+
+.quest-map-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.quest-pin {
+  position: absolute;
+  width: .85rem;
+  height: .85rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: #b04410;
+  transform: translate(-50%, -50%);
+}
+
+.quest-dialog-text {
+  white-space: pre-wrap;
+}
+
+.quest-guide-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 1rem;
+}
+
+@media (max-width: 640px) {
+  .quest-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #quest-list {
+    max-height: 12rem;
+  }
+}

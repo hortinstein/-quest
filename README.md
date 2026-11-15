@@ -37,3 +37,25 @@ Open **Gear history** beside a character in the comparison table to browse captu
 ## Limits
 
 Blizzard has no documented Forever API, so the collector reads the JSON embedded in the armory page. If Blizzard changes that page, the Action fails and the site lists the affected characters under "Needs attention". Tracked history is kept.
+
+## Quest log
+
+The Quest log tab lists completed quests reported by Blizzard for each watched
+character. To enable syncing, create a Battle.net developer client and add
+`BLIZZARD_CLIENT_ID` and `BLIZZARD_CLIENT_SECRET` as GitHub Actions repository
+secrets. Run **Collect and deploy** once manually or wait for the next scheduled
+run. The site publishes the watched characters' completed quest IDs, names, and
+sync timestamps. Credentials and access tokens stay in the collector.
+
+The collector uses Blizzard's Forever character profile namespace and the
+completed quests endpoint. Forever support is currently undocumented. If a
+sync fails, the tab reports the error and keeps the previous successful list.
+Quest lookup by ID also works before a character has synced.
+
+Dialog, objectives and zone information come from TheWoWDB when it has a
+matching record. The map marks the general quest zone on the existing world map,
+and guide links are available for more detailed directions.
+
+The Timeline view groups quests by the day the collector first saw them.
+Quests already present at the first sync are grouped under **Completed before
+tracking began**. Blizzard's completion response has no turn-in timestamps.

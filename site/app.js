@@ -1,3 +1,4 @@
+import { setupQuestLog } from './quest-log.js';
 import { recommendations } from './leveling.js';
 
 const DAY_MS = 86_400_000;
@@ -490,7 +491,7 @@ function renderControls() {
 }
 
 function setupTabs() {
-  const tabs = [$('progress-tab'), $('leveling-tab')];
+  const tabs = [$('progress-tab'), $('leveling-tab'), $('quest-tab')];
   function select(tab) {
     for (const candidate of tabs) {
       const active = candidate === tab;
@@ -507,7 +508,12 @@ function setupTabs() {
   tabs.forEach((tab, index) => {
     tab.addEventListener('click', () => select(tab));
     tab.addEventListener('keydown', (event) => {
-      const next = { ArrowLeft: 1 - index, ArrowRight: 1 - index, Home: 0, End: 1 }[event.key];
+      const next = {
+        ArrowLeft: (index + tabs.length - 1) % tabs.length,
+        ArrowRight: (index + 1) % tabs.length,
+        Home: 0,
+        End: tabs.length - 1,
+      }[event.key];
       if (next == null) return;
       event.preventDefault();
       select(tabs[next]);
@@ -640,6 +646,7 @@ async function start() {
   renderTable();
   renderAttention();
   renderLeveling();
+  setupQuestLog(state.characters.filter((character) => character.watched));
 
   let lastWidth = $('chart').clientWidth;
   new ResizeObserver(() => {

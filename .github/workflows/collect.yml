@@ -47,6 +47,9 @@ jobs:
       - name: Collect character data
         id: collect
         continue-on-error: true
+        env:
+          BLIZZARD_CLIENT_ID: ${{ secrets.BLIZZARD_CLIENT_ID }}
+          BLIZZARD_CLIENT_SECRET: ${{ secrets.BLIZZARD_CLIENT_SECRET }}
         run: node scripts/collect.mjs
 
       - name: Commit data
