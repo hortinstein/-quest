@@ -7,6 +7,8 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
+import { createQuestLookup } from './quests.mjs';
+
 const REGIONS = new Set(['us', 'eu', 'kr', 'tw']);
 const METRICS = ['level', 'itemLevel', 'honorableKills'];
 const DAY_MS = 86_400_000;
@@ -190,6 +192,7 @@ export async function collect({
   fetchImpl = fetch,
   sleep = (ms) => new Promise((done) => setTimeout(done, ms)),
   captureGear,
+  lookupQuests,
 }) {
   const timestamp = now.toISOString();
   const http = { fetchImpl, sleep };
@@ -218,6 +221,13 @@ export async function collect({
       message: outcome.message ?? null,
       lastChecked: timestamp,
     });
+    if (lookupQuests) {
+      try {
+        character.questLog = { updatedAt: timestamp, completed: await lookupQuests(entry) };
+      } catch (error) {
+        character.questLog = { ...character.questLog, error: error.message };
+      }
+    }
     if (outcome.profile) {
       applyProfile(character, outcome.profile, timestamp);
       const level = character.profile.level;
@@ -266,7 +276,13 @@ async function main() {
   const capturer = createGearCapturer(resolve(root, 'site'));
   let result;
   try {
-    result = await collect({ entries, previous: await readJson(dataPath), captureGear: capturer.capture });
+    const lookupQuests = createQuestLookup({
+      clientId: process.env.BLIZZARD_CLIENT_ID,
+      clientSecret: process.env.BLIZZARD_CLIENT_SECRET,
+    });
+    result = await collect({
+      entries, previous: await readJson(dataPath), captureGear: capturer.capture, lookupQuests,
+    });
   } finally {
     await capturer.close();
   }
@@ -275,6 +291,7 @@ async function main() {
   for (const c of data.characters.filter((character) => character.watched)) {
     const detail = c.message ?? `level ${c.profile.level}`;
     console.log(`${c.status.padEnd(6)} ${c.person} / ${c.name}: ${detail}`);
+    if (c.questLog?.error) console.error(`${c.name}: Quest sync failed: ${c.questLog.error}`);
     if (c.captureError) console.error(`${c.name}: ${c.captureError}`);
   }
   await mkdir(dirname(dataPath), { recursive: true });

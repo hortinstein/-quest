@@ -20,6 +20,7 @@
     <div class="segmented page-tabs" role="tablist" aria-label="Dashboard views">
       <button id="progress-tab" type="button" role="tab" aria-selected="true" aria-controls="progress">Progress</button>
       <button id="leveling-tab" type="button" role="tab" aria-selected="false" aria-controls="leveling" tabindex="-1">Where to quest</button>
+      <button id="quest-tab" type="button" role="tab" aria-selected="false" aria-controls="quests" tabindex="-1">Quest log</button>
     </div>
 
     <div id="progress" role="tabpanel" aria-labelledby="progress-tab">
@@ -90,6 +91,22 @@
         <a href="https://mobalytics.gg/wow-forever/guides/zone-map-level-ranges">Questing zones</a> ·
         <a href="https://mobalytics.gg/wow-forever/guides/dungeon-raid-map">World map and dungeon ranges</a>
       </p>
+    </section>
+    <section id="quests" class="card" role="tabpanel" aria-labelledby="quest-tab" hidden>
+      <h2>Quest log</h2>
+      <div class="controls quest-controls">
+        <label>Character <select id="quest-character"></select></label>
+        <label>Filter completed quests <input id="quest-filter" type="search" placeholder="Name or ID"></label>
+      </div>
+      <p id="quest-status" class="muted" role="status"></p>
+      <form id="quest-lookup" class="controls quest-controls">
+        <label>Look up any quest by ID <input name="questId" type="number" min="1" max="9007199254740991" required></label>
+        <button type="submit">Look up</button>
+      </form>
+      <div class="quest-layout">
+        <div id="quest-list" aria-label="Completed quests"></div>
+        <article id="quest-detail" aria-live="polite"><p>Select a completed quest or enter a quest ID.</p></article>
+      </div>
     </section>
   </main>
   <dialog id="gear-dialog" aria-labelledby="gear-title">
