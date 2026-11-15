@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-15T23:02:12.699Z",
+  "generatedAt": "2026-11-15T23:04:49.793Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-15T23:02:12.699Z",
+      "lastSeen": "2026-11-15T23:04:49.793Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -12,7 +12,7 @@
         "race": "Undead",
         "className": "Priest",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-15T01:31:28Z",
+        "lastUpdated": "2026-11-15T23:03:26Z",
         "professions": [
           {
             "name": "Tailoring",
@@ -21,7 +21,7 @@
           },
           {
             "name": "Enchanting",
-            "skill": 39,
+            "skill": 41,
             "max": 75
           },
           {
@@ -40,23 +40,23 @@
             "max": 150
           }
         ],
-        "level": 21,
-        "itemLevel": 12,
+        "level": 22,
+        "itemLevel": 16,
         "honorableKills": 3
       },
       "stats": {
         "skillsGained": {
           "Tailoring": 34,
-          "Enchanting": 18,
+          "Enchanting": 20,
           "Cooking": 10,
           "Fishing": 42,
           "First Aid": 73
         },
-        "levelsGained": 9,
-        "itemLevelGained": 8,
+        "levelsGained": 10,
+        "itemLevelGained": 12,
         "honorableKillsGained": 3,
         "daysTracked": 5.92,
-        "levelsPerDay": 1.52
+        "levelsPerDay": 1.69
       },
       "snapshots": [
         {
@@ -194,6 +194,19 @@
             "Fishing": 46,
             "First Aid": 75
           }
+        },
+        {
+          "t": "2026-11-15T23:04:49.793Z",
+          "level": 22,
+          "itemLevel": 16,
+          "honorableKills": 3,
+          "skills": {
+            "Tailoring": 75,
+            "Enchanting": 41,
+            "Cooking": 34,
+            "Fishing": 46,
+            "First Aid": 75
+          }
         }
       ],
       "person": "Alex",
@@ -204,7 +217,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T23:02:12.699Z",
+      "lastChecked": "2026-11-15T23:04:49.793Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -225,11 +238,16 @@
           "t": "2026-11-15T01:34:04.604Z",
           "level": 21,
           "path": "screenshots/thè-demiurge_us/20261115_thè-demiurge_LEVEL21.png"
+        },
+        {
+          "t": "2026-11-15T23:04:49.793Z",
+          "level": 22,
+          "path": "screenshots/thè-demiurge_us/20261115_thè-demiurge_LEVEL22.png"
         }
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T23:02:12.699Z",
+        "updatedAt": "2026-11-15T23:04:49.793Z",
         "completed": [
           {
             "id": 821,
@@ -242,6 +260,10 @@
           {
             "id": 97891,
             "name": "Prompt Potion Runner"
+          },
+          {
+            "id": 95885,
+            "name": "The Offering of Blood"
           },
           {
             "id": 96050,
@@ -306,6 +328,10 @@
           {
             "id": 5482,
             "name": "Doom Weed"
+          },
+          {
+            "id": 97292,
+            "name": "Unending Torment"
           },
           {
             "id": 97931,
@@ -612,6 +638,10 @@
             "name": "Camping 101: First Aid"
           },
           {
+            "id": 450,
+            "name": "A Recipe For Death"
+          },
+          {
             "id": 96897,
             "name": "The Cult of the Damned"
           },
@@ -628,8 +658,16 @@
             "name": "Camping 101: Skinning"
           },
           {
+            "id": 451,
+            "name": "A Recipe For Death"
+          },
+          {
             "id": 97937,
             "name": "Camping 101: Tailoring"
+          },
+          {
+            "id": 95981,
+            "name": "Watching the Roads"
           },
           {
             "id": 97919,
@@ -716,6 +754,10 @@
             "name": "Hidden Enemies"
           },
           {
+            "id": 443,
+            "name": "Rot Hide Ichor"
+          },
+          {
             "id": 383,
             "name": "Vital Intelligence"
           },
@@ -754,6 +796,10 @@
           {
             "id": 97972,
             "name": "Camping 101: Tailoring"
+          },
+          {
+            "id": 95883,
+            "name": "The Tortured Soul"
           },
           {
             "id": 99142,
@@ -840,6 +886,10 @@
             "name": "Dalaran's Intentions"
           },
           {
+            "id": 438,
+            "name": "The Decrepit Ferry"
+          },
+          {
             "id": 1492,
             "name": "Wharfmaster Dizzywig"
           },
@@ -860,12 +910,24 @@
             "name": "Camping 101: Cooking"
           },
           {
+            "id": 95884,
+            "name": "The Offering Stone"
+          },
+          {
+            "id": 444,
+            "name": "Rot Hide Origins"
+          },
+          {
             "id": 99152,
             "name": "As Above, So Below"
           },
           {
             "id": 96059,
             "name": "Camping 101: Enchanting"
+          },
+          {
+            "id": 97291,
+            "name": "Unending Torment"
           },
           {
             "id": 3902,
@@ -910,6 +972,10 @@
           {
             "id": 97932,
             "name": "Camping 101: Fishing"
+          },
+          {
+            "id": 439,
+            "name": "Rot Hide Clues"
           },
           {
             "id": 96607,
@@ -1852,6 +1918,66 @@
             "id": 437,
             "name": "The Dead Fields",
             "firstSeen": null
+          },
+          {
+            "id": 95885,
+            "name": "The Offering of Blood",
+            "firstSeen": "2026-11-15T23:04:49.793Z"
+          },
+          {
+            "id": 97292,
+            "name": "Unending Torment",
+            "firstSeen": "2026-11-15T23:04:49.793Z"
+          },
+          {
+            "id": 450,
+            "name": "A Recipe For Death",
+            "firstSeen": "2026-11-15T23:04:49.793Z"
+          },
+          {
+            "id": 451,
+            "name": "A Recipe For Death",
+            "firstSeen": "2026-11-15T23:04:49.793Z"
+          },
+          {
+            "id": 95981,
+            "name": "Watching the Roads",
+            "firstSeen": "2026-11-15T23:04:49.793Z"
+          },
+          {
+            "id": 443,
+            "name": "Rot Hide Ichor",
+            "firstSeen": "2026-11-15T23:04:49.793Z"
+          },
+          {
+            "id": 95883,
+            "name": "The Tortured Soul",
+            "firstSeen": "2026-11-15T23:04:49.793Z"
+          },
+          {
+            "id": 438,
+            "name": "The Decrepit Ferry",
+            "firstSeen": "2026-11-15T23:04:49.793Z"
+          },
+          {
+            "id": 95884,
+            "name": "The Offering Stone",
+            "firstSeen": "2026-11-15T23:04:49.793Z"
+          },
+          {
+            "id": 444,
+            "name": "Rot Hide Origins",
+            "firstSeen": "2026-11-15T23:04:49.793Z"
+          },
+          {
+            "id": 97291,
+            "name": "Unending Torment",
+            "firstSeen": "2026-11-15T23:04:49.793Z"
+          },
+          {
+            "id": 439,
+            "name": "Rot Hide Clues",
+            "firstSeen": "2026-11-15T23:04:49.793Z"
           }
         ]
       }
@@ -1859,7 +1985,7 @@
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-15T23:02:12.699Z",
+      "lastSeen": "2026-11-15T23:04:49.793Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -2036,7 +2162,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T23:02:12.699Z",
+      "lastChecked": "2026-11-15T23:04:49.793Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -2066,7 +2192,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T23:02:12.699Z",
+        "updatedAt": "2026-11-15T23:04:49.793Z",
         "completed": [
           {
             "id": 821,
@@ -3498,7 +3624,7 @@
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-15T23:02:12.699Z",
+      "lastSeen": "2026-11-15T23:04:49.793Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -3574,7 +3700,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T23:02:12.699Z",
+      "lastChecked": "2026-11-15T23:04:49.793Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -3584,7 +3710,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T23:02:12.699Z",
+        "updatedAt": "2026-11-15T23:04:49.793Z",
         "completed": [
           {
             "id": 95314,
@@ -4638,7 +4764,7 @@
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-15T23:02:12.699Z",
+      "lastSeen": "2026-11-15T23:04:49.793Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -4768,7 +4894,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T23:02:12.699Z",
+      "lastChecked": "2026-11-15T23:04:49.793Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -4788,7 +4914,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T23:02:12.699Z",
+        "updatedAt": "2026-11-15T23:04:49.793Z",
         "completed": [
           {
             "id": 97891,
@@ -5887,7 +6013,7 @@
     {
       "key": "us|ignivomous-defenestrata",
       "firstSeen": "2026-11-10T23:12:20.397Z",
-      "lastSeen": "2026-11-15T23:02:12.699Z",
+      "lastSeen": "2026-11-15T23:04:49.793Z",
       "slot": 4,
       "profile": {
         "name": "Ignivomous Defenestrata",
@@ -6037,7 +6163,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T23:02:12.699Z",
+      "lastChecked": "2026-11-15T23:04:49.793Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -6057,7 +6183,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T23:02:12.699Z",
+        "updatedAt": "2026-11-15T23:04:49.793Z",
         "completed": [
           {
             "id": 481,
@@ -7750,7 +7876,7 @@
     {
       "key": "us|ravzar-goldhorn",
       "firstSeen": "2026-11-11T06:28:13.565Z",
-      "lastSeen": "2026-11-15T23:02:12.699Z",
+      "lastSeen": "2026-11-15T23:04:49.793Z",
       "slot": 5,
       "profile": {
         "name": "Ravzar Goldhorn",
@@ -7868,7 +7994,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T23:02:12.699Z",
+      "lastChecked": "2026-11-15T23:04:49.793Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -7893,7 +8019,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T23:02:12.699Z",
+        "updatedAt": "2026-11-15T23:04:49.793Z",
         "completed": [
           {
             "id": 1498,
@@ -9010,7 +9136,7 @@
     {
       "key": "us|holojack-natesdad",
       "firstSeen": "2026-11-12T22:59:23.163Z",
-      "lastSeen": "2026-11-15T23:02:12.699Z",
+      "lastSeen": "2026-11-15T23:04:49.793Z",
       "slot": 6,
       "profile": {
         "name": "Holojack Natesdad",
@@ -9176,7 +9302,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T23:02:12.699Z",
+      "lastChecked": "2026-11-15T23:04:49.793Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T22:59:23.163Z",
@@ -9211,7 +9337,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T23:02:12.699Z",
+        "updatedAt": "2026-11-15T23:04:49.793Z",
         "completed": [
           {
             "id": 94668,
@@ -15057,7 +15183,7 @@
       "watched": true,
       "status": "error",
       "message": "Armory returned HTTP 500. Check the spelling, or the armory may be down.",
-      "lastChecked": "2026-11-15T23:02:12.699Z",
+      "lastChecked": "2026-11-15T23:04:49.793Z",
       "questLog": {
         "error": "HTTP 404"
       }
