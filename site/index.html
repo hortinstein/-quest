@@ -96,7 +96,7 @@
       <h2>Quest log</h2>
       <div class="controls quest-controls">
         <label>Character <select id="quest-character"></select></label>
-        <label>Filter completed quests <input id="quest-filter" type="search" placeholder="Name or ID"></label>
+        <label>Filter quests <input id="quest-filter" type="search" placeholder="Name, zone, or ID"></label>
       </div>
       <p id="quest-status" class="muted" role="status"></p>
       <form id="quest-lookup" class="controls quest-controls">
@@ -105,12 +105,25 @@
       </form>
       <div class="segmented" role="group" aria-label="Quest log view">
         <button id="quest-list-view" type="button" aria-pressed="true">Completed quests</button>
+        <button id="quest-open-view" type="button" aria-pressed="false">Incomplete</button>
+        <button id="quest-party-view" type="button" aria-pressed="false">Quest together</button>
         <button id="quest-timeline-view" type="button" aria-pressed="false">Timeline</button>
       </div>
+      <div class="controls quest-controls">
+        <label>Group by <select id="quest-group">
+          <option value="none">None</option>
+          <option value="zone">Zone / region</option>
+          <option value="chain">Quest chain</option>
+        </select></label>
+        <label>Zone <select id="quest-zone"><option value="">All zones</option></select></label>
+      </div>
+      <p id="quest-view-note" class="muted" role="status"></p>
       <div class="quest-layout">
         <div id="quest-list" aria-label="Completed quests"></div>
         <article id="quest-detail" aria-live="polite"><p>Select a completed quest or enter a quest ID.</p></article>
       </div>
+      <p class="muted">Quest catalog from <a href="https://github.com/Questie/QuestieDB">QuestieDB</a>.
+        Additional dialog from <a href="https://thewowdb.com/">TheWoWDB</a> when available.</p>
     </section>
   </main>
   <dialog id="gear-dialog" aria-labelledby="gear-title">

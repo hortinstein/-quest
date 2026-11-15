@@ -59,3 +59,23 @@ and guide links are available for more detailed directions.
 The Timeline view groups quests by the day the collector first saw them.
 Quests already present at the first sync are grouped under **Completed before
 tracking began**. Blizzard's completion response has no turn-in timestamps.
+
+Use **Group by** to browse quest records by zone or by linked quest chain.
+**Incomplete** compares the selected character's completion history with the
+embedded Forever catalog. **Quest together** ranks opportunities for distinct
+watched players on the same region, ruleset and faction, using known level,
+race and quest prerequisites. Suggestions may still require in-game checks.
+
+The catalog is based on QuestieDB revision
+[`4dbb824`](https://github.com/Questie/QuestieDB/tree/4dbb82440a27856f8dccf57094a5d792cdc7cc9b),
+using its Forever quest records and generated additions. See the upstream
+[licensing and credits](https://github.com/Questie/QuestieDB/blob/4dbb82440a27856f8dccf57094a5d792cdc7cc9b/LICENSE.md).
+To regenerate it from that checkout, use Lua 5.4 and gzip.
+
+```sh
+lua scripts/build-quest-catalog.lua /path/to/QuestieDB | gzip -n > site/data/quest-catalog.json.gz
+```
+
+Objectives and zone information load from this catalog immediately. Full dialog
+is supplemented by TheWoWDB where available. Coverage varies by quest and
+zone pins mark the general zone.

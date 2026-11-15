@@ -1,3 +1,4 @@
+import { questChains, sharedQuests } from './quest-planner.js';
 import { zonePositions } from './leveling-data.js';
 
 function node(tag, text, props = {}) {
@@ -50,7 +51,16 @@ export function setupQuestLog(characters) {
   const status = $('quest-status');
   const cache = new Map();
   let selection;
-  let timeline = false;
+  let view = 'list';
+  let catalog;
+  let catalogError = false;
+  let byId = new Map();
+  let chains = new Map();
+  let first = 0;
+  const groupBy = $('quest-group');
+  const zoneFilter = $('quest-zone');
+  const viewNote = $('quest-view-note');
+  const selectedCharacter = () => characters[select.selectedIndex];
   let requestVersion = 0;
 
   const log = () => characters[select.selectedIndex]?.questLog;
@@ -63,35 +73,76 @@ export function setupQuestLog(characters) {
     const current = log();
     const quests = current?.completed ?? [];
     const query = filter.value.trim().toLowerCase();
-    const records = timeline ? current?.history ?? quests : quests;
-    const matches = records.filter(({ id, name }) =>
-      String(id).includes(query) || name?.toLowerCase().includes(query));
+    const timeline = view === 'timeline';
+    const planner = view === 'open' || view === 'party';
+    const known = new Set([...quests, ...(current?.history ?? [])].map(({ id }) => id));
+    let records = timeline ? current?.history ?? quests : quests;
+    if (view === 'open') records = current?.completed ? (catalog ?? []).filter((quest) => !known.has(quest.id)) : [];
+    if (view === 'party') records = sharedQuests(catalog ?? [], selectedCharacter(), characters);
+    const matches = records.map((quest) => ({ ...byId.get(quest.id), ...quest,
+      name: quest.name ?? byId.get(quest.id)?.name }))
+      .filter(({ id, name, zone }) => (!zoneFilter.value || zoneFilter.value === zone)
+        && [id, name, zone, chains.get(id)?.name].some((value) => String(value ?? '').toLowerCase().includes(query)));
     const summary = current?.completed
       ? `${quests.length.toLocaleString()} completed · synced ${new Date(current.updatedAt).toLocaleString()}`
       : 'No quest sync available.';
     status.textContent = current?.error ? `${summary} Latest sync failed (${current.error}).` : summary;
 
-    if (timeline) matches.sort((a, b) => (b.firstSeen ?? '').localeCompare(a.firstSeen ?? ''));
-    list.setAttribute('aria-label', timeline ? 'Quest timeline' : 'Completed quests');
-    list.replaceChildren();
-    if (timeline) list.append(node('p', 'First seen during a sync. Dates are shown in your local time.', { className: 'muted' }));
-    let group;
-    for (const quest of matches) {
-      if (timeline) {
-        const day = quest.firstSeen
-          ? new Date(quest.firstSeen).toLocaleDateString(undefined, { dateStyle: 'long' })
-          : 'Completed before tracking began';
-        if (day !== group) {
-          list.append(node('h4', day));
-          group = day;
-        }
+    const group = (quest) => {
+      if (timeline) return quest.firstSeen
+        ? new Date(quest.firstSeen).toLocaleDateString(undefined, { dateStyle: 'long' })
+        : 'Completed before tracking began';
+      if (groupBy.value === 'zone') return quest.zone ?? 'Zone unknown';
+      if (groupBy.value === 'chain') {
+        const chain = chains.get(quest.id);
+        return chain ? `${chain.name} (#${chain.id})` : 'No known chain';
       }
+      return '';
+    };
+    if (timeline) matches.sort((a, b) => (b.firstSeen ?? '').localeCompare(a.firstSeen ?? ''));
+    else if (groupBy.value !== 'none') matches.sort((a, b) => group(a).localeCompare(group(b)));
+    groupBy.disabled = timeline || !catalog;
+    zoneFilter.disabled = !catalog;
+    viewNote.textContent = catalogError ? 'The quest catalog could not load.'
+      : !catalog && planner ? 'Loading the quest catalog…'
+      : view === 'open' ? 'Catalog quests with no completion recorded for this character. Some have eligibility requirements.'
+      : view === 'party' ? 'Suggested for characters on the same region, ruleset, and faction who meet known level and prerequisite checks. Check availability in-game.'
+      : timeline ? 'First seen during a sync. Dates are shown in your local time.' : '';
+
+    list.setAttribute('aria-label', {
+      list: 'Completed quests', open: 'Incomplete quests', party: 'Shared quest suggestions', timeline: 'Quest timeline',
+    }[view]);
+    list.replaceChildren();
+    let previousGroup;
+    const end = Math.min(matches.length, first + 100);
+    for (const quest of matches.slice(first, end)) {
+      const label = group(quest);
+      if (label && label !== previousGroup) list.append(node('h4', label));
+      previousGroup = label;
       const button = node('button', quest.name ?? `Quest #${quest.id}`, { type: 'button' });
+      if (quest.players) button.append(node('span', quest.players.map((player) => player.name).join(', '), { className: 'sub' }));
       button.setAttribute('aria-pressed', String(selection === quest.id));
       button.addEventListener('click', () => show(quest.id, button));
       list.append(button);
     }
-    if (!matches.length && current?.completed) list.append(node('p', 'No matching completed quests.'));
+    if (matches.length > 100) {
+      const paging = node('div', '', { className: 'controls quest-controls' });
+      paging.append(node('span', `${first + 1}–${end} of ${matches.length}`));
+      for (const [label, delta, disabled] of [['Previous', -100, first === 0], ['Next', 100, end === matches.length]]) {
+        const button = node('button', label, { type: 'button', disabled });
+        button.addEventListener('click', () => {
+          first += delta;
+          renderList();
+          list.scrollTop = 0;
+          list.querySelector('button')?.focus();
+        });
+        paging.append(button);
+      }
+      list.append(paging);
+    }
+    if (!matches.length && current?.completed && (!planner || catalog)) {
+      list.append(node('p', view === 'party' ? 'No shared suggestions for these filters.' : 'No matching quests.'));
+    }
   }
 
   async function show(id, trigger) {
@@ -106,7 +157,8 @@ export function setupQuestLog(characters) {
     const current = log();
     const completed = current?.completed?.find((quest) => quest.id === id);
     const observation = current?.history?.find((quest) => quest.id === id);
-    const title = node('h3', completed?.name ?? observation?.name ?? `Quest #${id}`);
+    const local = byId.get(id);
+    const title = node('h3', completed?.name ?? observation?.name ?? local?.name ?? `Quest #${id}`);
     const state = completed ? 'Completed'
       : observation ? 'Previously reported as completed'
       : current?.completed ? 'No completion recorded in the last sync' : 'Completion data unavailable';
@@ -114,6 +166,7 @@ export function setupQuestLog(characters) {
     const links = node('p', '', { className: 'quest-guide-links' });
     links.append(
       node('a', 'ForeverDB guide', { href: `https://foreverdb.net/quest/${id}` }),
+      node('a', 'Wowhead Forever reference', { href: `https://www.wowhead.com/forever/quest=${id}` }),
       node('a', 'Wowhead Classic reference', { href: `https://www.wowhead.com/classic/quest=${id}` }),
     );
     detail.replaceChildren(title, node('p', state, { className: 'muted' }), info, links);
@@ -123,12 +176,26 @@ export function setupQuestLog(characters) {
         : 'Completed before tracking began';
       detail.insertBefore(node('p', when, { className: 'muted' }), info);
     }
-    info.append(node('p', 'Loading quest details…'));
+    function renderDetails(remote, message) {
+      const quest = { ...local, ...remote, objectives: remote?.objectives || local?.objectives };
+      info.replaceChildren();
+      for (const [label, field] of [['Objectives', 'objectives'], ['Quest dialog', 'description'], ['Turn-in dialog', 'completion']]) {
+        if (typeof quest[field] === 'string' && quest[field].trim()) {
+          info.append(node('h4', label), node('p', quest[field], { className: 'quest-dialog-text' }));
+        }
+      }
+      addLocation(info, { ...quest, zone: local?.zone ?? quest.zone });
+      const chain = chains.get(id);
+      if (chain) info.append(node('p', `Quest chain: ${chain.name} · ${chain.count} quests`));
+      if (message) info.append(node('p', message, { className: 'muted' }));
+    }
+    renderDetails(null, 'Checking for quest dialog…');
 
     try {
       if (!cache.has(id)) {
-        const pending = fetch(`https://thewowdb.com/api/v1/forever/quest/${id}`, { signal: AbortSignal.timeout(12_000) })
+        const pending = fetch(`https://thewowdb.com/api/v1/forever/quest/${id}`, { signal: AbortSignal.timeout(8_000) })
           .then((response) => {
+            if (response.status === 404) return null;
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
             return response.json();
           });
@@ -137,20 +204,13 @@ export function setupQuestLog(characters) {
       }
       const quest = await cache.get(id);
       if (version !== requestVersion) return;
-      title.textContent = quest.name ?? title.textContent;
-      info.replaceChildren();
-      for (const [label, field] of [['Objectives', 'objectives'], ['Quest dialog', 'description'], ['Turn-in dialog', 'completion']]) {
-        if (typeof quest[field] === 'string' && quest[field].trim()) {
-          info.append(node('h4', label), node('p', quest[field], { className: 'quest-dialog-text' }));
-        }
-      }
-      if (!quest.description) info.append(node('p', 'Quest dialog unavailable.'));
-      addLocation(info, quest);
-      const credit = sourceLink(quest.links?.html) ?? 'https://thewowdb.com/';
-      links.prepend(node('a', 'Data from TheWoWDB', { href: credit }));
+      title.textContent = quest?.name ?? title.textContent;
+      renderDetails(quest, quest?.description ? null : 'Full quest dialog is unavailable here. See the external guides below.');
+      if (quest) links.prepend(node('a', 'Data from TheWoWDB', { href: sourceLink(quest.links?.html) ?? 'https://thewowdb.com/' }));
     } catch {
-      if (version === requestVersion) info.replaceChildren(node('p', 'Quest details could not be loaded. Try again or open a guide below.'));
+      if (version === requestVersion) renderDetails(null, 'The dialog provider did not respond. See the external guides below.');
     }
+
   }
 
   $('quest-lookup').addEventListener('submit', (event) => {
@@ -158,22 +218,50 @@ export function setupQuestLog(characters) {
     const id = Number(new FormData(event.currentTarget).get('questId'));
     if (Number.isSafeInteger(id) && id > 0) show(id);
   });
-  const listView = $('quest-list-view');
-  const timelineView = $('quest-timeline-view');
-  function setView(showTimeline) {
-    timeline = showTimeline;
-    listView.setAttribute('aria-pressed', String(!timeline));
-    timelineView.setAttribute('aria-pressed', String(timeline));
+  function resetList() {
+    first = 0;
     renderList();
+    list.scrollTop = 0;
   }
-  listView.addEventListener('click', () => setView(false));
-  timelineView.addEventListener('click', () => setView(true));
-  filter.addEventListener('input', renderList);
+  const views = ['list', 'open', 'party', 'timeline'];
+  for (const key of views) {
+    $(`quest-${key}-view`).addEventListener('click', () => {
+      view = key;
+      for (const candidate of views) $(`quest-${candidate}-view`).setAttribute('aria-pressed', String(view === candidate));
+      resetList();
+    });
+  }
+  filter.addEventListener('input', resetList);
+  groupBy.addEventListener('change', resetList);
+  zoneFilter.addEventListener('change', resetList);
   select.addEventListener('change', () => {
     requestVersion++;
     selection = undefined;
-    detail.replaceChildren(node('p', 'Select a completed quest or enter a quest ID.'));
-    renderList();
+    detail.replaceChildren(node('p', 'Select a quest or enter a quest ID.'));
+    resetList();
   });
   renderList();
+
+  let loading = false;
+  async function loadCatalog() {
+    if (loading) return;
+    loading = true;
+    try {
+      const response = await fetch('data/quest-catalog.json.gz');
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      catalog = await new Response(response.body.pipeThrough(new DecompressionStream('gzip'))).json();
+      byId = new Map(catalog.map((quest) => [quest.id, quest]));
+      chains = questChains(catalog);
+      const zones = [...new Set(catalog.map((quest) => quest.zone).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+      zoneFilter.append(...zones.map((zone) => node('option', zone, { value: zone })));
+      if (selection) show(selection);
+    } catch {
+      catalogError = true;
+    }
+    resetList();
+  }
+  const questTab = $('quest-tab');
+  questTab.addEventListener('click', loadCatalog, { once: true });
+  questTab.addEventListener('focus', loadCatalog, { once: true });
+  if (questTab.getAttribute('aria-selected') === 'true') loadCatalog();
 }
