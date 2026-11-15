@@ -77,9 +77,15 @@ export function setupQuestLog(characters) {
     const quests = current?.completed ?? [];
     const query = filter.value.trim().toLowerCase();
     const timeline = view === 'timeline';
-    const planner = view === 'open' || view === 'party';
+    const all = view === 'all';
+    const planner = all || view === 'open' || view === 'party';
     const known = new Set([...quests, ...(current?.history ?? [])].map(({ id }) => id));
     let records = timeline ? current?.history ?? quests : quests;
+    if (all) {
+      const uncataloged = new Map([...quests, ...(current?.history ?? [])]
+        .filter(({ id }) => !byId.has(id)).map((quest) => [quest.id, quest]));
+      records = [...(catalog ?? []), ...uncataloged.values()];
+    }
     const eligible = view === 'open' && eligibleOnly.checked;
     $('quest-eligible-control').hidden = view !== 'open';
     eligibleOnly.disabled = !catalog || !current?.completed;
@@ -121,13 +127,14 @@ export function setupQuestLog(characters) {
     retryCatalog.hidden = !catalogError;
     viewNote.textContent = catalogError ? 'Could not load the quest catalog. Retry to load quest grouping and planning.'
       : !catalog && planner ? 'Loading the quest catalog…'
+      : all && !current?.completed ? 'Completion status is unavailable until this character syncs.'
       : eligible ? 'Zones with incomplete quests that meet known level, faction, race, and prerequisite checks.'
       : view === 'open' ? 'Catalog quests with no completion recorded for this character. Some have eligibility requirements.'
       : view === 'party' ? 'Suggested for characters on the same region, ruleset, and faction who meet known level and prerequisite checks. Check availability in-game.'
       : timeline ? 'First seen during a sync. Dates are shown in your local time.' : '';
 
     list.setAttribute('aria-label', {
-      list: 'Completed quests', open: 'Incomplete quests', party: 'Shared quest suggestions', timeline: 'Quest timeline',
+      all: 'All quests', list: 'Completed quests', open: 'Incomplete quests', party: 'Shared quest suggestions', timeline: 'Quest timeline',
     }[view]);
     list.replaceChildren();
     let previousGroup;
@@ -140,7 +147,17 @@ export function setupQuestLog(characters) {
       if (quest.players) button.append(node('span', quest.players.map((player) => player.name).join(', '), { className: 'sub' }));
       button.setAttribute('aria-pressed', String(selection === quest.id));
       button.addEventListener('click', () => show(quest.id, button));
-      list.append(button);
+      if (all) {
+        const checked = known.has(quest.id);
+        const unknown = !checked && !current?.completed;
+        const checkbox = node('input', '', { type: 'checkbox', checked, indeterminate: unknown, disabled: true });
+        checkbox.setAttribute('aria-label', checked ? 'Completed' : unknown ? 'Completion unknown' : 'No completion reported');
+        const row = node('div', '', { className: 'quest-check-row' });
+        row.append(checkbox, button);
+        list.append(row);
+      } else {
+        list.append(button);
+      }
     }
     if (matches.length > 100) {
       const paging = node('div', '', { className: 'controls quest-controls' });
@@ -163,7 +180,7 @@ export function setupQuestLog(characters) {
           ? 'No other tracked player with a successful quest sync matches this character’s region, ruleset, and faction.'
           : 'No shared suggestions for these filters.';
       list.append(node('p', message));
-    } else if (!current?.completed && planner && catalog) {
+    } else if (!current?.completed && !all && planner && catalog) {
       list.append(node('p', 'This character needs a successful Blizzard quest sync.'));
     }
   }
@@ -246,7 +263,7 @@ export function setupQuestLog(characters) {
     renderList();
     list.scrollTop = 0;
   }
-  const views = ['list', 'open', 'party', 'timeline'];
+  const views = ['all', 'list', 'open', 'party', 'timeline'];
   for (const key of views) {
     $(`quest-${key}-view`).addEventListener('click', () => {
       view = key;

@@ -111,16 +111,17 @@
         <label>Look up any quest by ID <input name="questId" type="number" min="1" max="9007199254740991" required></label>
         <button type="submit">Look up</button>
       </form>
-      <div class="segmented" role="group" aria-label="Quest log view">
+      <div class="segmented quest-view-tabs" role="group" aria-label="Quest log view">
+        <button id="quest-all-view" type="button" aria-pressed="false">All quests</button>
         <button id="quest-list-view" type="button" aria-pressed="true">Completed quests</button>
         <button id="quest-open-view" type="button" aria-pressed="false">Incomplete</button>
         <button id="quest-party-view" type="button" aria-pressed="false">Quest together</button>
         <button id="quest-timeline-view" type="button" aria-pressed="false">Timeline</button>
       </div>
       <div class="controls quest-controls">
-        <label>Group by <select id="quest-group">
+        <label>Sort and group by <select id="quest-group">
           <option value="none">None</option>
-          <option value="zone">Zone / region</option>
+          <option value="zone">Area / zone</option>
           <option value="chain">Quest chain</option>
         </select></label>
         <label>Zone <select id="quest-zone"><option value="">All zones</option></select></label>

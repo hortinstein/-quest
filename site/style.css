@@ -459,3 +459,17 @@ footer {
   align-items: center;
   gap: .45rem;
 }
+
+.quest-view-tabs {
+  flex-wrap: wrap;
+}
+
+.quest-check-row {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+}
+
+.quest-check-row button {
+  flex: 1;
+}
