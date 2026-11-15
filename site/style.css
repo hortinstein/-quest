@@ -439,3 +439,23 @@ footer {
     max-height: 12rem;
   }
 }
+
+.area-quests {
+  margin-top: 1.5rem;
+}
+
+.area-quests details {
+  border-top: 1px solid var(--border);
+  padding: .65rem 0;
+}
+
+.area-quests summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.leveling-character {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+}

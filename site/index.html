@@ -80,6 +80,7 @@
         <p id="map-error" class="muted" hidden>The world map could not load. Recommendations are listed below.</p>
         <div class="map-key"><span>● Questing zones</span><span>◆ Dungeons</span></div>
       </div>
+      <p class="muted">Select a name for that character’s areas, or use the checkboxes to combine recommendations.</p>
       <p id="leveling-empty" class="muted">Loading watched characters…</p>
       <div class="table-scroll">
         <table class="leveling-table">
@@ -91,6 +92,13 @@
         <a href="https://mobalytics.gg/wow-forever/guides/zone-map-level-ranges">Questing zones</a> ·
         <a href="https://mobalytics.gg/wow-forever/guides/dungeon-raid-map">World map and dungeon ranges</a>
       </p>
+      <section class="area-quests" aria-labelledby="area-quest-title">
+        <h3 id="area-quest-title">Quest completions by recommended area</h3>
+        <p id="area-quest-status" class="muted" role="status"></p>
+        <button id="area-quest-retry" type="button" hidden>Retry catalog</button>
+        <div id="area-quest-tables"></div>
+        <p class="muted">Catalog from <a href="https://github.com/Questie/QuestieDB">QuestieDB</a>.</p>
+      </section>
     </section>
     <section id="quests" class="card" role="tabpanel" aria-labelledby="quest-tab" hidden>
       <h2>Quest log</h2>
