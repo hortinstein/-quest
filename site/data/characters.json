@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-15T22:45:27.309Z",
+  "generatedAt": "2026-11-15T23:02:12.699Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-15T22:45:27.309Z",
+      "lastSeen": "2026-11-15T23:02:12.699Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -55,7 +55,7 @@
         "levelsGained": 9,
         "itemLevelGained": 8,
         "honorableKillsGained": 3,
-        "daysTracked": 5.91,
+        "daysTracked": 5.92,
         "levelsPerDay": 1.52
       },
       "snapshots": [
@@ -204,7 +204,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T22:45:27.309Z",
+      "lastChecked": "2026-11-15T23:02:12.699Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -229,7 +229,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T21:17:41.663Z",
+        "updatedAt": "2026-11-15T23:02:12.699Z",
         "completed": [
           {
             "id": 821,
@@ -1859,7 +1859,7 @@
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-15T22:45:27.309Z",
+      "lastSeen": "2026-11-15T23:02:12.699Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -1904,7 +1904,7 @@
         "levelsGained": 10,
         "itemLevelGained": 13,
         "honorableKillsGained": 0,
-        "daysTracked": 5.87,
+        "daysTracked": 5.88,
         "levelsPerDay": 1.7
       },
       "snapshots": [
@@ -2036,7 +2036,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T22:45:27.309Z",
+      "lastChecked": "2026-11-15T23:02:12.699Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -2066,7 +2066,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T21:17:41.663Z",
+        "updatedAt": "2026-11-15T23:02:12.699Z",
         "completed": [
           {
             "id": 821,
@@ -2277,6 +2277,10 @@
             "name": "Sticks and Bones"
           },
           {
+            "id": 97288,
+            "name": "Unending Torment"
+          },
+          {
             "id": 900,
             "name": "Samophlange"
           },
@@ -2361,8 +2365,16 @@
             "name": "Rocks to Rests"
           },
           {
+            "id": 92421,
+            "name": "Light's Justice"
+          },
+          {
             "id": 372,
             "name": "At War With The Scarlet Crusade"
+          },
+          {
+            "id": 97289,
+            "name": "Unending Torment"
           },
           {
             "id": 363,
@@ -2491,6 +2503,10 @@
           {
             "id": 890,
             "name": "The Missing Shipment"
+          },
+          {
+            "id": 97290,
+            "name": "Unending Torment"
           },
           {
             "id": 96895,
@@ -3455,6 +3471,26 @@
             "id": 1483,
             "name": "Ziz Fizziks",
             "firstSeen": null
+          },
+          {
+            "id": 97288,
+            "name": "Unending Torment",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 92421,
+            "name": "Light's Justice",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 97289,
+            "name": "Unending Torment",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 97290,
+            "name": "Unending Torment",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
           }
         ]
       }
@@ -3462,7 +3498,7 @@
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-15T22:45:27.309Z",
+      "lastSeen": "2026-11-15T23:02:12.699Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -3507,7 +3543,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 5.87,
+        "daysTracked": 5.88,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -3538,7 +3574,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T22:45:27.309Z",
+      "lastChecked": "2026-11-15T23:02:12.699Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -3548,7 +3584,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T21:17:41.663Z",
+        "updatedAt": "2026-11-15T23:02:12.699Z",
         "completed": [
           {
             "id": 95314,
@@ -4602,7 +4638,7 @@
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-15T22:45:27.309Z",
+      "lastSeen": "2026-11-15T23:02:12.699Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -4641,7 +4677,7 @@
         "levelsGained": 7,
         "itemLevelGained": 5,
         "honorableKillsGained": 0,
-        "daysTracked": 5.87,
+        "daysTracked": 5.88,
         "levelsPerDay": 1.19
       },
       "snapshots": [
@@ -4732,7 +4768,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T22:45:27.309Z",
+      "lastChecked": "2026-11-15T23:02:12.699Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -4752,7 +4788,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T21:17:41.663Z",
+        "updatedAt": "2026-11-15T23:02:12.699Z",
         "completed": [
           {
             "id": 97891,
@@ -4811,12 +4847,20 @@
             "name": "A Token of Good Faith"
           },
           {
+            "id": 92422,
+            "name": "The Wrath of Rath'mael"
+          },
+          {
             "id": 99156,
             "name": "Rear Guard Patrol"
           },
           {
             "id": 358,
             "name": "Graverobbers"
+          },
+          {
+            "id": 5725,
+            "name": "The Power to Destroy..."
           },
           {
             "id": 8,
@@ -4895,6 +4939,10 @@
             "name": "Sticks and Bones"
           },
           {
+            "id": 97288,
+            "name": "Unending Torment"
+          },
+          {
             "id": 5041,
             "name": "Supplies for the Crossroads"
           },
@@ -4951,8 +4999,16 @@
             "name": "A Lesson in Divinity"
           },
           {
+            "id": 92421,
+            "name": "Light's Justice"
+          },
+          {
             "id": 372,
             "name": "At War With The Scarlet Crusade"
+          },
+          {
+            "id": 97289,
+            "name": "Unending Torment"
           },
           {
             "id": 363,
@@ -5057,6 +5113,10 @@
           {
             "id": 890,
             "name": "The Missing Shipment"
+          },
+          {
+            "id": 97290,
+            "name": "Unending Torment"
           },
           {
             "id": 96895,
@@ -5790,6 +5850,36 @@
             "id": 91316,
             "name": "Making Repairs",
             "firstSeen": null
+          },
+          {
+            "id": 92422,
+            "name": "The Wrath of Rath'mael",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 5725,
+            "name": "The Power to Destroy...",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 97288,
+            "name": "Unending Torment",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 92421,
+            "name": "Light's Justice",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 97289,
+            "name": "Unending Torment",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 97290,
+            "name": "Unending Torment",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
           }
         ]
       }
@@ -5797,7 +5887,7 @@
     {
       "key": "us|ignivomous-defenestrata",
       "firstSeen": "2026-11-10T23:12:20.397Z",
-      "lastSeen": "2026-11-15T22:45:27.309Z",
+      "lastSeen": "2026-11-15T23:02:12.699Z",
       "slot": 4,
       "profile": {
         "name": "Ignivomous Defenestrata",
@@ -5805,7 +5895,7 @@
         "race": "Undead",
         "className": "Mage",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-15T13:17:45Z",
+        "lastUpdated": "2026-11-15T22:49:53Z",
         "professions": [
           {
             "name": "Skinning",
@@ -5848,8 +5938,8 @@
         "levelsGained": 7,
         "itemLevelGained": 10,
         "honorableKillsGained": 442,
-        "daysTracked": 4.98,
-        "levelsPerDay": 1.41
+        "daysTracked": 4.99,
+        "levelsPerDay": 1.4
       },
       "snapshots": [
         {
@@ -5947,7 +6037,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T22:45:27.309Z",
+      "lastChecked": "2026-11-15T23:02:12.699Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -5967,7 +6057,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T21:17:41.663Z",
+        "updatedAt": "2026-11-15T23:02:12.699Z",
         "completed": [
           {
             "id": 481,
@@ -7660,7 +7750,7 @@
     {
       "key": "us|ravzar-goldhorn",
       "firstSeen": "2026-11-11T06:28:13.565Z",
-      "lastSeen": "2026-11-15T22:45:27.309Z",
+      "lastSeen": "2026-11-15T23:02:12.699Z",
       "slot": 5,
       "profile": {
         "name": "Ravzar Goldhorn",
@@ -7705,7 +7795,7 @@
         "levelsGained": 5,
         "itemLevelGained": 4,
         "honorableKillsGained": 0,
-        "daysTracked": 4.68,
+        "daysTracked": 4.69,
         "levelsPerDay": 1.07
       },
       "snapshots": [
@@ -7778,7 +7868,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T22:45:27.309Z",
+      "lastChecked": "2026-11-15T23:02:12.699Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -7803,7 +7893,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T21:17:41.663Z",
+        "updatedAt": "2026-11-15T23:02:12.699Z",
         "completed": [
           {
             "id": 1498,
@@ -8920,7 +9010,7 @@
     {
       "key": "us|holojack-natesdad",
       "firstSeen": "2026-11-12T22:59:23.163Z",
-      "lastSeen": "2026-11-15T22:45:27.309Z",
+      "lastSeen": "2026-11-15T23:02:12.699Z",
       "slot": 6,
       "profile": {
         "name": "Holojack Natesdad",
@@ -8965,8 +9055,8 @@
         "levelsGained": 7,
         "itemLevelGained": 11,
         "honorableKillsGained": 0,
-        "daysTracked": 2.99,
-        "levelsPerDay": 2.34
+        "daysTracked": 3,
+        "levelsPerDay": 2.33
       },
       "snapshots": [
         {
@@ -9086,7 +9176,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T22:45:27.309Z",
+      "lastChecked": "2026-11-15T23:02:12.699Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T22:59:23.163Z",
@@ -9121,7 +9211,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T21:17:41.663Z",
+        "updatedAt": "2026-11-15T23:02:12.699Z",
         "completed": [
           {
             "id": 94668,
@@ -9396,6 +9486,10 @@
             "name": "Witch Doctor Ti'ik"
           },
           {
+            "id": 7722,
+            "name": "What the Flux?"
+          },
+          {
             "id": 97942,
             "name": "Camping 101: First Aid"
           },
@@ -9458,6 +9552,10 @@
           {
             "id": 8,
             "name": "A Rogue's Deal"
+          },
+          {
+            "id": 7728,
+            "name": "STOLEN: Smithing Tuyere and Lookout's Spyglass"
           },
           {
             "id": 2606,
@@ -9600,6 +9698,10 @@
             "name": "Raptor Mastery"
           },
           {
+            "id": 3452,
+            "name": "The Flame's Casing"
+          },
+          {
             "id": 94930,
             "name": "Lost Shipping Crate"
           },
@@ -9684,6 +9786,10 @@
             "name": "Chol'aruk the Ravener"
           },
           {
+            "id": 7724,
+            "name": "Fiery Menace!"
+          },
+          {
             "id": 98093,
             "name": "Field to Clear"
           },
@@ -9750,6 +9856,10 @@
           {
             "id": 2865,
             "name": "Scarab Shells"
+          },
+          {
+            "id": 3443,
+            "name": "Forging the Shaft"
           },
           {
             "id": 95062,
@@ -10244,6 +10354,10 @@
             "name": "Camping 101: Cooking"
           },
           {
+            "id": 7729,
+            "name": "JOB OPPORTUNITY: Culling the Competition"
+          },
+          {
             "id": 96109,
             "name": "A Hunter's Quiver"
           },
@@ -10412,6 +10526,10 @@
             "name": "Death to the Executioner"
           },
           {
+            "id": 3441,
+            "name": "Divine Retribution"
+          },
+          {
             "id": 95454,
             "name": "The Honor of the Kor'kron"
           },
@@ -10424,12 +10542,20 @@
             "name": "Scourge of the Downs"
           },
           {
+            "id": 3463,
+            "name": "Set Them Ablaze!"
+          },
+          {
             "id": 895,
             "name": "WANTED: Baron Longshore"
           },
           {
             "id": 5762,
             "name": "Hemet Nesingwary"
+          },
+          {
+            "id": 3481,
+            "name": "Trinkets..."
           },
           {
             "id": 880,
@@ -10518,6 +10644,10 @@
           {
             "id": 97935,
             "name": "Camping 101: Mining"
+          },
+          {
+            "id": 7701,
+            "name": "WANTED: Overseer Maltorius"
           },
           {
             "id": 96897,
@@ -10708,6 +10838,10 @@
             "name": "The Scepter of Celebras"
           },
           {
+            "id": 3453,
+            "name": "The Torch of Retribution"
+          },
+          {
             "id": 96107,
             "name": "Feathers for Fletching"
           },
@@ -10896,6 +11030,10 @@
             "name": "Hypercapacitor Gizmo"
           },
           {
+            "id": 7727,
+            "name": "Incendosaurs? Whateverosaur is More Like It"
+          },
+          {
             "id": 95189,
             "name": "Crest of Lordaeron"
           },
@@ -11030,6 +11168,10 @@
           {
             "id": 914,
             "name": "Leaders of the Fang"
+          },
+          {
+            "id": 3462,
+            "name": "Squire Maltrake"
           },
           {
             "id": 499,
@@ -11182,6 +11324,10 @@
           {
             "id": 96063,
             "name": "Gaseous Gold"
+          },
+          {
+            "id": 7723,
+            "name": "Curse These Fat Fingers"
           },
           {
             "id": 91317,
@@ -11382,6 +11528,10 @@
           {
             "id": 7850,
             "name": "Dark Vessels"
+          },
+          {
+            "id": 3442,
+            "name": "The Flawless Flame"
           },
           {
             "id": 872,
@@ -11614,6 +11764,10 @@
           {
             "id": 6922,
             "name": "Baron Aquanis"
+          },
+          {
+            "id": 3454,
+            "name": "The Torch of Retribution"
           },
           {
             "id": 94748,
@@ -14803,6 +14957,86 @@
             "id": 2661,
             "name": "Delivery for Marin",
             "firstSeen": "2026-11-15T21:17:41.663Z"
+          },
+          {
+            "id": 7722,
+            "name": "What the Flux?",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 7728,
+            "name": "STOLEN: Smithing Tuyere and Lookout's Spyglass",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 3452,
+            "name": "The Flame's Casing",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 7724,
+            "name": "Fiery Menace!",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 3443,
+            "name": "Forging the Shaft",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 7729,
+            "name": "JOB OPPORTUNITY: Culling the Competition",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 3441,
+            "name": "Divine Retribution",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 3463,
+            "name": "Set Them Ablaze!",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 3481,
+            "name": "Trinkets...",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 7701,
+            "name": "WANTED: Overseer Maltorius",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 3453,
+            "name": "The Torch of Retribution",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 7727,
+            "name": "Incendosaurs? Whateverosaur is More Like It",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 3462,
+            "name": "Squire Maltrake",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 7723,
+            "name": "Curse These Fat Fingers",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 3442,
+            "name": "The Flawless Flame",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 3454,
+            "name": "The Torch of Retribution",
+            "firstSeen": "2026-11-15T23:02:12.699Z"
           }
         ]
       }
@@ -14823,7 +15057,7 @@
       "watched": true,
       "status": "error",
       "message": "Armory returned HTTP 500. Check the spelling, or the armory may be down.",
-      "lastChecked": "2026-11-15T22:45:27.309Z",
+      "lastChecked": "2026-11-15T23:02:12.699Z",
       "questLog": {
         "error": "HTTP 404"
       }
