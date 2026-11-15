@@ -1,4 +1,4 @@
-import { eligibleIncompleteQuests } from './quest-planner.js';
+import { eligibleIncompleteQuests, questChains } from './quest-planner.js';
 import { loadQuestCatalog } from './quest-catalog.js';
 
 function catalogArea(name) {
@@ -40,13 +40,13 @@ export function setupAreaQuests(recommendations, characters, initialSelection) {
     }
   }
 
-  function areaTable(area, recommendedFor, quests) {
+  function areaTable(area, recommendedFor, quests, chains) {
     const details = element('details');
     details.open = true;
     const summary = element('summary', `${area} · ${quests.length} catalog quests`);
     const recommended = element('p');
-    const completionCells = [];
-    sections.push({ details, summary, area, recommended, recommendedFor, completionCells });
+    const groups = [];
+    sections.push({ details, summary, area, recommended, recommendedFor, groups });
     details.append(summary, recommended);
     if (!quests.length) {
       details.append(element('p', 'No quests are assigned to this area in the catalog.'));
@@ -60,14 +60,31 @@ export function setupAreaQuests(recommendations, characters, initialSelection) {
       cell.scope = 'col';
       header.append(cell);
     }
-    const body = table.createTBody();
+    const questsByChain = new Map();
     for (const quest of quests) {
-      const row = body.insertRow();
-      const link = element('a', quest.name);
-      link.href = `https://foreverdb.net/quest/${quest.id}`;
-      row.insertCell().append(link);
-      row.insertCell().textContent = quest.level > 0 ? quest.level : '—';
-      completionCells.push({ row, id: quest.id, cell: row.insertCell(), done: completions.get(quest.id) });
+      const chain = chains.get(quest.id);
+      if (!questsByChain.has(chain)) questsByChain.set(chain, []);
+      questsByChain.get(chain).push(quest);
+    }
+    const chainGroups = [...questsByChain].sort(([a], [b]) =>
+      !a ? 1 : !b ? -1 : a.name.localeCompare(b.name) || a.id - b.id);
+    for (const [chain, members] of chainGroups) {
+      const body = table.createTBody();
+      const heading = element('th', chain?.name ?? 'No known chain');
+      heading.scope = 'rowgroup';
+      heading.colSpan = 3;
+      heading.className = 'area-quest-chain';
+      body.insertRow().append(heading);
+      const completionCells = [];
+      groups.push({ body, completionCells });
+      for (const quest of members) {
+        const row = body.insertRow();
+        const link = element('a', quest.name);
+        link.href = `https://foreverdb.net/quest/${quest.id}`;
+        row.insertCell().append(link);
+        row.insertCell().textContent = quest.level > 0 ? quest.level : '—';
+        completionCells.push({ row, id: quest.id, cell: row.insertCell(), done: completions.get(quest.id) });
+      }
     }
     const scroll = element('div');
     scroll.className = 'table-scroll';
@@ -81,20 +98,24 @@ export function setupAreaQuests(recommendations, characters, initialSelection) {
   function applySelection() {
     let visible = 0;
     const group = [...selected];
-    for (const { details, summary, area, recommended, recommendedFor, completionCells } of sections) {
+    for (const { details, summary, area, recommended, recommendedFor, groups } of sections) {
       details.hidden = !group.length || !group.every((entry) => recommendedFor.includes(entry));
       if (details.hidden) continue;
       let count = 0;
       recommended.textContent = `Recommended for ${group.map(({ name }) => name).join(', ')}`;
-      for (const { row, id, cell, done } of completionCells) {
-        row.hidden = eligibleOnly.checked && !group.every(({ key }) =>
-          done?.has(key) || availableByCharacter.get(key)?.has(id));
-        if (row.hidden) continue;
-        count++;
-        const names = group.filter(({ key }) => done?.has(key)).map(({ name }) => name);
-        cell.textContent = group.length === 1
-          ? names[0] ?? 'None reported'
-          : `${names.length} of ${group.length} completed${names.length ? ` · ${names.join(', ')}` : ''}`;
+      for (const { body, completionCells } of groups) {
+        const before = count;
+        for (const { row, id, cell, done } of completionCells) {
+          row.hidden = eligibleOnly.checked && !group.every(({ key }) =>
+            done?.has(key) || availableByCharacter.get(key)?.has(id));
+          if (row.hidden) continue;
+          count++;
+          const names = group.filter(({ key }) => done?.has(key)).map(({ name }) => name);
+          cell.textContent = group.length === 1
+            ? names[0] ?? 'None reported'
+            : `${names.length} of ${group.length} completed${names.length ? ` · ${names.join(', ')}` : ''}`;
+        }
+        body.hidden = count === before;
       }
       details.hidden = eligibleOnly.checked && !count;
       if (!details.hidden) visible++;
@@ -120,6 +141,7 @@ export function setupAreaQuests(recommendations, characters, initialSelection) {
       for (const character of characters) {
         availableByCharacter.set(character.key, new Set(eligibleIncompleteQuests(catalog, character).map(({ id }) => id)));
       }
+      const chains = questChains(catalog);
       const recommendedAreas = new Set([...areas.keys()].map(catalogArea));
       const questsByArea = new Map();
       for (const quest of catalog) {
@@ -131,7 +153,7 @@ export function setupAreaQuests(recommendations, characters, initialSelection) {
       const tables = [...areas].sort(([a], [b]) => a.localeCompare(b)).map(([area, recommendedFor]) => {
         const quests = questsByArea.get(catalogArea(area)) ?? [];
         quests.sort((a, b) => a.level - b.level || a.name.localeCompare(b.name) || a.id - b.id);
-        return areaTable(area, recommendedFor, quests);
+        return areaTable(area, recommendedFor, quests, chains);
       });
       container.replaceChildren(...tables);
       loaded = true;
