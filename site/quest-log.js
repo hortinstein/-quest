@@ -1,3 +1,4 @@
+import { loadQuestCatalog } from './quest-catalog.js';
 import { questChains, questPartners, sharedQuests } from './quest-planner.js';
 import { zonePositions } from './leveling-data.js';
 
@@ -258,11 +259,7 @@ export function setupQuestLog(characters) {
     catalogError = false;
     renderList();
     try {
-      const response = await fetch('data/quest-catalog.json', { cache: 'no-cache' });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const records = await response.json();
-      if (!Array.isArray(records) || !records.length) throw new Error('Empty quest catalog');
-      catalog = records;
+      catalog = await loadQuestCatalog();
       byId = new Map(catalog.map((quest) => [quest.id, quest]));
       chains = questChains(catalog);
       const zones = [...new Set(catalog.map((quest) => quest.zone).filter(Boolean))].sort((a, b) => a.localeCompare(b));

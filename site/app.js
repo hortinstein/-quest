@@ -1,3 +1,4 @@
+import { setupAreaQuests } from './area-quests.js';
 import { setupQuestLog } from './quest-log.js';
 import { recommendations } from './leveling.js';
 
@@ -531,6 +532,7 @@ function renderLeveling() {
       faction: c.profile?.faction,
       places: recommendations(c.profile),
     }));
+  setupAreaQuests(entries, state.characters.filter((character) => character.watched));
   $('leveling-empty').hidden = entries.length > 0;
   $('leveling-empty').textContent = 'No watched characters available.';
   let selected = entries[0];
