@@ -473,3 +473,8 @@ footer {
 .quest-check-row button {
   flex: 1;
 }
+
+.area-quest-chain {
+  background: var(--surface);
+  color: var(--gold-soft);
+}
