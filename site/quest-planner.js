@@ -48,20 +48,25 @@ function canStart(quest, character, completed) {
   return !!race && (mask & BigInt(race)) !== 0n;
 }
 
-export function sharedQuests(quests, leader, characters) {
-  if (!leader?.questLog?.completed || !Number.isInteger(leader.profile?.level)
-      || !leader.profile.ruleset || !Object.hasOwn(factionRaces, leader.profile.faction)) return [];
-  const party = [leader, ...characters.filter((character) =>
+export function questPartners(leader, characters) {
+  if (!Array.isArray(leader?.questLog?.completed) || leader.questLog.error
+      || !Number.isInteger(leader.profile?.level) || !leader.profile.ruleset
+      || !Object.hasOwn(factionRaces, leader.profile.faction)) return [];
+  return characters.filter((character) =>
     character.key !== leader.key && character.person !== leader.person
     && character.region === leader.region && character.profile?.ruleset === leader.profile.ruleset
     && character.profile.faction === leader.profile.faction && Number.isInteger(character.profile.level)
-    && Array.isArray(character.questLog?.completed))]
-    .filter((character) => !character.questLog.error)
+    && Array.isArray(character.questLog?.completed) && !character.questLog.error);
+}
+
+export function sharedQuests(quests, leader, characters) {
+  const partners = questPartners(leader, characters);
+  if (!partners.length) return [];
+  const party = [leader, ...partners]
     .map((character) => ({
       character,
       completed: new Set([...character.questLog.completed, ...(character.questLog.history ?? [])].map(({ id }) => id)),
     }));
-  if (party.length < 2 || party[0].character !== leader) return [];
   const results = [];
   for (const quest of quests) {
     if (!canStart(quest, leader, party[0].completed)) continue;

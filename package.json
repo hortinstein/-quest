@@ -7,7 +7,8 @@
   },
   "scripts": {
     "collect": "node scripts/collect.mjs",
-    "preview": "npx --yes serve site",
+    "prepare:quests": "node scripts/prepare-quest-catalog.mjs",
+    "preview": "npm run prepare:quests && npx --yes serve site",
     "test": "node --test"
   },
   "devDependencies": {

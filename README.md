@@ -76,6 +76,6 @@ To regenerate it from that checkout, use Lua 5.4 and gzip.
 lua scripts/build-quest-catalog.lua /path/to/QuestieDB | gzip -n > site/data/quest-catalog.json.gz
 ```
 
-Objectives and zone information load from this catalog immediately. Full dialog
+The Pages workflow and `npm run preview` unpack the catalog into JSON before serving it. Objectives and zone information load from that file. Full dialog
 is supplemented by TheWoWDB where available. Coverage varies by quest and
 zone pins mark the general zone.
