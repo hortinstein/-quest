@@ -1,3 +1,4 @@
+import { eligibleIncompleteQuests } from './quest-planner.js';
 import { loadQuestCatalog } from './quest-catalog.js';
 
 function catalogArea(name) {
@@ -15,6 +16,7 @@ export function setupAreaQuests(recommendations, characters, initialSelection) {
   const tab = document.getElementById('leveling-tab');
   const status = document.getElementById('area-quest-status');
   const container = document.getElementById('area-quest-tables');
+  const eligibleOnly = document.getElementById('area-quest-eligible');
   const retry = document.getElementById('area-quest-retry');
   const areas = new Map();
   let selected = initialSelection;
@@ -28,6 +30,7 @@ export function setupAreaQuests(recommendations, characters, initialSelection) {
     }
   }
   const completions = new Map();
+  const availableByCharacter = new Map();
   for (const character of characters) {
     const { completed, history } = character.questLog ?? {};
     const ids = new Set([...(completed ?? []), ...(history ?? [])].map((quest) => quest.id));
@@ -43,7 +46,7 @@ export function setupAreaQuests(recommendations, characters, initialSelection) {
     const summary = element('summary', `${area} · ${quests.length} catalog quests`);
     const recommended = element('p');
     const completionCells = [];
-    sections.push({ details, recommended, recommendedFor, completionCells });
+    sections.push({ details, summary, area, recommended, recommendedFor, completionCells });
     details.append(summary, recommended);
     if (!quests.length) {
       details.append(element('p', 'No quests are assigned to this area in the catalog.'));
@@ -64,7 +67,7 @@ export function setupAreaQuests(recommendations, characters, initialSelection) {
       link.href = `https://foreverdb.net/quest/${quest.id}`;
       row.insertCell().append(link);
       row.insertCell().textContent = quest.level > 0 ? quest.level : '—';
-      completionCells.push({ cell: row.insertCell(), done: completions.get(quest.id) });
+      completionCells.push({ row, id: quest.id, cell: row.insertCell(), done: completions.get(quest.id) });
     }
     const scroll = element('div');
     scroll.className = 'table-scroll';
@@ -78,19 +81,27 @@ export function setupAreaQuests(recommendations, characters, initialSelection) {
   function applySelection() {
     let visible = 0;
     const group = [...selected];
-    for (const { details, recommended, recommendedFor, completionCells } of sections) {
+    for (const { details, summary, area, recommended, recommendedFor, completionCells } of sections) {
       details.hidden = !group.length || !group.every((entry) => recommendedFor.includes(entry));
       if (details.hidden) continue;
-      visible++;
+      let count = 0;
       recommended.textContent = `Recommended for ${group.map(({ name }) => name).join(', ')}`;
-      for (const { cell, done } of completionCells) {
+      for (const { row, id, cell, done } of completionCells) {
+        row.hidden = eligibleOnly.checked && !group.every(({ key }) =>
+          done?.has(key) || availableByCharacter.get(key)?.has(id));
+        if (row.hidden) continue;
+        count++;
         const names = group.filter(({ key }) => done?.has(key)).map(({ name }) => name);
         cell.textContent = group.length === 1
           ? names[0] ?? 'None reported'
           : `${names.length} of ${group.length} completed${names.length ? ` · ${names.join(', ')}` : ''}`;
       }
+      details.hidden = eligibleOnly.checked && !count;
+      if (!details.hidden) visible++;
+      summary.textContent = `${area} · ${count} quests`;
     }
     status.textContent = visible ? ''
+      : selected.size && eligibleOnly.checked ? 'No completed or available quests in the recommended areas for this selection.'
       : selected.size > 1 ? 'No recommended areas are shared by all selected characters.'
       : selected.size ? 'No recommended areas for the selected character.'
       : 'Select a character above to show their recommended areas.';
@@ -106,6 +117,9 @@ export function setupAreaQuests(recommendations, characters, initialSelection) {
     status.textContent = 'Loading area quests…';
     try {
       const catalog = await loadQuestCatalog();
+      for (const character of characters) {
+        availableByCharacter.set(character.key, new Set(eligibleIncompleteQuests(catalog, character).map(({ id }) => id)));
+      }
       const recommendedAreas = new Set([...areas.keys()].map(catalogArea));
       const questsByArea = new Map();
       for (const quest of catalog) {
@@ -129,6 +143,7 @@ export function setupAreaQuests(recommendations, characters, initialSelection) {
       loading = false;
     }
   }
+  eligibleOnly.addEventListener('change', () => { if (loaded) applySelection(); });
   retry.addEventListener('click', render);
   tab.addEventListener('click', render, { once: true });
   tab.addEventListener('focus', render, { once: true });
