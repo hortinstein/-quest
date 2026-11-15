@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-15T00:42:26.141Z",
+  "generatedAt": "2026-11-15T01:34:04.604Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-15T00:42:26.141Z",
+      "lastSeen": "2026-11-15T01:34:04.604Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -12,7 +12,7 @@
         "race": "Undead",
         "className": "Priest",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-14T21:57:18Z",
+        "lastUpdated": "2026-11-15T01:31:28Z",
         "professions": [
           {
             "name": "Tailoring",
@@ -21,12 +21,12 @@
           },
           {
             "name": "Enchanting",
-            "skill": 35,
+            "skill": 39,
             "max": 75
           },
           {
             "name": "Cooking",
-            "skill": 33,
+            "skill": 34,
             "max": 75
           },
           {
@@ -40,23 +40,23 @@
             "max": 150
           }
         ],
-        "level": 19,
-        "itemLevel": 10,
+        "level": 21,
+        "itemLevel": 12,
         "honorableKills": 3
       },
       "stats": {
         "skillsGained": {
           "Tailoring": 34,
-          "Enchanting": 14,
-          "Cooking": 9,
+          "Enchanting": 18,
+          "Cooking": 10,
           "Fishing": 42,
           "First Aid": 73
         },
-        "levelsGained": 7,
-        "itemLevelGained": 6,
+        "levelsGained": 9,
+        "itemLevelGained": 8,
         "honorableKillsGained": 3,
-        "daysTracked": 4.99,
-        "levelsPerDay": 1.4
+        "daysTracked": 5.03,
+        "levelsPerDay": 1.79
       },
       "snapshots": [
         {
@@ -181,6 +181,19 @@
             "Fishing": 46,
             "First Aid": 75
           }
+        },
+        {
+          "t": "2026-11-15T01:34:04.604Z",
+          "level": 21,
+          "itemLevel": 12,
+          "honorableKills": 3,
+          "skills": {
+            "Tailoring": 75,
+            "Enchanting": 39,
+            "Cooking": 34,
+            "Fishing": 46,
+            "First Aid": 75
+          }
         }
       ],
       "person": "Alex",
@@ -191,7 +204,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T00:42:26.141Z",
+      "lastChecked": "2026-11-15T01:34:04.604Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -207,6 +220,11 @@
           "t": "2026-11-14T18:20:08.954Z",
           "level": 19,
           "path": "screenshots/thè-demiurge_us/20261114_thè-demiurge_LEVEL19.png"
+        },
+        {
+          "t": "2026-11-15T01:34:04.604Z",
+          "level": 21,
+          "path": "screenshots/thè-demiurge_us/20261115_thè-demiurge_LEVEL21.png"
         }
       ],
       "captureError": null
@@ -214,7 +232,7 @@
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-15T00:42:26.141Z",
+      "lastSeen": "2026-11-15T01:34:04.604Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -259,8 +277,8 @@
         "levelsGained": 8,
         "itemLevelGained": 6,
         "honorableKillsGained": 0,
-        "daysTracked": 4.95,
-        "levelsPerDay": 1.62
+        "daysTracked": 4.99,
+        "levelsPerDay": 1.6
       },
       "snapshots": [
         {
@@ -367,7 +385,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T00:42:26.141Z",
+      "lastChecked": "2026-11-15T01:34:04.604Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -390,7 +408,7 @@
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-15T00:42:26.141Z",
+      "lastSeen": "2026-11-15T01:34:04.604Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -435,7 +453,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 4.95,
+        "daysTracked": 4.99,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -466,7 +484,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T00:42:26.141Z",
+      "lastChecked": "2026-11-15T01:34:04.604Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -479,7 +497,7 @@
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-15T00:42:26.141Z",
+      "lastSeen": "2026-11-15T01:34:04.604Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -518,8 +536,8 @@
         "levelsGained": 6,
         "itemLevelGained": 4,
         "honorableKillsGained": 0,
-        "daysTracked": 4.95,
-        "levelsPerDay": 1.21
+        "daysTracked": 4.99,
+        "levelsPerDay": 1.2
       },
       "snapshots": [
         {
@@ -598,7 +616,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T00:42:26.141Z",
+      "lastChecked": "2026-11-15T01:34:04.604Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -616,7 +634,7 @@
     {
       "key": "us|ignivomous-defenestrata",
       "firstSeen": "2026-11-10T23:12:20.397Z",
-      "lastSeen": "2026-11-15T00:42:26.141Z",
+      "lastSeen": "2026-11-15T01:34:04.604Z",
       "slot": 4,
       "profile": {
         "name": "Ignivomous Defenestrata",
@@ -667,8 +685,8 @@
         "levelsGained": 5,
         "itemLevelGained": 9,
         "honorableKillsGained": 442,
-        "daysTracked": 4.06,
-        "levelsPerDay": 1.23
+        "daysTracked": 4.1,
+        "levelsPerDay": 1.22
       },
       "snapshots": [
         {
@@ -753,7 +771,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T00:42:26.141Z",
+      "lastChecked": "2026-11-15T01:34:04.604Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -771,7 +789,7 @@
     {
       "key": "us|ravzar-goldhorn",
       "firstSeen": "2026-11-11T06:28:13.565Z",
-      "lastSeen": "2026-11-15T00:42:26.141Z",
+      "lastSeen": "2026-11-15T01:34:04.604Z",
       "slot": 5,
       "profile": {
         "name": "Ravzar Goldhorn",
@@ -816,8 +834,8 @@
         "levelsGained": 4,
         "itemLevelGained": 3,
         "honorableKillsGained": 0,
-        "daysTracked": 3.76,
-        "levelsPerDay": 1.06
+        "daysTracked": 3.8,
+        "levelsPerDay": 1.05
       },
       "snapshots": [
         {
@@ -877,7 +895,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T00:42:26.141Z",
+      "lastChecked": "2026-11-15T01:34:04.604Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -900,7 +918,7 @@
     {
       "key": "us|holojack-natesdad",
       "firstSeen": "2026-11-12T22:59:23.163Z",
-      "lastSeen": "2026-11-15T00:42:26.141Z",
+      "lastSeen": "2026-11-15T01:34:04.604Z",
       "slot": 6,
       "profile": {
         "name": "Holojack Natesdad",
@@ -945,8 +963,8 @@
         "levelsGained": 4,
         "itemLevelGained": 8,
         "honorableKillsGained": 0,
-        "daysTracked": 2.07,
-        "levelsPerDay": 1.93
+        "daysTracked": 2.11,
+        "levelsPerDay": 1.9
       },
       "snapshots": [
         {
@@ -1030,7 +1048,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T00:42:26.141Z",
+      "lastChecked": "2026-11-15T01:34:04.604Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T22:59:23.163Z",
