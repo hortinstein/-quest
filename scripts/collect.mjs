@@ -223,7 +223,20 @@ export async function collect({
     });
     if (lookupQuests) {
       try {
-        character.questLog = { updatedAt: timestamp, completed: await lookupQuests(entry) };
+        const completed = await lookupQuests(entry);
+        const previous = character.questLog;
+        const history = new Map(
+          (previous?.history ?? previous?.completed ?? []).map((quest) => [quest.id, quest]),
+        );
+        for (const quest of completed) {
+          const earlier = history.get(quest.id);
+          history.set(quest.id, {
+            ...quest,
+            name: quest.name ?? earlier?.name ?? null,
+            firstSeen: earlier || !previous?.updatedAt ? earlier?.firstSeen ?? null : timestamp,
+          });
+        }
+        character.questLog = { updatedAt: timestamp, completed, history: [...history.values()] };
       } catch (error) {
         character.questLog = { ...character.questLog, error: error.message };
       }

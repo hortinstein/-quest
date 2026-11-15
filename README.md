@@ -55,3 +55,7 @@ Quest lookup by ID also works before a character has synced.
 Dialog, objectives and zone information come from TheWoWDB when it has a
 matching record. The map marks the general quest zone on the existing world map,
 and guide links are available for more detailed directions.
+
+The Timeline view groups quests by the day the collector first saw them.
+Quests already present at the first sync are grouped under **Completed before
+tracking began**. Blizzard's completion response has no turn-in timestamps.

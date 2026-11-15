@@ -50,6 +50,7 @@ export function setupQuestLog(characters) {
   const status = $('quest-status');
   const cache = new Map();
   let selection;
+  let timeline = false;
   let requestVersion = 0;
 
   const log = () => characters[select.selectedIndex]?.questLog;
@@ -62,20 +63,35 @@ export function setupQuestLog(characters) {
     const current = log();
     const quests = current?.completed ?? [];
     const query = filter.value.trim().toLowerCase();
-    const matches = quests.filter(({ id, name }) =>
+    const records = timeline ? current?.history ?? quests : quests;
+    const matches = records.filter(({ id, name }) =>
       String(id).includes(query) || name?.toLowerCase().includes(query));
     const summary = current?.completed
       ? `${quests.length.toLocaleString()} completed · synced ${new Date(current.updatedAt).toLocaleString()}`
       : 'No quest sync available.';
     status.textContent = current?.error ? `${summary} Latest sync failed (${current.error}).` : summary;
-    list.replaceChildren(...matches.slice(0, 100).map((quest) => {
+
+    if (timeline) matches.sort((a, b) => (b.firstSeen ?? '').localeCompare(a.firstSeen ?? ''));
+    list.setAttribute('aria-label', timeline ? 'Quest timeline' : 'Completed quests');
+    list.replaceChildren();
+    if (timeline) list.append(node('p', 'First seen during a sync. Dates are shown in your local time.', { className: 'muted' }));
+    let group;
+    for (const quest of matches) {
+      if (timeline) {
+        const day = quest.firstSeen
+          ? new Date(quest.firstSeen).toLocaleDateString(undefined, { dateStyle: 'long' })
+          : 'Completed before tracking began';
+        if (day !== group) {
+          list.append(node('h4', day));
+          group = day;
+        }
+      }
       const button = node('button', quest.name ?? `Quest #${quest.id}`, { type: 'button' });
       button.setAttribute('aria-pressed', String(selection === quest.id));
       button.addEventListener('click', () => show(quest.id, button));
-      return button;
-    }));
-    if (matches.length > 100) list.append(node('p', `Showing 100 of ${matches.length}. Filter by name or ID to narrow the list.`));
-    if (!matches.length && quests.length) list.append(node('p', 'No matching completed quests.'));
+      list.append(button);
+    }
+    if (!matches.length && current?.completed) list.append(node('p', 'No matching completed quests.'));
   }
 
   async function show(id, trigger) {
@@ -89,8 +105,10 @@ export function setupQuestLog(characters) {
     }
     const current = log();
     const completed = current?.completed?.find((quest) => quest.id === id);
-    const title = node('h3', completed?.name ?? `Quest #${id}`);
+    const observation = current?.history?.find((quest) => quest.id === id);
+    const title = node('h3', completed?.name ?? observation?.name ?? `Quest #${id}`);
     const state = completed ? 'Completed'
+      : observation ? 'Previously reported as completed'
       : current?.completed ? 'No completion recorded in the last sync' : 'Completion data unavailable';
     const info = node('div', '');
     const links = node('p', '', { className: 'quest-guide-links' });
@@ -99,6 +117,12 @@ export function setupQuestLog(characters) {
       node('a', 'Wowhead Classic reference', { href: `https://www.wowhead.com/classic/quest=${id}` }),
     );
     detail.replaceChildren(title, node('p', state, { className: 'muted' }), info, links);
+    if (observation) {
+      const when = observation.firstSeen
+        ? `First seen ${new Date(observation.firstSeen).toLocaleString()}`
+        : 'Completed before tracking began';
+      detail.insertBefore(node('p', when, { className: 'muted' }), info);
+    }
     info.append(node('p', 'Loading quest details…'));
 
     try {
@@ -134,6 +158,16 @@ export function setupQuestLog(characters) {
     const id = Number(new FormData(event.currentTarget).get('questId'));
     if (Number.isSafeInteger(id) && id > 0) show(id);
   });
+  const listView = $('quest-list-view');
+  const timelineView = $('quest-timeline-view');
+  function setView(showTimeline) {
+    timeline = showTimeline;
+    listView.setAttribute('aria-pressed', String(!timeline));
+    timelineView.setAttribute('aria-pressed', String(timeline));
+    renderList();
+  }
+  listView.addEventListener('click', () => setView(false));
+  timelineView.addEventListener('click', () => setView(true));
   filter.addEventListener('input', renderList);
   select.addEventListener('change', () => {
     requestVersion++;

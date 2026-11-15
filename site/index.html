@@ -103,6 +103,10 @@
         <label>Look up any quest by ID <input name="questId" type="number" min="1" max="9007199254740991" required></label>
         <button type="submit">Look up</button>
       </form>
+      <div class="segmented" role="group" aria-label="Quest log view">
+        <button id="quest-list-view" type="button" aria-pressed="true">Completed quests</button>
+        <button id="quest-timeline-view" type="button" aria-pressed="false">Timeline</button>
+      </div>
       <div class="quest-layout">
         <div id="quest-list" aria-label="Completed quests"></div>
         <article id="quest-detail" aria-live="polite"><p>Select a completed quest or enter a quest ID.</p></article>
