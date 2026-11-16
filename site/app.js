@@ -1,3 +1,4 @@
+import { setupSleepingBag } from './sleeping-bag.js';
 import { setupAreaQuests } from './area-quests.js';
 import { setupQuestLog } from './quest-log.js';
 import { recommendations } from './leveling.js';
@@ -492,7 +493,7 @@ function renderControls() {
 }
 
 function setupTabs() {
-  const tabs = [$('progress-tab'), $('leveling-tab'), $('quest-tab')];
+  const tabs = [$('progress-tab'), $('leveling-tab'), $('quest-tab'), $('sleeping-bag-tab')];
   function select(tab) {
     for (const candidate of tabs) {
       const active = candidate === tab;
@@ -662,7 +663,9 @@ async function start() {
   renderTable();
   renderAttention();
   renderLeveling();
-  setupQuestLog(state.characters.filter((character) => character.watched));
+  const watched = state.characters.filter((character) => character.watched);
+  setupQuestLog(watched);
+  setupSleepingBag(watched);
 
   let lastWidth = $('chart').clientWidth;
   new ResizeObserver(() => {
