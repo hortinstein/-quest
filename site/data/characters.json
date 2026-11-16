@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-16T00:45:48.386Z",
+  "generatedAt": "2026-11-16T06:41:44.518Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-16T00:45:48.386Z",
+      "lastSeen": "2026-11-16T06:41:44.518Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -55,8 +55,8 @@
         "levelsGained": 10,
         "itemLevelGained": 12,
         "honorableKillsGained": 3,
-        "daysTracked": 5.99,
-        "levelsPerDay": 1.67
+        "daysTracked": 6.24,
+        "levelsPerDay": 1.6
       },
       "snapshots": [
         {
@@ -217,7 +217,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-16T00:45:48.386Z",
+      "lastChecked": "2026-11-16T06:41:44.518Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -247,7 +247,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-16T00:45:48.386Z",
+        "updatedAt": "2026-11-16T06:41:44.518Z",
         "completed": [
           {
             "id": 821,
@@ -1985,7 +1985,7 @@
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-16T00:45:48.386Z",
+      "lastSeen": "2026-11-16T06:41:44.518Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -1993,7 +1993,7 @@
         "race": "Undead",
         "className": "Mage",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-16T00:22:54Z",
+        "lastUpdated": "2026-11-16T02:26:44Z",
         "professions": [
           {
             "name": "Tailoring",
@@ -2030,8 +2030,8 @@
         "levelsGained": 10,
         "itemLevelGained": 14,
         "honorableKillsGained": 0,
-        "daysTracked": 5.95,
-        "levelsPerDay": 1.68
+        "daysTracked": 6.2,
+        "levelsPerDay": 1.61
       },
       "snapshots": [
         {
@@ -2174,7 +2174,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-16T00:45:48.386Z",
+      "lastChecked": "2026-11-16T06:41:44.518Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -2204,7 +2204,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-16T00:45:48.386Z",
+        "updatedAt": "2026-11-16T06:41:44.518Z",
         "completed": [
           {
             "id": 821,
@@ -2383,6 +2383,10 @@
             "name": "Hidden Enemies"
           },
           {
+            "id": 1093,
+            "name": "Super Reaper 6000"
+          },
+          {
             "id": 96604,
             "name": "The Great Outdoors"
           },
@@ -2497,6 +2501,10 @@
           {
             "id": 380,
             "name": "Night Web's Hollow"
+          },
+          {
+            "id": 6301,
+            "name": "Cycle of Rebirth"
           },
           {
             "id": 3901,
@@ -2673,6 +2681,10 @@
           {
             "id": 96895,
             "name": "The Argent Emissary"
+          },
+          {
+            "id": 1062,
+            "name": "Goblin Invaders"
           },
           {
             "id": 869,
@@ -3692,6 +3704,21 @@
             "id": 482,
             "name": "Dalaran's Intentions",
             "firstSeen": "2026-11-16T00:45:48.386Z"
+          },
+          {
+            "id": 1093,
+            "name": "Super Reaper 6000",
+            "firstSeen": "2026-11-16T06:41:44.518Z"
+          },
+          {
+            "id": 6301,
+            "name": "Cycle of Rebirth",
+            "firstSeen": "2026-11-16T06:41:44.518Z"
+          },
+          {
+            "id": 1062,
+            "name": "Goblin Invaders",
+            "firstSeen": "2026-11-16T06:41:44.518Z"
           }
         ]
       }
@@ -3699,7 +3726,7 @@
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-16T00:45:48.386Z",
+      "lastSeen": "2026-11-16T06:41:44.518Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -3744,7 +3771,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 5.95,
+        "daysTracked": 6.2,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -3775,7 +3802,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-16T00:45:48.386Z",
+      "lastChecked": "2026-11-16T06:41:44.518Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -3785,7 +3812,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-16T00:45:48.386Z",
+        "updatedAt": "2026-11-16T06:41:44.518Z",
         "completed": [
           {
             "id": 95314,
@@ -4839,7 +4866,7 @@
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-16T00:45:48.386Z",
+      "lastSeen": "2026-11-16T06:41:44.518Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -4878,8 +4905,8 @@
         "levelsGained": 7,
         "itemLevelGained": 5,
         "honorableKillsGained": 0,
-        "daysTracked": 5.95,
-        "levelsPerDay": 1.18
+        "daysTracked": 6.2,
+        "levelsPerDay": 1.13
       },
       "snapshots": [
         {
@@ -4969,7 +4996,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-16T00:45:48.386Z",
+      "lastChecked": "2026-11-16T06:41:44.518Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -4989,7 +5016,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-16T00:45:48.386Z",
+        "updatedAt": "2026-11-16T06:41:44.518Z",
         "completed": [
           {
             "id": 97891,
@@ -6088,7 +6115,7 @@
     {
       "key": "us|ignivomous-defenestrata",
       "firstSeen": "2026-11-10T23:12:20.397Z",
-      "lastSeen": "2026-11-16T00:45:48.386Z",
+      "lastSeen": "2026-11-16T06:41:44.518Z",
       "slot": 4,
       "profile": {
         "name": "Ignivomous Defenestrata",
@@ -6096,27 +6123,27 @@
         "race": "Undead",
         "className": "Mage",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-15T22:49:53Z",
+        "lastUpdated": "2026-11-16T02:42:33Z",
         "professions": [
           {
             "name": "Skinning",
-            "skill": 140,
+            "skill": 150,
             "max": 150
           },
           {
             "name": "Herbalism",
-            "skill": 11,
+            "skill": 41,
             "max": 75
           },
           {
             "name": "Cooking",
-            "skill": 68,
+            "skill": 69,
             "max": 150
           },
           {
             "name": "Fishing",
-            "skill": 42,
-            "max": 75
+            "skill": 74,
+            "max": 150
           },
           {
             "name": "First Aid",
@@ -6124,23 +6151,23 @@
             "max": 150
           }
         ],
-        "level": 23,
+        "level": 24,
         "itemLevel": 18,
         "honorableKills": 442
       },
       "stats": {
         "skillsGained": {
-          "Skinning": 27,
-          "Herbalism": 7,
-          "Cooking": 17,
-          "Fishing": 40,
+          "Skinning": 37,
+          "Herbalism": 37,
+          "Cooking": 18,
+          "Fishing": 72,
           "First Aid": 30
         },
-        "levelsGained": 7,
+        "levelsGained": 8,
         "itemLevelGained": 10,
         "honorableKillsGained": 442,
-        "daysTracked": 5.06,
-        "levelsPerDay": 1.38
+        "daysTracked": 5.31,
+        "levelsPerDay": 1.51
       },
       "snapshots": [
         {
@@ -6228,6 +6255,19 @@
             "Fishing": 42,
             "First Aid": 102
           }
+        },
+        {
+          "t": "2026-11-16T06:41:44.518Z",
+          "level": 24,
+          "itemLevel": 18,
+          "honorableKills": 442,
+          "skills": {
+            "Skinning": 150,
+            "Herbalism": 41,
+            "Cooking": 69,
+            "Fishing": 74,
+            "First Aid": 102
+          }
         }
       ],
       "person": "Dan",
@@ -6238,7 +6278,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-16T00:45:48.386Z",
+      "lastChecked": "2026-11-16T06:41:44.518Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -6254,11 +6294,16 @@
           "t": "2026-11-15T04:36:36.883Z",
           "level": 23,
           "path": "screenshots/ignivomous-defenestrata_us/20261115_ignivomous-defenestrata_LEVEL23.png"
+        },
+        {
+          "t": "2026-11-16T06:41:44.518Z",
+          "level": 24,
+          "path": "screenshots/ignivomous-defenestrata_us/20261116_ignivomous-defenestrata_LEVEL24.png"
         }
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-16T00:45:48.386Z",
+        "updatedAt": "2026-11-16T06:41:44.518Z",
         "completed": [
           {
             "id": 481,
@@ -6813,6 +6858,10 @@
             "name": "Speak with Renferrel"
           },
           {
+            "id": 499,
+            "name": "Elixir of Suffering"
+          },
+          {
             "id": 99142,
             "name": "Tomb Weed"
           },
@@ -6863,6 +6912,10 @@
           {
             "id": 426,
             "name": "The Mills Overrun"
+          },
+          {
+            "id": 496,
+            "name": "Elixir of Suffering"
           },
           {
             "id": 461,
@@ -7944,6 +7997,16 @@
             "id": 437,
             "name": "The Dead Fields",
             "firstSeen": null
+          },
+          {
+            "id": 499,
+            "name": "Elixir of Suffering",
+            "firstSeen": "2026-11-16T06:41:44.518Z"
+          },
+          {
+            "id": 496,
+            "name": "Elixir of Suffering",
+            "firstSeen": "2026-11-16T06:41:44.518Z"
           }
         ]
       }
@@ -7951,7 +8014,7 @@
     {
       "key": "us|ravzar-goldhorn",
       "firstSeen": "2026-11-11T06:28:13.565Z",
-      "lastSeen": "2026-11-16T00:45:48.386Z",
+      "lastSeen": "2026-11-16T06:41:44.518Z",
       "slot": 5,
       "profile": {
         "name": "Ravzar Goldhorn",
@@ -7959,7 +8022,7 @@
         "race": "Tauren",
         "className": "Warrior",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-15T20:30:59Z",
+        "lastUpdated": "2026-11-16T04:14:51Z",
         "professions": [
           {
             "name": "Mining",
@@ -7996,8 +8059,8 @@
         "levelsGained": 5,
         "itemLevelGained": 4,
         "honorableKillsGained": 0,
-        "daysTracked": 4.76,
-        "levelsPerDay": 1.05
+        "daysTracked": 5.01,
+        "levelsPerDay": 1
       },
       "snapshots": [
         {
@@ -8069,7 +8132,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-16T00:45:48.386Z",
+      "lastChecked": "2026-11-16T06:41:44.518Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -8094,7 +8157,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-16T00:45:48.386Z",
+        "updatedAt": "2026-11-16T06:41:44.518Z",
         "completed": [
           {
             "id": 1498,
@@ -9211,7 +9274,7 @@
     {
       "key": "us|holojack-natesdad",
       "firstSeen": "2026-11-12T22:59:23.163Z",
-      "lastSeen": "2026-11-16T00:45:48.386Z",
+      "lastSeen": "2026-11-16T06:41:44.518Z",
       "slot": 6,
       "profile": {
         "name": "Holojack Natesdad",
@@ -9219,11 +9282,11 @@
         "race": "Undead",
         "className": "Paladin",
         "ruleset": "Normal",
-        "lastUpdated": "2026-11-15T22:31:52Z",
+        "lastUpdated": "2026-11-16T04:06:39Z",
         "professions": [
           {
             "name": "Mining",
-            "skill": 218,
+            "skill": 221,
             "max": 225
           },
           {
@@ -9242,22 +9305,22 @@
             "max": 150
           }
         ],
-        "level": 53,
+        "level": 54,
         "itemLevel": 46,
         "honorableKills": 0
       },
       "stats": {
         "skillsGained": {
-          "Mining": 19,
+          "Mining": 22,
           "Blacksmithing": 0,
           "Cooking": 0,
           "First Aid": 0
         },
-        "levelsGained": 7,
+        "levelsGained": 8,
         "itemLevelGained": 11,
         "honorableKillsGained": 0,
-        "daysTracked": 3.07,
-        "levelsPerDay": 2.28
+        "daysTracked": 3.32,
+        "levelsPerDay": 2.41
       },
       "snapshots": [
         {
@@ -9367,6 +9430,18 @@
             "Cooking": 15,
             "First Aid": 150
           }
+        },
+        {
+          "t": "2026-11-16T06:41:44.518Z",
+          "level": 54,
+          "itemLevel": 46,
+          "honorableKills": 0,
+          "skills": {
+            "Mining": 221,
+            "Blacksmithing": 156,
+            "Cooking": 15,
+            "First Aid": 150
+          }
         }
       ],
       "person": "Howard",
@@ -9377,7 +9452,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-16T00:45:48.386Z",
+      "lastChecked": "2026-11-16T06:41:44.518Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T22:59:23.163Z",
@@ -9408,11 +9483,16 @@
           "t": "2026-11-15T21:17:41.663Z",
           "level": 53,
           "path": "screenshots/holojack-natesdad_us/20261115_holojack-natesdad_LEVEL53.png"
+        },
+        {
+          "t": "2026-11-16T06:41:44.518Z",
+          "level": 54,
+          "path": "screenshots/holojack-natesdad_us/20261116_holojack-natesdad_LEVEL54.png"
         }
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-16T00:45:48.386Z",
+        "updatedAt": "2026-11-16T06:41:44.518Z",
         "completed": [
           {
             "id": 94668,
@@ -9963,6 +10043,10 @@
             "name": "Fields of Grief"
           },
           {
+            "id": 6162,
+            "name": "A Husband's Last Battle"
+          },
+          {
             "id": 671,
             "name": "Foul Magics"
           },
@@ -10393,6 +10477,10 @@
           {
             "id": 96204,
             "name": "The Windshaper's Wrath"
+          },
+          {
+            "id": 5157,
+            "name": "Collection of the Corrupt Water"
           },
           {
             "id": 2951,
@@ -10867,6 +10955,10 @@
             "name": "Homeward Bound"
           },
           {
+            "id": 5156,
+            "name": "Verifying the Corruption"
+          },
+          {
             "id": 98601,
             "name": "A Difficult Path"
           },
@@ -11021,6 +11113,10 @@
           {
             "id": 405,
             "name": "The Prodigal Lich"
+          },
+          {
+            "id": 8460,
+            "name": "Timbermaw Ally"
           },
           {
             "id": 1130,
@@ -11211,6 +11307,10 @@
             "name": "Elixir of Agony"
           },
           {
+            "id": 5155,
+            "name": "Forces of Jaedenar"
+          },
+          {
             "id": 6565,
             "name": "Allegiance to the Old Gods"
           },
@@ -11273,6 +11373,10 @@
           {
             "id": 3373,
             "name": "The Essence of Eranikus"
+          },
+          {
+            "id": 86577,
+            "name": "A Sampling of Putrescence"
           },
           {
             "id": 96987,
@@ -15238,30 +15342,687 @@
             "id": 3454,
             "name": "The Torch of Retribution",
             "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 6162,
+            "name": "A Husband's Last Battle",
+            "firstSeen": "2026-11-16T06:41:44.518Z"
+          },
+          {
+            "id": 5157,
+            "name": "Collection of the Corrupt Water",
+            "firstSeen": "2026-11-16T06:41:44.518Z"
+          },
+          {
+            "id": 5156,
+            "name": "Verifying the Corruption",
+            "firstSeen": "2026-11-16T06:41:44.518Z"
+          },
+          {
+            "id": 8460,
+            "name": "Timbermaw Ally",
+            "firstSeen": "2026-11-16T06:41:44.518Z"
+          },
+          {
+            "id": 5155,
+            "name": "Forces of Jaedenar",
+            "firstSeen": "2026-11-16T06:41:44.518Z"
+          },
+          {
+            "id": 86577,
+            "name": "A Sampling of Putrescence",
+            "firstSeen": "2026-11-16T06:41:44.518Z"
           }
         ]
       }
     },
     {
       "key": "us|vivamus-defenestrata",
-      "firstSeen": null,
-      "lastSeen": null,
-      "slot": null,
-      "profile": null,
-      "stats": null,
-      "snapshots": [],
+      "firstSeen": "2026-11-16T06:41:44.518Z",
+      "lastSeen": "2026-11-16T06:41:44.518Z",
+      "slot": 7,
+      "profile": {
+        "name": "Vivamus Defenestrata",
+        "faction": "Horde",
+        "race": "Undead",
+        "className": "Priest",
+        "ruleset": "PvP",
+        "lastUpdated": "2026-11-16T00:59:22Z",
+        "professions": [
+          {
+            "name": "Tailoring",
+            "skill": 70,
+            "max": 150
+          },
+          {
+            "name": "Enchanting",
+            "skill": 13,
+            "max": 75
+          },
+          {
+            "name": "Cooking",
+            "skill": 1,
+            "max": 75
+          },
+          {
+            "name": "First Aid",
+            "skill": 5,
+            "max": 75
+          }
+        ],
+        "level": 10,
+        "itemLevel": 3,
+        "honorableKills": 0
+      },
+      "stats": {
+        "skillsGained": {
+          "Tailoring": 0,
+          "Enchanting": 0,
+          "Cooking": 0,
+          "First Aid": 0
+        },
+        "levelsGained": 0,
+        "itemLevelGained": 0,
+        "honorableKillsGained": 0,
+        "daysTracked": 0,
+        "levelsPerDay": null
+      },
+      "snapshots": [
+        {
+          "t": "2026-11-16T06:41:44.518Z",
+          "level": 10,
+          "itemLevel": 3,
+          "honorableKills": 0,
+          "skills": {
+            "Tailoring": 70,
+            "Enchanting": 13,
+            "Cooking": 1,
+            "First Aid": 5
+          }
+        }
+      ],
       "person": "Dan",
       "name": "Vivamus Defenestrata",
       "slug": "vivamus-defenestrata",
       "region": "us",
       "url": "https://worldofwarcraft.blizzard.com/en-us/forever/us/armory/character/vivamus-defenestrata",
       "watched": true,
-      "status": "error",
-      "message": "Armory returned HTTP 500. Check the spelling, or the armory may be down.",
-      "lastChecked": "2026-11-16T00:45:48.386Z",
+      "status": "ok",
+      "message": null,
+      "lastChecked": "2026-11-16T06:41:44.518Z",
       "questLog": {
-        "error": "HTTP 404"
-      }
+        "updatedAt": "2026-11-16T06:41:44.518Z",
+        "completed": [
+          {
+            "id": 382,
+            "name": "The Red Messenger"
+          },
+          {
+            "id": 98389,
+            "name": "A Light in the Darkness"
+          },
+          {
+            "id": 96652,
+            "name": "The Adventurer"
+          },
+          {
+            "id": 367,
+            "name": "A New Plague"
+          },
+          {
+            "id": 96626,
+            "name": "Camping 101: Cooking"
+          },
+          {
+            "id": 96656,
+            "name": "The Adventurer"
+          },
+          {
+            "id": 96627,
+            "name": "The Adventurer"
+          },
+          {
+            "id": 5482,
+            "name": "Doom Weed"
+          },
+          {
+            "id": 96646,
+            "name": "Camping 101: Cooking"
+          },
+          {
+            "id": 96655,
+            "name": "Camping 101: Cooking"
+          },
+          {
+            "id": 358,
+            "name": "Graverobbers"
+          },
+          {
+            "id": 8,
+            "name": "A Rogue's Deal"
+          },
+          {
+            "id": 6395,
+            "name": "Marla's Last Wish"
+          },
+          {
+            "id": 364,
+            "name": "The Mindless Ones"
+          },
+          {
+            "id": 427,
+            "name": "At War With The Scarlet Crusade"
+          },
+          {
+            "id": 407,
+            "name": "Fields of Grief"
+          },
+          {
+            "id": 97558,
+            "name": "Hides for the Forsaken"
+          },
+          {
+            "id": 97961,
+            "name": "Camping 101: Tailoring"
+          },
+          {
+            "id": 96604,
+            "name": "The Great Outdoors"
+          },
+          {
+            "id": 99141,
+            "name": "Patience"
+          },
+          {
+            "id": 5481,
+            "name": "Gordo's Task"
+          },
+          {
+            "id": 96606,
+            "name": "The Great Outdoors"
+          },
+          {
+            "id": 86784,
+            "name": "Sticks and Bones"
+          },
+          {
+            "id": 5650,
+            "name": "Garments of Darkness"
+          },
+          {
+            "id": 96628,
+            "name": "The Adventurer"
+          },
+          {
+            "id": 96608,
+            "name": "The Great Outdoors"
+          },
+          {
+            "id": 590,
+            "name": "A Rogue's Deal"
+          },
+          {
+            "id": 96638,
+            "name": "The Adventurer"
+          },
+          {
+            "id": 376,
+            "name": "The Damned"
+          },
+          {
+            "id": 96658,
+            "name": "Camping 101: Cooking"
+          },
+          {
+            "id": 380,
+            "name": "Night Web's Hollow"
+          },
+          {
+            "id": 97925,
+            "name": "Camping 101: Tailoring"
+          },
+          {
+            "id": 3901,
+            "name": "Rattling the Rattlecages"
+          },
+          {
+            "id": 370,
+            "name": "At War With The Scarlet Crusade"
+          },
+          {
+            "id": 96102,
+            "name": "Camping 101: Tailoring"
+          },
+          {
+            "id": 97973,
+            "name": "Camping 101: Tailoring"
+          },
+          {
+            "id": 363,
+            "name": "Rude Awakening"
+          },
+          {
+            "id": 3097,
+            "name": "Hallowed Scroll"
+          },
+          {
+            "id": 97937,
+            "name": "Camping 101: Tailoring"
+          },
+          {
+            "id": 5651,
+            "name": "In Favor of Darkness"
+          },
+          {
+            "id": 95998,
+            "name": "The Great Outdoors"
+          },
+          {
+            "id": 96605,
+            "name": "The Great Outdoors"
+          },
+          {
+            "id": 383,
+            "name": "Vital Intelligence"
+          },
+          {
+            "id": 381,
+            "name": "The Scarlet Crusade"
+          },
+          {
+            "id": 374,
+            "name": "Proof of Demise"
+          },
+          {
+            "id": 96057,
+            "name": "Camping 101: Tailoring"
+          },
+          {
+            "id": 97972,
+            "name": "Camping 101: Tailoring"
+          },
+          {
+            "id": 365,
+            "name": "Fields of Grief"
+          },
+          {
+            "id": 96634,
+            "name": "Camping 101: Cooking"
+          },
+          {
+            "id": 96101,
+            "name": "The Great Outdoors"
+          },
+          {
+            "id": 96629,
+            "name": "Camping 101: Cooking"
+          },
+          {
+            "id": 96630,
+            "name": "The Adventurer"
+          },
+          {
+            "id": 368,
+            "name": "A New Plague"
+          },
+          {
+            "id": 99134,
+            "name": "Discipline"
+          },
+          {
+            "id": 96659,
+            "name": "The Adventurer"
+          },
+          {
+            "id": 375,
+            "name": "The Chill of Death"
+          },
+          {
+            "id": 96661,
+            "name": "Camping 101: Cooking"
+          },
+          {
+            "id": 3902,
+            "name": "Scavenging Deathknell"
+          },
+          {
+            "id": 359,
+            "name": "Forsaken Duties"
+          },
+          {
+            "id": 96607,
+            "name": "The Great Outdoors"
+          },
+          {
+            "id": 97950,
+            "name": "Camping 101: Tailoring"
+          },
+          {
+            "id": 404,
+            "name": "A Putrid Task"
+          }
+        ],
+        "history": [
+          {
+            "id": 382,
+            "name": "The Red Messenger",
+            "firstSeen": null
+          },
+          {
+            "id": 98389,
+            "name": "A Light in the Darkness",
+            "firstSeen": null
+          },
+          {
+            "id": 96652,
+            "name": "The Adventurer",
+            "firstSeen": null
+          },
+          {
+            "id": 367,
+            "name": "A New Plague",
+            "firstSeen": null
+          },
+          {
+            "id": 96626,
+            "name": "Camping 101: Cooking",
+            "firstSeen": null
+          },
+          {
+            "id": 96656,
+            "name": "The Adventurer",
+            "firstSeen": null
+          },
+          {
+            "id": 96627,
+            "name": "The Adventurer",
+            "firstSeen": null
+          },
+          {
+            "id": 5482,
+            "name": "Doom Weed",
+            "firstSeen": null
+          },
+          {
+            "id": 96646,
+            "name": "Camping 101: Cooking",
+            "firstSeen": null
+          },
+          {
+            "id": 96655,
+            "name": "Camping 101: Cooking",
+            "firstSeen": null
+          },
+          {
+            "id": 358,
+            "name": "Graverobbers",
+            "firstSeen": null
+          },
+          {
+            "id": 8,
+            "name": "A Rogue's Deal",
+            "firstSeen": null
+          },
+          {
+            "id": 6395,
+            "name": "Marla's Last Wish",
+            "firstSeen": null
+          },
+          {
+            "id": 364,
+            "name": "The Mindless Ones",
+            "firstSeen": null
+          },
+          {
+            "id": 427,
+            "name": "At War With The Scarlet Crusade",
+            "firstSeen": null
+          },
+          {
+            "id": 407,
+            "name": "Fields of Grief",
+            "firstSeen": null
+          },
+          {
+            "id": 97558,
+            "name": "Hides for the Forsaken",
+            "firstSeen": null
+          },
+          {
+            "id": 97961,
+            "name": "Camping 101: Tailoring",
+            "firstSeen": null
+          },
+          {
+            "id": 96604,
+            "name": "The Great Outdoors",
+            "firstSeen": null
+          },
+          {
+            "id": 99141,
+            "name": "Patience",
+            "firstSeen": null
+          },
+          {
+            "id": 5481,
+            "name": "Gordo's Task",
+            "firstSeen": null
+          },
+          {
+            "id": 96606,
+            "name": "The Great Outdoors",
+            "firstSeen": null
+          },
+          {
+            "id": 86784,
+            "name": "Sticks and Bones",
+            "firstSeen": null
+          },
+          {
+            "id": 5650,
+            "name": "Garments of Darkness",
+            "firstSeen": null
+          },
+          {
+            "id": 96628,
+            "name": "The Adventurer",
+            "firstSeen": null
+          },
+          {
+            "id": 96608,
+            "name": "The Great Outdoors",
+            "firstSeen": null
+          },
+          {
+            "id": 590,
+            "name": "A Rogue's Deal",
+            "firstSeen": null
+          },
+          {
+            "id": 96638,
+            "name": "The Adventurer",
+            "firstSeen": null
+          },
+          {
+            "id": 376,
+            "name": "The Damned",
+            "firstSeen": null
+          },
+          {
+            "id": 96658,
+            "name": "Camping 101: Cooking",
+            "firstSeen": null
+          },
+          {
+            "id": 380,
+            "name": "Night Web's Hollow",
+            "firstSeen": null
+          },
+          {
+            "id": 97925,
+            "name": "Camping 101: Tailoring",
+            "firstSeen": null
+          },
+          {
+            "id": 3901,
+            "name": "Rattling the Rattlecages",
+            "firstSeen": null
+          },
+          {
+            "id": 370,
+            "name": "At War With The Scarlet Crusade",
+            "firstSeen": null
+          },
+          {
+            "id": 96102,
+            "name": "Camping 101: Tailoring",
+            "firstSeen": null
+          },
+          {
+            "id": 97973,
+            "name": "Camping 101: Tailoring",
+            "firstSeen": null
+          },
+          {
+            "id": 363,
+            "name": "Rude Awakening",
+            "firstSeen": null
+          },
+          {
+            "id": 3097,
+            "name": "Hallowed Scroll",
+            "firstSeen": null
+          },
+          {
+            "id": 97937,
+            "name": "Camping 101: Tailoring",
+            "firstSeen": null
+          },
+          {
+            "id": 5651,
+            "name": "In Favor of Darkness",
+            "firstSeen": null
+          },
+          {
+            "id": 95998,
+            "name": "The Great Outdoors",
+            "firstSeen": null
+          },
+          {
+            "id": 96605,
+            "name": "The Great Outdoors",
+            "firstSeen": null
+          },
+          {
+            "id": 383,
+            "name": "Vital Intelligence",
+            "firstSeen": null
+          },
+          {
+            "id": 381,
+            "name": "The Scarlet Crusade",
+            "firstSeen": null
+          },
+          {
+            "id": 374,
+            "name": "Proof of Demise",
+            "firstSeen": null
+          },
+          {
+            "id": 96057,
+            "name": "Camping 101: Tailoring",
+            "firstSeen": null
+          },
+          {
+            "id": 97972,
+            "name": "Camping 101: Tailoring",
+            "firstSeen": null
+          },
+          {
+            "id": 365,
+            "name": "Fields of Grief",
+            "firstSeen": null
+          },
+          {
+            "id": 96634,
+            "name": "Camping 101: Cooking",
+            "firstSeen": null
+          },
+          {
+            "id": 96101,
+            "name": "The Great Outdoors",
+            "firstSeen": null
+          },
+          {
+            "id": 96629,
+            "name": "Camping 101: Cooking",
+            "firstSeen": null
+          },
+          {
+            "id": 96630,
+            "name": "The Adventurer",
+            "firstSeen": null
+          },
+          {
+            "id": 368,
+            "name": "A New Plague",
+            "firstSeen": null
+          },
+          {
+            "id": 99134,
+            "name": "Discipline",
+            "firstSeen": null
+          },
+          {
+            "id": 96659,
+            "name": "The Adventurer",
+            "firstSeen": null
+          },
+          {
+            "id": 375,
+            "name": "The Chill of Death",
+            "firstSeen": null
+          },
+          {
+            "id": 96661,
+            "name": "Camping 101: Cooking",
+            "firstSeen": null
+          },
+          {
+            "id": 3902,
+            "name": "Scavenging Deathknell",
+            "firstSeen": null
+          },
+          {
+            "id": 359,
+            "name": "Forsaken Duties",
+            "firstSeen": null
+          },
+          {
+            "id": 96607,
+            "name": "The Great Outdoors",
+            "firstSeen": null
+          },
+          {
+            "id": 97950,
+            "name": "Camping 101: Tailoring",
+            "firstSeen": null
+          },
+          {
+            "id": 404,
+            "name": "A Putrid Task",
+            "firstSeen": null
+          }
+        ]
+      },
+      "gearCaptures": [
+        {
+          "t": "2026-11-16T06:41:44.518Z",
+          "level": 10,
+          "path": "screenshots/vivamus-defenestrata_us/20261116_vivamus-defenestrata_LEVEL10.png"
+        }
+      ],
+      "captureError": null
     }
   ]
 }
