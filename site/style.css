@@ -509,3 +509,8 @@ footer {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+.sleeping-bag-table th .sub {
+  display: block;
+  color: var(--ink-2);
+}
