@@ -21,6 +21,7 @@
       <button id="progress-tab" type="button" role="tab" aria-selected="true" aria-controls="progress">Progress</button>
       <button id="leveling-tab" type="button" role="tab" aria-selected="false" aria-controls="leveling" tabindex="-1">Where to quest</button>
       <button id="quest-tab" type="button" role="tab" aria-selected="false" aria-controls="quests" tabindex="-1">Quest log</button>
+      <button id="sleeping-bag-tab" type="button" role="tab" aria-selected="false" aria-controls="sleeping-bag" tabindex="-1">Sleeping bag</button>
     </div>
 
     <div id="progress" role="tabpanel" aria-labelledby="progress-tab">
@@ -138,6 +139,17 @@
       </div>
       <p class="muted">Quest catalog from <a href="https://github.com/Questie/QuestieDB">QuestieDB</a>.
         Additional dialog from <a href="https://thewowdb.com/">TheWoWDB</a> when available.</p>
+    </section>
+    <section id="sleeping-bag" class="card" role="tabpanel" aria-labelledby="sleeping-bag-tab" hidden>
+      <h2>Cozy Sleeping Bag</h2>
+      <p class="muted">Blizzard quest completions for each watched character. <a href="https://www.method.gg/wow-forever/how-to-unlock-the-cozy-sleeping-bag-in-wow-forever">Quest chain guide</a></p>
+      <div class="table-scroll">
+        <table class="sleeping-bag-table" aria-label="Cozy Sleeping Bag quest chain progress">
+          <thead><tr id="sleeping-bag-steps"><th scope="col">Character</th><th scope="col">Progress</th></tr></thead>
+          <tbody id="sleeping-bag-rows"></tbody>
+        </table>
+      </div>
+      <p id="sleeping-bag-empty" class="muted" hidden>No watched characters available.</p>
     </section>
   </main>
   <dialog id="gear-dialog" aria-labelledby="gear-title">

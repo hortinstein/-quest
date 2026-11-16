@@ -478,3 +478,39 @@ footer {
   background: var(--surface);
   color: var(--gold-soft);
 }
+
+.page-tabs {
+  flex-wrap: wrap;
+}
+
+.sleeping-bag-table th,
+.sleeping-bag-table td {
+  text-align: center;
+}
+
+.sleeping-bag-table th:first-child {
+  text-align: start;
+}
+
+.sleeping-bag-table thead th {
+  white-space: normal;
+}
+
+.sleeping-bag-done {
+  color: #95cf98;
+  font-weight: 700;
+}
+
+.sleeping-bag-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.sleeping-bag-table th .sub {
+  display: block;
+  color: var(--ink-2);
+}
