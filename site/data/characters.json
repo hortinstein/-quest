@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-15T23:11:11.511Z",
+  "generatedAt": "2026-11-16T00:45:48.386Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-15T23:11:11.511Z",
+      "lastSeen": "2026-11-16T00:45:48.386Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -55,8 +55,8 @@
         "levelsGained": 10,
         "itemLevelGained": 12,
         "honorableKillsGained": 3,
-        "daysTracked": 5.93,
-        "levelsPerDay": 1.69
+        "daysTracked": 5.99,
+        "levelsPerDay": 1.67
       },
       "snapshots": [
         {
@@ -217,7 +217,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T23:11:11.511Z",
+      "lastChecked": "2026-11-16T00:45:48.386Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -247,7 +247,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T23:11:11.511Z",
+        "updatedAt": "2026-11-16T00:45:48.386Z",
         "completed": [
           {
             "id": 821,
@@ -1985,7 +1985,7 @@
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-15T23:11:11.511Z",
+      "lastSeen": "2026-11-16T00:45:48.386Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -1993,7 +1993,7 @@
         "race": "Undead",
         "className": "Mage",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-15T22:30:08Z",
+        "lastUpdated": "2026-11-16T00:22:54Z",
         "professions": [
           {
             "name": "Tailoring",
@@ -2017,7 +2017,7 @@
           }
         ],
         "level": 21,
-        "itemLevel": 15,
+        "itemLevel": 16,
         "honorableKills": 1
       },
       "stats": {
@@ -2028,10 +2028,10 @@
           "First Aid": 1
         },
         "levelsGained": 10,
-        "itemLevelGained": 13,
+        "itemLevelGained": 14,
         "honorableKillsGained": 0,
-        "daysTracked": 5.89,
-        "levelsPerDay": 1.7
+        "daysTracked": 5.95,
+        "levelsPerDay": 1.68
       },
       "snapshots": [
         {
@@ -2152,6 +2152,18 @@
             "Cooking": 32,
             "First Aid": 32
           }
+        },
+        {
+          "t": "2026-11-16T00:45:48.386Z",
+          "level": 21,
+          "itemLevel": 16,
+          "honorableKills": 1,
+          "skills": {
+            "Tailoring": 51,
+            "Skinning": 10,
+            "Cooking": 32,
+            "First Aid": 32
+          }
         }
       ],
       "person": "Richards",
@@ -2162,7 +2174,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T23:11:11.511Z",
+      "lastChecked": "2026-11-16T00:45:48.386Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -2192,11 +2204,15 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T23:11:11.511Z",
+        "updatedAt": "2026-11-16T00:45:48.386Z",
         "completed": [
           {
             "id": 821,
             "name": "Chen's Empty Keg"
+          },
+          {
+            "id": 481,
+            "name": "Dalar's Analysis"
           },
           {
             "id": 97891,
@@ -2205,6 +2221,10 @@
           {
             "id": 819,
             "name": "Chen's Empty Keg"
+          },
+          {
+            "id": 264,
+            "name": "Until Death Do Us Part"
           },
           {
             "id": 382,
@@ -2293,6 +2313,10 @@
           {
             "id": 6323,
             "name": "Ride to the Undercity"
+          },
+          {
+            "id": 92422,
+            "name": "The Wrath of Rath'mael"
           },
           {
             "id": 99156,
@@ -2391,6 +2415,10 @@
             "name": "The Lich's Identity"
           },
           {
+            "id": 477,
+            "name": "Border Crossings"
+          },
+          {
             "id": 91921,
             "name": "Return to Quinn (Again)"
           },
@@ -2463,6 +2491,10 @@
             "name": "Camping 101: Cooking"
           },
           {
+            "id": 478,
+            "name": "Maps and Runes"
+          },
+          {
             "id": 380,
             "name": "Night Web's Hollow"
           },
@@ -2509,6 +2541,10 @@
           {
             "id": 895,
             "name": "WANTED: Baron Longshore"
+          },
+          {
+            "id": 92401,
+            "name": "A Frightened Request"
           },
           {
             "id": 411,
@@ -2729,6 +2765,10 @@
           {
             "id": 368,
             "name": "A New Plague"
+          },
+          {
+            "id": 482,
+            "name": "Dalaran's Intentions"
           },
           {
             "id": 1492,
@@ -3617,6 +3657,41 @@
             "id": 97290,
             "name": "Unending Torment",
             "firstSeen": "2026-11-15T23:02:12.699Z"
+          },
+          {
+            "id": 481,
+            "name": "Dalar's Analysis",
+            "firstSeen": "2026-11-16T00:45:48.386Z"
+          },
+          {
+            "id": 264,
+            "name": "Until Death Do Us Part",
+            "firstSeen": "2026-11-16T00:45:48.386Z"
+          },
+          {
+            "id": 92422,
+            "name": "The Wrath of Rath'mael",
+            "firstSeen": "2026-11-16T00:45:48.386Z"
+          },
+          {
+            "id": 477,
+            "name": "Border Crossings",
+            "firstSeen": "2026-11-16T00:45:48.386Z"
+          },
+          {
+            "id": 478,
+            "name": "Maps and Runes",
+            "firstSeen": "2026-11-16T00:45:48.386Z"
+          },
+          {
+            "id": 92401,
+            "name": "A Frightened Request",
+            "firstSeen": "2026-11-16T00:45:48.386Z"
+          },
+          {
+            "id": 482,
+            "name": "Dalaran's Intentions",
+            "firstSeen": "2026-11-16T00:45:48.386Z"
           }
         ]
       }
@@ -3624,7 +3699,7 @@
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-15T23:11:11.511Z",
+      "lastSeen": "2026-11-16T00:45:48.386Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -3669,7 +3744,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 5.89,
+        "daysTracked": 5.95,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -3700,7 +3775,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T23:11:11.511Z",
+      "lastChecked": "2026-11-16T00:45:48.386Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -3710,7 +3785,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T23:11:11.511Z",
+        "updatedAt": "2026-11-16T00:45:48.386Z",
         "completed": [
           {
             "id": 95314,
@@ -4764,7 +4839,7 @@
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-15T23:11:11.511Z",
+      "lastSeen": "2026-11-16T00:45:48.386Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -4803,8 +4878,8 @@
         "levelsGained": 7,
         "itemLevelGained": 5,
         "honorableKillsGained": 0,
-        "daysTracked": 5.89,
-        "levelsPerDay": 1.19
+        "daysTracked": 5.95,
+        "levelsPerDay": 1.18
       },
       "snapshots": [
         {
@@ -4894,7 +4969,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T23:11:11.511Z",
+      "lastChecked": "2026-11-16T00:45:48.386Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -4914,7 +4989,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T23:11:11.511Z",
+        "updatedAt": "2026-11-16T00:45:48.386Z",
         "completed": [
           {
             "id": 97891,
@@ -6013,7 +6088,7 @@
     {
       "key": "us|ignivomous-defenestrata",
       "firstSeen": "2026-11-10T23:12:20.397Z",
-      "lastSeen": "2026-11-15T23:11:11.511Z",
+      "lastSeen": "2026-11-16T00:45:48.386Z",
       "slot": 4,
       "profile": {
         "name": "Ignivomous Defenestrata",
@@ -6064,8 +6139,8 @@
         "levelsGained": 7,
         "itemLevelGained": 10,
         "honorableKillsGained": 442,
-        "daysTracked": 5,
-        "levelsPerDay": 1.4
+        "daysTracked": 5.06,
+        "levelsPerDay": 1.38
       },
       "snapshots": [
         {
@@ -6163,7 +6238,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T23:11:11.511Z",
+      "lastChecked": "2026-11-16T00:45:48.386Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -6183,7 +6258,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T23:11:11.511Z",
+        "updatedAt": "2026-11-16T00:45:48.386Z",
         "completed": [
           {
             "id": 481,
@@ -7876,7 +7951,7 @@
     {
       "key": "us|ravzar-goldhorn",
       "firstSeen": "2026-11-11T06:28:13.565Z",
-      "lastSeen": "2026-11-15T23:11:11.511Z",
+      "lastSeen": "2026-11-16T00:45:48.386Z",
       "slot": 5,
       "profile": {
         "name": "Ravzar Goldhorn",
@@ -7921,8 +7996,8 @@
         "levelsGained": 5,
         "itemLevelGained": 4,
         "honorableKillsGained": 0,
-        "daysTracked": 4.7,
-        "levelsPerDay": 1.06
+        "daysTracked": 4.76,
+        "levelsPerDay": 1.05
       },
       "snapshots": [
         {
@@ -7994,7 +8069,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T23:11:11.511Z",
+      "lastChecked": "2026-11-16T00:45:48.386Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -8019,7 +8094,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T23:11:11.511Z",
+        "updatedAt": "2026-11-16T00:45:48.386Z",
         "completed": [
           {
             "id": 1498,
@@ -9136,7 +9211,7 @@
     {
       "key": "us|holojack-natesdad",
       "firstSeen": "2026-11-12T22:59:23.163Z",
-      "lastSeen": "2026-11-15T23:11:11.511Z",
+      "lastSeen": "2026-11-16T00:45:48.386Z",
       "slot": 6,
       "profile": {
         "name": "Holojack Natesdad",
@@ -9181,8 +9256,8 @@
         "levelsGained": 7,
         "itemLevelGained": 11,
         "honorableKillsGained": 0,
-        "daysTracked": 3.01,
-        "levelsPerDay": 2.33
+        "daysTracked": 3.07,
+        "levelsPerDay": 2.28
       },
       "snapshots": [
         {
@@ -9302,7 +9377,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-15T23:11:11.511Z",
+      "lastChecked": "2026-11-16T00:45:48.386Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T22:59:23.163Z",
@@ -9337,7 +9412,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-15T23:11:11.511Z",
+        "updatedAt": "2026-11-16T00:45:48.386Z",
         "completed": [
           {
             "id": 94668,
@@ -15183,7 +15258,7 @@
       "watched": true,
       "status": "error",
       "message": "Armory returned HTTP 500. Check the spelling, or the armory may be down.",
-      "lastChecked": "2026-11-15T23:11:11.511Z",
+      "lastChecked": "2026-11-16T00:45:48.386Z",
       "questLog": {
         "error": "HTTP 404"
       }
