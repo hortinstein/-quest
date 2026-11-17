@@ -454,12 +454,6 @@ footer {
   font-weight: 600;
 }
 
-.leveling-character {
-  display: flex;
-  align-items: center;
-  gap: .45rem;
-}
-
 .quest-view-tabs {
   flex-wrap: wrap;
 }
@@ -513,4 +507,17 @@ footer {
 .sleeping-bag-table th .sub {
   display: block;
   color: var(--ink-2);
+}
+
+@media (min-width: 1100px) {
+  .leveling-overview {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    gap: 1.25rem;
+    align-items: start;
+  }
+
+  .leveling-suggestions {
+    min-width: 0;
+  }
 }
