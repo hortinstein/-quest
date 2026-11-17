@@ -71,28 +71,32 @@
 
     <section id="leveling" class="card" role="tabpanel" aria-labelledby="leveling-tab" hidden>
       <h2>Where to quest</h2>
-      <div class="leveling-map">
-        <p id="map-character" class="map-character"></p>
-        <svg id="world-map" viewBox="0 0 1497 855" role="img" aria-labelledby="map-title">
-          <title id="map-title">Recommended locations in Kalimdor and the Eastern Kingdoms</title>
-          <image id="world-art" width="1497" height="855" />
-          <g id="map-markers"></g>
-        </svg>
-        <p id="map-error" class="muted" hidden>The world map could not load. Recommendations are listed below.</p>
-        <div class="map-key"><span>● Questing zones</span><span>◆ Dungeons</span></div>
+      <div class="leveling-overview">
+        <div class="leveling-map">
+          <p id="map-character" class="map-character"></p>
+          <svg id="world-map" viewBox="0 0 1497 855" role="img" aria-labelledby="map-title">
+            <title id="map-title">Recommended locations in Kalimdor and the Eastern Kingdoms</title>
+            <image id="world-art" width="1497" height="855" />
+            <g id="map-markers"></g>
+          </svg>
+          <p id="map-error" class="muted" hidden>The world map could not load. Recommendations are listed below.</p>
+          <div class="map-key"><span>● Questing zones</span><span>◆ Dungeons</span></div>
+        </div>
+        <div class="leveling-suggestions">
+          <p class="muted">Click a character’s name to toggle selection. Select multiple characters to see shared areas.</p>
+          <p id="leveling-empty" class="muted">Loading watched characters…</p>
+          <div class="table-scroll">
+            <table class="leveling-table">
+              <thead><tr><th>Character</th><th class="num">Level</th><th>Questing next</th><th>Dungeons</th></tr></thead>
+              <tbody id="leveling-rows"></tbody>
+            </table>
+          </div>
+          <p class="leveling-sources muted">Mobalytics guides:
+            <a href="https://mobalytics.gg/wow-forever/guides/zone-map-level-ranges">Questing zones</a> ·
+            <a href="https://mobalytics.gg/wow-forever/guides/dungeon-raid-map">World map and dungeon ranges</a>
+          </p>
+        </div>
       </div>
-      <p class="muted">Select a name for that character’s areas, or check multiple characters to see their shared areas and completion status.</p>
-      <p id="leveling-empty" class="muted">Loading watched characters…</p>
-      <div class="table-scroll">
-        <table class="leveling-table">
-          <thead><tr><th>Character</th><th class="num">Level</th><th>Questing next</th><th>Dungeons</th></tr></thead>
-          <tbody id="leveling-rows"></tbody>
-        </table>
-      </div>
-      <p class="leveling-sources muted">Mobalytics guides:
-        <a href="https://mobalytics.gg/wow-forever/guides/zone-map-level-ranges">Questing zones</a> ·
-        <a href="https://mobalytics.gg/wow-forever/guides/dungeon-raid-map">World map and dungeon ranges</a>
-      </p>
       <section class="area-quests" aria-labelledby="area-quest-title">
         <h3 id="area-quest-title">Quest completions by recommended area</h3>
         <label><input id="area-quest-eligible" type="checkbox" checked> Completed or available only</label>

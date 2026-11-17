@@ -537,26 +537,25 @@ function renderLeveling() {
 
   $('leveling-empty').hidden = entries.length > 0;
   $('leveling-empty').textContent = 'No watched characters available.';
-  let selected = entries[0];
-  const checked = new Set(entries.slice(0, 1));
+  const selected = new Set(entries.slice(0, 1));
   const controls = new Map();
-  const setAreaCharacters = setupAreaQuests(entries, state.characters.filter((character) => character.watched), checked);
+  const setAreaCharacters = setupAreaQuests(entries, state.characters.filter((character) => character.watched), selected);
 
   function updateMap() {
-    const active = selected;
-    for (const [entry, { button, checkbox }] of controls) {
-      checkbox.checked = checked.has(entry);
-      button.setAttribute('aria-pressed', String(entry === active));
-      button.closest('tr').classList.toggle('map-active', entry === active);
+    const active = selected.values().next().value;
+    for (const [entry, button] of controls) {
+      const pressed = selected.has(entry);
+      button.setAttribute('aria-pressed', String(pressed));
+      button.closest('tr').classList.toggle('map-active', pressed);
     }
-    $('map-character').textContent = checked.size > 1
+    $('map-character').textContent = selected.size > 1
       ? 'Shared recommended areas'
       : active?.name ?? 'World map';
     const markers = [];
     const labels = [];
     for (const [kind, places] of Object.entries(active?.places ?? {})) {
       for (const place of places) {
-        if (!place.position || [...checked].some((entry) =>
+        if (!place.position || [...selected].some((entry) =>
           !entry.places?.[kind]?.some(({ name }) => name === place.name))) continue;
         const [x, y] = place.position;
         const marker = svg('g', { class: `map-pin ${kind}`, transform: `translate(${x} ${y})` });
@@ -597,24 +596,10 @@ function renderLeveling() {
 
   $('leveling-rows').replaceChildren(...entries.map((entry) => {
     const button = el('button', { type: 'button', className: 'map-character-button', textContent: entry.name });
-    button.setAttribute('aria-controls', 'world-map');
-    const checkbox = el('input', { type: 'checkbox' });
-    controls.set(entry, { button, checkbox });
-    checkbox.setAttribute('aria-label', `Show recommended areas for ${entry.name}`);
-    checkbox.setAttribute('aria-controls', 'area-quest-tables');
-    checkbox.addEventListener('change', () => {
-      if (checkbox.checked) {
-        checked.add(entry);
-        selected = entry;
-      } else {
-        checked.delete(entry);
-        if (selected === entry) selected = entries.find((candidate) => checked.has(candidate));
-      }
-      setAreaCharacters(checked);
-      updateMap();
-    });
+    controls.set(entry, button);
+    button.setAttribute('aria-controls', 'world-map area-quest-tables');
     const row = el('tr', {},
-      el('td', {}, el('div', { className: 'leveling-character' }, checkbox, button), el('span', { className: 'sub', textContent: entry.faction ?? '' })),
+      el('td', {}, button, el('span', { className: 'sub', textContent: entry.faction ?? '' })),
       el('td', { className: 'num', textContent: formatValue(entry.level) }),
       el('td', {}, placeList(entry.places?.zones,
         (p) => p.position ? p.name : `${p.name} (off map)`,
@@ -623,10 +608,8 @@ function renderLeveling() {
         (p) => `${p.name} (${p.low}–${p.high})`, '—')),
     );
     button.addEventListener('click', () => {
-      checked.clear();
-      checked.add(entry);
-      selected = entry;
-      setAreaCharacters(checked);
+      if (!selected.delete(entry)) selected.add(entry);
+      setAreaCharacters(selected);
       updateMap();
     });
     return row;
