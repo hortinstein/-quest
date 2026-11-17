@@ -221,7 +221,7 @@ th, td {
 }
 
 th { color: var(--gold-soft); font-size: 12px; font-weight: 500; }
-tbody tr:hover { background: var(--wash); }
+table:not(.leveling-table) tbody tr:hover { background: var(--wash); }
 tbody tr:last-child td { border-bottom: 0; }
 .num { text-align: right; font-variant-numeric: tabular-nums; }
 td a { color: inherit; font-weight: 600; text-decoration-thickness: 1px; text-underline-offset: 2px; }
@@ -308,6 +308,7 @@ footer {
 .map-key { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 6px; }
 .map-key span:first-child { color: var(--zone-pin); }
 .map-key span:last-child { color: var(--dungeon-pin); }
+.leveling-table tbody tr { cursor: pointer; }
 .leveling-table td { white-space: normal; vertical-align: top; }
 .leveling-table ul { margin: 0; padding: 0; list-style: none; }
 .leveling-table .map-active { background: var(--wash); }

@@ -607,7 +607,7 @@ function renderLeveling() {
       el('td', {}, placeList(entry.places?.dungeons,
         (p) => `${p.name} (${p.low}–${p.high})`, '—')),
     );
-    button.addEventListener('click', () => {
+    row.addEventListener('click', () => {
       if (!selected.delete(entry)) selected.add(entry);
       setAreaCharacters(selected);
       updateMap();
