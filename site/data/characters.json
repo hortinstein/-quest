@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-17T04:08:05.997Z",
+  "generatedAt": "2026-11-17T06:29:26.765Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-17T04:08:05.997Z",
+      "lastSeen": "2026-11-17T06:29:26.765Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -55,8 +55,8 @@
         "levelsGained": 11,
         "itemLevelGained": 12,
         "honorableKillsGained": 3,
-        "daysTracked": 7.13,
-        "levelsPerDay": 1.54
+        "daysTracked": 7.23,
+        "levelsPerDay": 1.52
       },
       "snapshots": [
         {
@@ -230,7 +230,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-17T04:08:05.997Z",
+      "lastChecked": "2026-11-17T06:29:26.765Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -265,7 +265,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-17T04:08:05.997Z",
+        "updatedAt": "2026-11-17T06:29:26.765Z",
         "completed": [
           {
             "id": 821,
@@ -2030,7 +2030,7 @@
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-17T04:08:05.997Z",
+      "lastSeen": "2026-11-17T06:29:26.765Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -2075,8 +2075,8 @@
         "levelsGained": 10,
         "itemLevelGained": 14,
         "honorableKillsGained": 0,
-        "daysTracked": 7.09,
-        "levelsPerDay": 1.41
+        "daysTracked": 7.19,
+        "levelsPerDay": 1.39
       },
       "snapshots": [
         {
@@ -2219,7 +2219,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-17T04:08:05.997Z",
+      "lastChecked": "2026-11-17T06:29:26.765Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -2249,7 +2249,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-17T04:08:05.997Z",
+        "updatedAt": "2026-11-17T06:29:26.765Z",
         "completed": [
           {
             "id": 821,
@@ -3771,7 +3771,7 @@
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-17T04:08:05.997Z",
+      "lastSeen": "2026-11-17T06:29:26.765Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -3816,7 +3816,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 7.09,
+        "daysTracked": 7.19,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -3847,7 +3847,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-17T04:08:05.997Z",
+      "lastChecked": "2026-11-17T06:29:26.765Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -3857,7 +3857,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-17T04:08:05.997Z",
+        "updatedAt": "2026-11-17T06:29:26.765Z",
         "completed": [
           {
             "id": 95314,
@@ -4911,7 +4911,7 @@
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-17T04:08:05.997Z",
+      "lastSeen": "2026-11-17T06:29:26.765Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -4950,8 +4950,8 @@
         "levelsGained": 7,
         "itemLevelGained": 5,
         "honorableKillsGained": 0,
-        "daysTracked": 7.09,
-        "levelsPerDay": 0.99
+        "daysTracked": 7.19,
+        "levelsPerDay": 0.97
       },
       "snapshots": [
         {
@@ -5041,7 +5041,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-17T04:08:05.997Z",
+      "lastChecked": "2026-11-17T06:29:26.765Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -5061,7 +5061,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-17T04:08:05.997Z",
+        "updatedAt": "2026-11-17T06:29:26.765Z",
         "completed": [
           {
             "id": 97891,
@@ -6160,7 +6160,7 @@
     {
       "key": "us|ignivomous-defenestrata",
       "firstSeen": "2026-11-10T23:12:20.397Z",
-      "lastSeen": "2026-11-17T04:08:05.997Z",
+      "lastSeen": "2026-11-17T06:29:26.765Z",
       "slot": 4,
       "profile": {
         "name": "Ignivomous Defenestrata",
@@ -6211,8 +6211,8 @@
         "levelsGained": 8,
         "itemLevelGained": 10,
         "honorableKillsGained": 442,
-        "daysTracked": 6.21,
-        "levelsPerDay": 1.29
+        "daysTracked": 6.3,
+        "levelsPerDay": 1.27
       },
       "snapshots": [
         {
@@ -6336,7 +6336,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-17T04:08:05.997Z",
+      "lastChecked": "2026-11-17T06:29:26.765Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -6361,7 +6361,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-17T04:08:05.997Z",
+        "updatedAt": "2026-11-17T06:29:26.765Z",
         "completed": [
           {
             "id": 481,
@@ -8090,7 +8090,7 @@
     {
       "key": "us|ravzar-goldhorn",
       "firstSeen": "2026-11-11T06:28:13.565Z",
-      "lastSeen": "2026-11-17T04:08:05.997Z",
+      "lastSeen": "2026-11-17T06:29:26.765Z",
       "slot": 5,
       "profile": {
         "name": "Ravzar Goldhorn",
@@ -8135,8 +8135,8 @@
         "levelsGained": 5,
         "itemLevelGained": 4,
         "honorableKillsGained": 0,
-        "daysTracked": 5.9,
-        "levelsPerDay": 0.85
+        "daysTracked": 6,
+        "levelsPerDay": 0.83
       },
       "snapshots": [
         {
@@ -8208,7 +8208,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-17T04:08:05.997Z",
+      "lastChecked": "2026-11-17T06:29:26.765Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -8233,7 +8233,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-17T04:08:05.997Z",
+        "updatedAt": "2026-11-17T06:29:26.765Z",
         "completed": [
           {
             "id": 1498,
@@ -9350,7 +9350,7 @@
     {
       "key": "us|holojack-natesdad",
       "firstSeen": "2026-11-12T22:59:23.163Z",
-      "lastSeen": "2026-11-17T04:08:05.997Z",
+      "lastSeen": "2026-11-17T06:29:26.765Z",
       "slot": 6,
       "profile": {
         "name": "Holojack Natesdad",
@@ -9358,11 +9358,11 @@
         "race": "Undead",
         "className": "Paladin",
         "ruleset": "Normal",
-        "lastUpdated": "2026-11-16T04:06:39Z",
+        "lastUpdated": "2026-11-17T04:17:03Z",
         "professions": [
           {
             "name": "Mining",
-            "skill": 221,
+            "skill": 224,
             "max": 225
           },
           {
@@ -9387,7 +9387,7 @@
       },
       "stats": {
         "skillsGained": {
-          "Mining": 22,
+          "Mining": 25,
           "Blacksmithing": 0,
           "Cooking": 0,
           "First Aid": 0
@@ -9395,8 +9395,8 @@
         "levelsGained": 8,
         "itemLevelGained": 11,
         "honorableKillsGained": 0,
-        "daysTracked": 4.21,
-        "levelsPerDay": 1.9
+        "daysTracked": 4.31,
+        "levelsPerDay": 1.86
       },
       "snapshots": [
         {
@@ -9518,6 +9518,18 @@
             "Cooking": 15,
             "First Aid": 150
           }
+        },
+        {
+          "t": "2026-11-17T06:29:26.765Z",
+          "level": 54,
+          "itemLevel": 46,
+          "honorableKills": 0,
+          "skills": {
+            "Mining": 224,
+            "Blacksmithing": 156,
+            "Cooking": 15,
+            "First Aid": 150
+          }
         }
       ],
       "person": "Howard",
@@ -9528,7 +9540,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-17T04:08:05.997Z",
+      "lastChecked": "2026-11-17T06:29:26.765Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T22:59:23.163Z",
@@ -9568,7 +9580,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-17T04:08:05.997Z",
+        "updatedAt": "2026-11-17T06:29:26.765Z",
         "completed": [
           {
             "id": 94668,
@@ -9623,6 +9635,10 @@
             "name": "Pay to Play"
           },
           {
+            "id": 87492,
+            "name": "Uncanny Crystal"
+          },
+          {
             "id": 513,
             "name": "Elixir of Agony"
           },
@@ -9633,6 +9649,10 @@
           {
             "id": 98389,
             "name": "A Light in the Darkness"
+          },
+          {
+            "id": 3882,
+            "name": "Roll the Bones"
           },
           {
             "id": 96652,
@@ -10223,6 +10243,10 @@
             "name": "Forging the Shaft"
           },
           {
+            "id": 4289,
+            "name": "The Apes of Un'Goro"
+          },
+          {
             "id": 95062,
             "name": "Frazzlespark's Crate"
           },
@@ -10755,6 +10779,10 @@
             "name": "Raptor Mastery"
           },
           {
+            "id": 4148,
+            "name": "Bloodpetal Zapper"
+          },
+          {
             "id": 95384,
             "name": "Partial Mystical Notes"
           },
@@ -10793,6 +10821,10 @@
           {
             "id": 871,
             "name": "Disrupt the Attacks"
+          },
+          {
+            "id": 4501,
+            "name": "Beware of Pterrordax"
           },
           {
             "id": 96984,
@@ -10863,12 +10895,20 @@
             "name": "The Stagnant Oasis"
           },
           {
+            "id": 4284,
+            "name": "Crystals of Power"
+          },
+          {
             "id": 372,
             "name": "At War With The Scarlet Crusade"
           },
           {
             "id": 847,
             "name": "Guile of the Raptor"
+          },
+          {
+            "id": 4504,
+            "name": "Super Sticky"
           },
           {
             "id": 97289,
@@ -10949,6 +10989,10 @@
           {
             "id": 524,
             "name": "Elixir of Agony"
+          },
+          {
+            "id": 3844,
+            "name": "It's a Secret to Everybody"
           },
           {
             "id": 94427,
@@ -11107,6 +11151,10 @@
             "name": "Southsea Freebooters"
           },
           {
+            "id": 3883,
+            "name": "Alien Ecology"
+          },
+          {
             "id": 79007,
             "name": "... and that note you found"
           },
@@ -11233,6 +11281,10 @@
           {
             "id": 600,
             "name": "Venture Company Mining"
+          },
+          {
+            "id": 87494,
+            "name": "Microcrystal Contamination"
           },
           {
             "id": 5381,
@@ -11555,6 +11607,10 @@
             "name": "Squire Maltrake"
           },
           {
+            "id": 3881,
+            "name": "Expedition Salvation"
+          },
+          {
             "id": 499,
             "name": "Elixir of Suffering"
           },
@@ -11703,12 +11759,12 @@
             "name": "The Purple Ones"
           },
           {
-            "id": 96063,
-            "name": "Gaseous Gold"
-          },
-          {
             "id": 7723,
             "name": "Curse These Fat Fingers"
+          },
+          {
+            "id": 4503,
+            "name": "Shizzle's Flyer"
           },
           {
             "id": 91317,
@@ -11741,6 +11797,10 @@
           {
             "id": 194,
             "name": "Raptor Mastery"
+          },
+          {
+            "id": 3845,
+            "name": "It's a Secret to Everybody"
           },
           {
             "id": 1111,
@@ -11813,6 +11873,10 @@
           {
             "id": 375,
             "name": "The Chill of Death"
+          },
+          {
+            "id": 4243,
+            "name": "Chasing A-Me 01"
           },
           {
             "id": 94680,
@@ -11889,6 +11953,10 @@
           {
             "id": 648,
             "name": "Rescue OOX-17/TN!"
+          },
+          {
+            "id": 4290,
+            "name": "The Fare of Lar'korwi"
           },
           {
             "id": 97253,
@@ -12181,6 +12249,10 @@
           {
             "id": 96103,
             "name": "A Feast for Buzzards"
+          },
+          {
+            "id": 96063,
+            "name": "Gaseous Gold"
           }
         ],
         "history": [
@@ -15448,6 +15520,81 @@
             "id": 86577,
             "name": "A Sampling of Putrescence",
             "firstSeen": "2026-11-16T06:41:44.518Z"
+          },
+          {
+            "id": 87492,
+            "name": "Uncanny Crystal",
+            "firstSeen": "2026-11-17T06:29:26.765Z"
+          },
+          {
+            "id": 3882,
+            "name": "Roll the Bones",
+            "firstSeen": "2026-11-17T06:29:26.765Z"
+          },
+          {
+            "id": 4289,
+            "name": "The Apes of Un'Goro",
+            "firstSeen": "2026-11-17T06:29:26.765Z"
+          },
+          {
+            "id": 4148,
+            "name": "Bloodpetal Zapper",
+            "firstSeen": "2026-11-17T06:29:26.765Z"
+          },
+          {
+            "id": 4501,
+            "name": "Beware of Pterrordax",
+            "firstSeen": "2026-11-17T06:29:26.765Z"
+          },
+          {
+            "id": 4284,
+            "name": "Crystals of Power",
+            "firstSeen": "2026-11-17T06:29:26.765Z"
+          },
+          {
+            "id": 4504,
+            "name": "Super Sticky",
+            "firstSeen": "2026-11-17T06:29:26.765Z"
+          },
+          {
+            "id": 3844,
+            "name": "It's a Secret to Everybody",
+            "firstSeen": "2026-11-17T06:29:26.765Z"
+          },
+          {
+            "id": 3883,
+            "name": "Alien Ecology",
+            "firstSeen": "2026-11-17T06:29:26.765Z"
+          },
+          {
+            "id": 87494,
+            "name": "Microcrystal Contamination",
+            "firstSeen": "2026-11-17T06:29:26.765Z"
+          },
+          {
+            "id": 3881,
+            "name": "Expedition Salvation",
+            "firstSeen": "2026-11-17T06:29:26.765Z"
+          },
+          {
+            "id": 4503,
+            "name": "Shizzle's Flyer",
+            "firstSeen": "2026-11-17T06:29:26.765Z"
+          },
+          {
+            "id": 3845,
+            "name": "It's a Secret to Everybody",
+            "firstSeen": "2026-11-17T06:29:26.765Z"
+          },
+          {
+            "id": 4243,
+            "name": "Chasing A-Me 01",
+            "firstSeen": "2026-11-17T06:29:26.765Z"
+          },
+          {
+            "id": 4290,
+            "name": "The Fare of Lar'korwi",
+            "firstSeen": "2026-11-17T06:29:26.765Z"
           }
         ]
       }
@@ -15455,7 +15602,7 @@
     {
       "key": "us|vivamus-defenestrata",
       "firstSeen": "2026-11-16T06:41:44.518Z",
-      "lastSeen": "2026-11-17T04:08:05.997Z",
+      "lastSeen": "2026-11-17T06:29:26.765Z",
       "slot": 7,
       "profile": {
         "name": "Vivamus Defenestrata",
@@ -15500,7 +15647,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 0.89,
+        "daysTracked": 0.99,
         "levelsPerDay": null
       },
       "snapshots": [
@@ -15525,9 +15672,9 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-17T04:08:05.997Z",
+      "lastChecked": "2026-11-17T06:29:26.765Z",
       "questLog": {
-        "updatedAt": "2026-11-17T04:08:05.997Z",
+        "updatedAt": "2026-11-17T06:29:26.765Z",
         "completed": [
           {
             "id": 382,
