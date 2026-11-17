@@ -323,17 +323,6 @@ footer {
 }
 .leveling-sources { margin-top: 12px; }
 
-@media (min-width: 850px) {
-  #leveling {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    column-gap: 20px;
-    align-items: start;
-  }
-  #leveling[hidden] { display: none; }
-  #leveling h2, .leveling-sources { grid-column: 1 / -1; }
-  .leveling-map { position: sticky; top: 12px; margin: 0; }
-}
 
 .map-label {
   font: 700 26px system-ui, sans-serif;
@@ -512,12 +501,33 @@ footer {
 @media (min-width: 1100px) {
   .leveling-overview {
     display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
     gap: 1.25rem;
     align-items: start;
   }
 
+  .leveling-map {
+    width: 100%;
+    margin: 0;
+  }
+
   .leveling-suggestions {
     min-width: 0;
+  }
+
+  .leveling-suggestions > p:first-child {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1100px) {
+  .leveling-suggestions .table-scroll {
+    max-height: 355px;
+  }
+
+  .leveling-table thead {
+    position: sticky;
+    top: 0;
+    background: var(--surface);
   }
 }
