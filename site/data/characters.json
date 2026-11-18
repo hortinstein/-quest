@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-18T12:25:43.386Z",
+  "generatedAt": "2026-11-18T18:21:18.217Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-18T12:25:43.386Z",
+      "lastSeen": "2026-11-18T18:21:18.217Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -55,8 +55,8 @@
         "levelsGained": 11,
         "itemLevelGained": 12,
         "honorableKillsGained": 3,
-        "daysTracked": 8.48,
-        "levelsPerDay": 1.3
+        "daysTracked": 8.72,
+        "levelsPerDay": 1.26
       },
       "snapshots": [
         {
@@ -230,7 +230,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-18T12:25:43.386Z",
+      "lastChecked": "2026-11-18T18:21:18.217Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -265,7 +265,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-18T12:25:43.386Z",
+        "updatedAt": "2026-11-18T18:21:18.217Z",
         "completed": [
           {
             "id": 821,
@@ -2120,7 +2120,7 @@
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-18T12:25:43.386Z",
+      "lastSeen": "2026-11-18T18:21:18.217Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -2165,8 +2165,8 @@
         "levelsGained": 10,
         "itemLevelGained": 14,
         "honorableKillsGained": 0,
-        "daysTracked": 8.44,
-        "levelsPerDay": 1.19
+        "daysTracked": 8.69,
+        "levelsPerDay": 1.15
       },
       "snapshots": [
         {
@@ -2309,7 +2309,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-18T12:25:43.386Z",
+      "lastChecked": "2026-11-18T18:21:18.217Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -2339,7 +2339,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-18T12:25:43.386Z",
+        "updatedAt": "2026-11-18T18:21:18.217Z",
         "completed": [
           {
             "id": 821,
@@ -3861,7 +3861,7 @@
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-18T12:25:43.386Z",
+      "lastSeen": "2026-11-18T18:21:18.217Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -3906,7 +3906,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 8.44,
+        "daysTracked": 8.69,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -3937,7 +3937,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-18T12:25:43.386Z",
+      "lastChecked": "2026-11-18T18:21:18.217Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -3947,7 +3947,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-18T12:25:43.386Z",
+        "updatedAt": "2026-11-18T18:21:18.217Z",
         "completed": [
           {
             "id": 95314,
@@ -5001,7 +5001,7 @@
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-18T12:25:43.386Z",
+      "lastSeen": "2026-11-18T18:21:18.217Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -5040,8 +5040,8 @@
         "levelsGained": 8,
         "itemLevelGained": 7,
         "honorableKillsGained": 0,
-        "daysTracked": 8.44,
-        "levelsPerDay": 0.95
+        "daysTracked": 8.69,
+        "levelsPerDay": 0.92
       },
       "snapshots": [
         {
@@ -5142,7 +5142,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-18T12:25:43.386Z",
+      "lastChecked": "2026-11-18T18:21:18.217Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -5167,7 +5167,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-18T12:25:43.386Z",
+        "updatedAt": "2026-11-18T18:21:18.217Z",
         "completed": [
           {
             "id": 97891,
@@ -6365,7 +6365,7 @@
     {
       "key": "us|ignivomous-defenestrata",
       "firstSeen": "2026-11-10T23:12:20.397Z",
-      "lastSeen": "2026-11-18T12:25:43.386Z",
+      "lastSeen": "2026-11-18T18:21:18.217Z",
       "slot": 4,
       "profile": {
         "name": "Ignivomous Defenestrata",
@@ -6416,8 +6416,8 @@
         "levelsGained": 8,
         "itemLevelGained": 10,
         "honorableKillsGained": 442,
-        "daysTracked": 7.55,
-        "levelsPerDay": 1.06
+        "daysTracked": 7.8,
+        "levelsPerDay": 1.03
       },
       "snapshots": [
         {
@@ -6554,7 +6554,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-18T12:25:43.386Z",
+      "lastChecked": "2026-11-18T18:21:18.217Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -6579,7 +6579,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-18T12:25:43.386Z",
+        "updatedAt": "2026-11-18T18:21:18.217Z",
         "completed": [
           {
             "id": 481,
@@ -8362,7 +8362,7 @@
     {
       "key": "us|ravzar-goldhorn",
       "firstSeen": "2026-11-11T06:28:13.565Z",
-      "lastSeen": "2026-11-18T12:25:43.386Z",
+      "lastSeen": "2026-11-18T18:21:18.217Z",
       "slot": 5,
       "profile": {
         "name": "Ravzar Goldhorn",
@@ -8407,8 +8407,8 @@
         "levelsGained": 5,
         "itemLevelGained": 4,
         "honorableKillsGained": 0,
-        "daysTracked": 7.25,
-        "levelsPerDay": 0.69
+        "daysTracked": 7.5,
+        "levelsPerDay": 0.67
       },
       "snapshots": [
         {
@@ -8480,7 +8480,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-18T12:25:43.386Z",
+      "lastChecked": "2026-11-18T18:21:18.217Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -8505,7 +8505,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-18T12:25:43.386Z",
+        "updatedAt": "2026-11-18T18:21:18.217Z",
         "completed": [
           {
             "id": 1498,
@@ -9622,7 +9622,7 @@
     {
       "key": "us|holojack-natesdad",
       "firstSeen": "2026-11-12T22:59:23.163Z",
-      "lastSeen": "2026-11-18T12:25:43.386Z",
+      "lastSeen": "2026-11-18T18:21:18.217Z",
       "slot": 6,
       "profile": {
         "name": "Holojack Natesdad",
@@ -9667,8 +9667,8 @@
         "levelsGained": 8,
         "itemLevelGained": 11,
         "honorableKillsGained": 0,
-        "daysTracked": 5.56,
-        "levelsPerDay": 1.44
+        "daysTracked": 5.81,
+        "levelsPerDay": 1.38
       },
       "snapshots": [
         {
@@ -9812,7 +9812,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-18T12:25:43.386Z",
+      "lastChecked": "2026-11-18T18:21:18.217Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T22:59:23.163Z",
@@ -9852,7 +9852,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-18T12:25:43.386Z",
+        "updatedAt": "2026-11-18T18:21:18.217Z",
         "completed": [
           {
             "id": 94668,
@@ -15874,7 +15874,7 @@
     {
       "key": "us|vivamus-defenestrata",
       "firstSeen": "2026-11-16T06:41:44.518Z",
-      "lastSeen": "2026-11-18T12:25:43.386Z",
+      "lastSeen": "2026-11-18T18:21:18.217Z",
       "slot": 7,
       "profile": {
         "name": "Vivamus Defenestrata",
@@ -15919,7 +15919,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 2.24,
+        "daysTracked": 2.49,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -15956,9 +15956,9 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-18T12:25:43.386Z",
+      "lastChecked": "2026-11-18T18:21:18.217Z",
       "questLog": {
-        "updatedAt": "2026-11-18T12:25:43.386Z",
+        "updatedAt": "2026-11-18T18:21:18.217Z",
         "completed": [
           {
             "id": 382,
