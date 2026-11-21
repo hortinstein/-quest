@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-21T04:18:20.823Z",
+  "generatedAt": "2026-11-21T06:26:58.516Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-21T04:18:20.823Z",
+      "lastSeen": "2026-11-21T06:26:58.516Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -55,8 +55,8 @@
         "levelsGained": 12,
         "itemLevelGained": 16,
         "honorableKillsGained": 4,
-        "daysTracked": 11.14,
-        "levelsPerDay": 1.08
+        "daysTracked": 11.23,
+        "levelsPerDay": 1.07
       },
       "snapshots": [
         {
@@ -269,7 +269,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-21T04:18:20.823Z",
+      "lastChecked": "2026-11-21T06:26:58.516Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -309,7 +309,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-21T04:18:20.823Z",
+        "updatedAt": "2026-11-21T06:26:58.516Z",
         "completed": [
           {
             "id": 821,
@@ -2344,7 +2344,7 @@
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-21T04:18:20.823Z",
+      "lastSeen": "2026-11-21T06:26:58.516Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -2389,8 +2389,8 @@
         "levelsGained": 12,
         "itemLevelGained": 15,
         "honorableKillsGained": 0,
-        "daysTracked": 11.1,
-        "levelsPerDay": 1.08
+        "daysTracked": 11.19,
+        "levelsPerDay": 1.07
       },
       "snapshots": [
         {
@@ -2557,7 +2557,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-21T04:18:20.823Z",
+      "lastChecked": "2026-11-21T06:26:58.516Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -2597,7 +2597,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-21T04:18:20.823Z",
+        "updatedAt": "2026-11-21T06:26:58.516Z",
         "completed": [
           {
             "id": 821,
@@ -4317,7 +4317,7 @@
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-21T04:18:20.823Z",
+      "lastSeen": "2026-11-21T06:26:58.516Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -4362,7 +4362,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 11.1,
+        "daysTracked": 11.19,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -4393,7 +4393,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-21T04:18:20.823Z",
+      "lastChecked": "2026-11-21T06:26:58.516Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -4403,7 +4403,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-21T04:18:20.823Z",
+        "updatedAt": "2026-11-21T06:26:58.516Z",
         "completed": [
           {
             "id": 95314,
@@ -5457,7 +5457,7 @@
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-21T04:18:20.823Z",
+      "lastSeen": "2026-11-21T06:26:58.516Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -5496,8 +5496,8 @@
         "levelsGained": 10,
         "itemLevelGained": 10,
         "honorableKillsGained": 1,
-        "daysTracked": 11.1,
-        "levelsPerDay": 0.9
+        "daysTracked": 11.19,
+        "levelsPerDay": 0.89
       },
       "snapshots": [
         {
@@ -5631,7 +5631,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-21T04:18:20.823Z",
+      "lastChecked": "2026-11-21T06:26:58.516Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -5666,7 +5666,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-21T04:18:20.823Z",
+        "updatedAt": "2026-11-21T06:26:58.516Z",
         "completed": [
           {
             "id": 97891,
@@ -6972,7 +6972,7 @@
     {
       "key": "us|ignivomous-defenestrata",
       "firstSeen": "2026-11-10T23:12:20.397Z",
-      "lastSeen": "2026-11-21T04:18:20.823Z",
+      "lastSeen": "2026-11-21T06:26:58.516Z",
       "slot": 4,
       "profile": {
         "name": "Ignivomous Defenestrata",
@@ -7023,8 +7023,8 @@
         "levelsGained": 11,
         "itemLevelGained": 14,
         "honorableKillsGained": 442,
-        "daysTracked": 10.21,
-        "levelsPerDay": 1.08
+        "daysTracked": 10.3,
+        "levelsPerDay": 1.07
       },
       "snapshots": [
         {
@@ -7200,7 +7200,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-21T04:18:20.823Z",
+      "lastChecked": "2026-11-21T06:26:58.516Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -7240,7 +7240,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-21T04:18:20.823Z",
+        "updatedAt": "2026-11-21T06:26:58.516Z",
         "completed": [
           {
             "id": 481,
@@ -9239,7 +9239,7 @@
     {
       "key": "us|ravzar-goldhorn",
       "firstSeen": "2026-11-11T06:28:13.565Z",
-      "lastSeen": "2026-11-21T04:18:20.823Z",
+      "lastSeen": "2026-11-21T06:26:58.516Z",
       "slot": 5,
       "profile": {
         "name": "Ravzar Goldhorn",
@@ -9247,16 +9247,16 @@
         "race": "Tauren",
         "className": "Warrior",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-20T18:07:06Z",
+        "lastUpdated": "2026-11-21T05:59:27Z",
         "professions": [
           {
             "name": "Mining",
-            "skill": 88,
+            "skill": 98,
             "max": 150
           },
           {
             "name": "Blacksmithing",
-            "skill": 73,
+            "skill": 89,
             "max": 150
           },
           {
@@ -9266,26 +9266,26 @@
           },
           {
             "name": "First Aid",
-            "skill": 83,
+            "skill": 104,
             "max": 150
           }
         ],
-        "level": 17,
-        "itemLevel": 7,
-        "honorableKills": 0
+        "level": 18,
+        "itemLevel": 10,
+        "honorableKills": 37
       },
       "stats": {
         "skillsGained": {
-          "Mining": 32,
-          "Blacksmithing": 36,
+          "Mining": 42,
+          "Blacksmithing": 52,
           "Cooking": 29,
-          "First Aid": 29
+          "First Aid": 50
         },
-        "levelsGained": 6,
-        "itemLevelGained": 4,
-        "honorableKillsGained": 0,
-        "daysTracked": 9.91,
-        "levelsPerDay": 0.61
+        "levelsGained": 7,
+        "itemLevelGained": 7,
+        "honorableKillsGained": 37,
+        "daysTracked": 10,
+        "levelsPerDay": 0.7
       },
       "snapshots": [
         {
@@ -9359,6 +9359,18 @@
             "Cooking": 30,
             "First Aid": 83
           }
+        },
+        {
+          "t": "2026-11-21T06:26:58.516Z",
+          "level": 18,
+          "itemLevel": 10,
+          "honorableKills": 37,
+          "skills": {
+            "Mining": 98,
+            "Blacksmithing": 89,
+            "Cooking": 30,
+            "First Aid": 104
+          }
         }
       ],
       "person": "Whalen",
@@ -9369,7 +9381,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-21T04:18:20.823Z",
+      "lastChecked": "2026-11-21T06:26:58.516Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -9395,11 +9407,16 @@
           "t": "2026-11-20T18:23:30.107Z",
           "level": 17,
           "path": "screenshots/ravzar-goldhorn_us/20261120_ravzar-goldhorn_LEVEL17.png"
+        },
+        {
+          "t": "2026-11-21T06:26:58.516Z",
+          "level": 18,
+          "path": "screenshots/ravzar-goldhorn_us/20261121_ravzar-goldhorn_LEVEL18.png"
         }
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-21T04:18:20.823Z",
+        "updatedAt": "2026-11-21T06:26:58.516Z",
         "completed": [
           {
             "id": 1498,
@@ -9462,6 +9479,10 @@
             "name": "Apothecary Zamah"
           },
           {
+            "id": 896,
+            "name": "Miner's Fortune"
+          },
+          {
             "id": 96646,
             "name": "Camping 101: Cooking"
           },
@@ -9522,6 +9543,10 @@
             "name": "The Great Outdoors"
           },
           {
+            "id": 95495,
+            "name": "The Hermit Tanner"
+          },
+          {
             "id": 1656,
             "name": "A Task Unfinished"
           },
@@ -9560,6 +9585,10 @@
           {
             "id": 894,
             "name": "Samophlange"
+          },
+          {
+            "id": 1490,
+            "name": "Nara Wildmane"
           },
           {
             "id": 96046,
@@ -9606,6 +9635,10 @@
             "name": "The Adventurer"
           },
           {
+            "id": 875,
+            "name": "Harpy Lieutenants"
+          },
+          {
             "id": 99101,
             "name": "Our Ancient Enemy"
           },
@@ -9624,6 +9657,10 @@
           {
             "id": 3922,
             "name": "Nugget Slugs"
+          },
+          {
+            "id": 8426,
+            "name": "Battle of Warsong Gulch"
           },
           {
             "id": 903,
@@ -9666,6 +9703,10 @@
             "name": "Favorite Food"
           },
           {
+            "id": 863,
+            "name": "The Escape"
+          },
+          {
             "id": 97965,
             "name": "Camping 101: First Aid"
           },
@@ -9680,6 +9721,10 @@
           {
             "id": 755,
             "name": "Rites of the Earthmother"
+          },
+          {
+            "id": 8429,
+            "name": "Battle of Warsong Gulch"
           },
           {
             "id": 6364,
@@ -9704,6 +9749,10 @@
           {
             "id": 887,
             "name": "Southsea Freebooters"
+          },
+          {
+            "id": 95494,
+            "name": "Bruised Pride and Lion Hides"
           },
           {
             "id": 771,
@@ -9770,8 +9819,20 @@
             "name": "Simple Note"
           },
           {
+            "id": 95507,
+            "name": "Vrang's Game"
+          },
+          {
             "id": 890,
             "name": "The Missing Shipment"
+          },
+          {
+            "id": 95508,
+            "name": "Unwelcome Guests"
+          },
+          {
+            "id": 8428,
+            "name": "Battle of Warsong Gulch"
           },
           {
             "id": 869,
@@ -9810,6 +9871,10 @@
             "name": "The Great Outdoors"
           },
           {
+            "id": 3923,
+            "name": "Rilli Greasygob"
+          },
+          {
             "id": 96629,
             "name": "Camping 101: Cooking"
           },
@@ -9834,6 +9899,10 @@
             "name": "Sparring Match"
           },
           {
+            "id": 1489,
+            "name": "Hamuul Runetotem"
+          },
+          {
             "id": 1492,
             "name": "Wharfmaster Dizzywig"
           },
@@ -9850,8 +9919,20 @@
             "name": "Camping 101: Cooking"
           },
           {
+            "id": 8430,
+            "name": "Battle of Warsong Gulch"
+          },
+          {
+            "id": 8427,
+            "name": "Battle of Warsong Gulch"
+          },
+          {
             "id": 97928,
             "name": "Camping 101: Blacksmithing"
+          },
+          {
+            "id": 95621,
+            "name": "Trouble in the Valley"
           },
           {
             "id": 97907,
@@ -9882,6 +9963,10 @@
             "name": "Rite of Wisdom"
           },
           {
+            "id": 865,
+            "name": "Raptor Horns"
+          },
+          {
             "id": 860,
             "name": "Sergra Darkthorn"
           },
@@ -9896,6 +9981,10 @@
           {
             "id": 752,
             "name": "A Humble Task"
+          },
+          {
+            "id": 8368,
+            "name": "Battle of Warsong Gulch"
           },
           {
             "id": 97939,
@@ -10536,6 +10625,96 @@
             "id": 3922,
             "name": "Nugget Slugs",
             "firstSeen": "2026-11-20T18:23:30.107Z"
+          },
+          {
+            "id": 896,
+            "name": "Miner's Fortune",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 95495,
+            "name": "The Hermit Tanner",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 1490,
+            "name": "Nara Wildmane",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 875,
+            "name": "Harpy Lieutenants",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 8426,
+            "name": "Battle of Warsong Gulch",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 863,
+            "name": "The Escape",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 8429,
+            "name": "Battle of Warsong Gulch",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 95494,
+            "name": "Bruised Pride and Lion Hides",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 95507,
+            "name": "Vrang's Game",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 95508,
+            "name": "Unwelcome Guests",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 8428,
+            "name": "Battle of Warsong Gulch",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 3923,
+            "name": "Rilli Greasygob",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 1489,
+            "name": "Hamuul Runetotem",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 8430,
+            "name": "Battle of Warsong Gulch",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 8427,
+            "name": "Battle of Warsong Gulch",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 95621,
+            "name": "Trouble in the Valley",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 865,
+            "name": "Raptor Horns",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 8368,
+            "name": "Battle of Warsong Gulch",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
           }
         ]
       }
@@ -10543,7 +10722,7 @@
     {
       "key": "us|holojack-natesdad",
       "firstSeen": "2026-11-12T22:59:23.163Z",
-      "lastSeen": "2026-11-21T04:18:20.823Z",
+      "lastSeen": "2026-11-21T06:26:58.516Z",
       "slot": 6,
       "profile": {
         "name": "Holojack Natesdad",
@@ -10551,7 +10730,7 @@
         "race": "Undead",
         "className": "Paladin",
         "ruleset": "Normal",
-        "lastUpdated": "2026-11-20T23:18:08Z",
+        "lastUpdated": "2026-11-21T04:56:39Z",
         "professions": [
           {
             "name": "Mining",
@@ -10574,7 +10753,7 @@
             "max": 150
           }
         ],
-        "level": 56,
+        "level": 57,
         "itemLevel": 46,
         "honorableKills": 0
       },
@@ -10585,11 +10764,11 @@
           "Cooking": 0,
           "First Aid": 0
         },
-        "levelsGained": 10,
+        "levelsGained": 11,
         "itemLevelGained": 11,
         "honorableKillsGained": 0,
-        "daysTracked": 8.22,
-        "levelsPerDay": 1.22
+        "daysTracked": 8.31,
+        "levelsPerDay": 1.32
       },
       "snapshots": [
         {
@@ -10759,6 +10938,18 @@
             "Cooking": 15,
             "First Aid": 150
           }
+        },
+        {
+          "t": "2026-11-21T06:26:58.516Z",
+          "level": 57,
+          "itemLevel": 46,
+          "honorableKills": 0,
+          "skills": {
+            "Mining": 225,
+            "Blacksmithing": 156,
+            "Cooking": 15,
+            "First Aid": 150
+          }
         }
       ],
       "person": "Howard",
@@ -10769,7 +10960,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-21T04:18:20.823Z",
+      "lastChecked": "2026-11-21T06:26:58.516Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T22:59:23.163Z",
@@ -10815,11 +11006,16 @@
           "t": "2026-11-20T04:35:58.088Z",
           "level": 56,
           "path": "screenshots/holojack-natesdad_us/20261120_holojack-natesdad_LEVEL56.png"
+        },
+        {
+          "t": "2026-11-21T06:26:58.516Z",
+          "level": 57,
+          "path": "screenshots/holojack-natesdad_us/20261121_holojack-natesdad_LEVEL57.png"
         }
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-21T04:18:20.823Z",
+        "updatedAt": "2026-11-21T06:26:58.516Z",
         "completed": [
           {
             "id": 94668,
@@ -10982,6 +11178,10 @@
             "name": "Doom Weed"
           },
           {
+            "id": 8465,
+            "name": "Speak to Salfa"
+          },
+          {
             "id": 97292,
             "name": "Unending Torment"
           },
@@ -10996,6 +11196,10 @@
           {
             "id": 680,
             "name": "The Real Threat"
+          },
+          {
+            "id": 5085,
+            "name": "Mystery Goo"
           },
           {
             "id": 6027,
@@ -11210,6 +11414,10 @@
             "name": "Battle of Hillsbrad"
           },
           {
+            "id": 5203,
+            "name": "Rescue From Jaedenar"
+          },
+          {
             "id": 5763,
             "name": "Hunting in Stranglethorn"
           },
@@ -11308,6 +11516,10 @@
           {
             "id": 1105,
             "name": "Hardened Shells"
+          },
+          {
+            "id": 5165,
+            "name": "Dousing the Flames of Protection"
           },
           {
             "id": 1429,
@@ -11630,6 +11842,10 @@
             "name": "Bloodmaster's Ring"
           },
           {
+            "id": 5084,
+            "name": "Falling to Corruption"
+          },
+          {
             "id": 5481,
             "name": "Gordo's Task"
           },
@@ -11656,6 +11872,10 @@
           {
             "id": 2861,
             "name": "Tabetha's Task"
+          },
+          {
+            "id": 5082,
+            "name": "Threat of the Winterfall"
           },
           {
             "id": 342,
@@ -11688,6 +11908,10 @@
           {
             "id": 98248,
             "name": "Shipping Label"
+          },
+          {
+            "id": 5083,
+            "name": "Winterfall Firewater"
           },
           {
             "id": 3906,
@@ -11810,6 +12034,10 @@
             "name": "Dark Iron Legacy"
           },
           {
+            "id": 8464,
+            "name": "Winterfall Activity"
+          },
+          {
             "id": 96046,
             "name": "Camping 101: Mining"
           },
@@ -11896,6 +12124,10 @@
           {
             "id": 5157,
             "name": "Collection of the Corrupt Water"
+          },
+          {
+            "id": 8462,
+            "name": "Speak to Nafien"
           },
           {
             "id": 2951,
@@ -12200,6 +12432,10 @@
           {
             "id": 98247,
             "name": "Shipping Label"
+          },
+          {
+            "id": 5204,
+            "name": "Retribution of the Light"
           },
           {
             "id": 94973,
@@ -12910,6 +13146,10 @@
             "name": "The Argent Emissary"
           },
           {
+            "id": 4505,
+            "name": "Well of Corruption"
+          },
+          {
             "id": 869,
             "name": "Raptor Thieves"
           },
@@ -13074,8 +13314,16 @@
             "name": "Pool of Tears"
           },
           {
+            "id": 5202,
+            "name": "A Strange Red Key"
+          },
+          {
             "id": 190,
             "name": "Panther Mastery"
+          },
+          {
+            "id": 5385,
+            "name": "The Remains of Trey Lightforge"
           },
           {
             "id": 848,
@@ -13168,6 +13416,10 @@
           {
             "id": 91317,
             "name": "The Tarnished"
+          },
+          {
+            "id": 5242,
+            "name": "A Final Blow"
           },
           {
             "id": 6142,
@@ -13316,6 +13568,10 @@
           {
             "id": 3884,
             "name": "Williden's Journal"
+          },
+          {
+            "id": 8461,
+            "name": "Deadwood of the North"
           },
           {
             "id": 185,
@@ -13600,6 +13856,10 @@
           {
             "id": 89001,
             "name": "Home on the Range"
+          },
+          {
+            "id": 3908,
+            "name": "It's a Secret to Everybody"
           },
           {
             "id": 1164,
@@ -17302,6 +17562,86 @@
             "id": 5159,
             "name": "Cleansed Water Returns to Felwood",
             "firstSeen": "2026-11-21T00:38:39.998Z"
+          },
+          {
+            "id": 8465,
+            "name": "Speak to Salfa",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 5085,
+            "name": "Mystery Goo",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 5203,
+            "name": "Rescue From Jaedenar",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 5165,
+            "name": "Dousing the Flames of Protection",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 5084,
+            "name": "Falling to Corruption",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 5082,
+            "name": "Threat of the Winterfall",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 5083,
+            "name": "Winterfall Firewater",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 8464,
+            "name": "Winterfall Activity",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 8462,
+            "name": "Speak to Nafien",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 5204,
+            "name": "Retribution of the Light",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 4505,
+            "name": "Well of Corruption",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 5202,
+            "name": "A Strange Red Key",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 5385,
+            "name": "The Remains of Trey Lightforge",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 5242,
+            "name": "A Final Blow",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 8461,
+            "name": "Deadwood of the North",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
+          },
+          {
+            "id": 3908,
+            "name": "It's a Secret to Everybody",
+            "firstSeen": "2026-11-21T06:26:58.516Z"
           }
         ]
       }
@@ -17309,7 +17649,7 @@
     {
       "key": "us|vivamus-defenestrata",
       "firstSeen": "2026-11-16T06:41:44.518Z",
-      "lastSeen": "2026-11-21T04:18:20.823Z",
+      "lastSeen": "2026-11-21T06:26:58.516Z",
       "slot": 7,
       "profile": {
         "name": "Vivamus Defenestrata",
@@ -17354,7 +17694,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 4.9,
+        "daysTracked": 4.99,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -17427,9 +17767,9 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-21T04:18:20.823Z",
+      "lastChecked": "2026-11-21T06:26:58.516Z",
       "questLog": {
-        "updatedAt": "2026-11-21T04:18:20.823Z",
+        "updatedAt": "2026-11-21T06:26:58.516Z",
         "completed": [
           {
             "id": 382,
