@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-22T18:21:43.023Z",
+  "generatedAt": "2026-11-23T00:43:10.013Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-22T18:21:43.023Z",
+      "lastSeen": "2026-11-23T00:43:10.013Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -55,8 +55,8 @@
         "levelsGained": 13,
         "itemLevelGained": 16,
         "honorableKillsGained": 4,
-        "daysTracked": 12.73,
-        "levelsPerDay": 1.02
+        "daysTracked": 12.99,
+        "levelsPerDay": 1
       },
       "snapshots": [
         {
@@ -282,7 +282,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-22T18:21:43.023Z",
+      "lastChecked": "2026-11-23T00:43:10.013Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -327,7 +327,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-22T18:21:43.023Z",
+        "updatedAt": "2026-11-23T00:43:10.013Z",
         "completed": [
           {
             "id": 821,
@@ -2371,7 +2371,7 @@
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-22T18:21:43.023Z",
+      "lastSeen": "2026-11-23T00:43:10.013Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -2379,7 +2379,7 @@
         "race": "Undead",
         "className": "Mage",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-19T04:39:03Z",
+        "lastUpdated": "2026-11-22T18:50:33Z",
         "professions": [
           {
             "name": "Skinning",
@@ -2416,8 +2416,8 @@
         "levelsGained": 12,
         "itemLevelGained": 15,
         "honorableKillsGained": 0,
-        "daysTracked": 12.69,
-        "levelsPerDay": 0.95
+        "daysTracked": 12.95,
+        "levelsPerDay": 0.93
       },
       "snapshots": [
         {
@@ -2584,7 +2584,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-22T18:21:43.023Z",
+      "lastChecked": "2026-11-23T00:43:10.013Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -2624,7 +2624,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-22T18:21:43.023Z",
+        "updatedAt": "2026-11-23T00:43:10.013Z",
         "completed": [
           {
             "id": 821,
@@ -4344,7 +4344,7 @@
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-22T18:21:43.023Z",
+      "lastSeen": "2026-11-23T00:43:10.013Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -4389,7 +4389,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 12.69,
+        "daysTracked": 12.95,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -4420,7 +4420,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-22T18:21:43.023Z",
+      "lastChecked": "2026-11-23T00:43:10.013Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -4430,7 +4430,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-22T18:21:43.023Z",
+        "updatedAt": "2026-11-23T00:43:10.013Z",
         "completed": [
           {
             "id": 95314,
@@ -5484,7 +5484,7 @@
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-22T18:21:43.023Z",
+      "lastSeen": "2026-11-23T00:43:10.013Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -5523,8 +5523,8 @@
         "levelsGained": 10,
         "itemLevelGained": 10,
         "honorableKillsGained": 1,
-        "daysTracked": 12.69,
-        "levelsPerDay": 0.79
+        "daysTracked": 12.95,
+        "levelsPerDay": 0.77
       },
       "snapshots": [
         {
@@ -5658,7 +5658,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-22T18:21:43.023Z",
+      "lastChecked": "2026-11-23T00:43:10.013Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -5693,7 +5693,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-22T18:21:43.023Z",
+        "updatedAt": "2026-11-23T00:43:10.013Z",
         "completed": [
           {
             "id": 97891,
@@ -6999,7 +6999,7 @@
     {
       "key": "us|ignivomous-defenestrata",
       "firstSeen": "2026-11-10T23:12:20.397Z",
-      "lastSeen": "2026-11-22T18:21:43.023Z",
+      "lastSeen": "2026-11-23T00:43:10.013Z",
       "slot": 4,
       "profile": {
         "name": "Ignivomous Defenestrata",
@@ -7007,16 +7007,16 @@
         "race": "Undead",
         "className": "Mage",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-22T15:02:27Z",
+        "lastUpdated": "2026-11-22T20:27:15Z",
         "professions": [
           {
             "name": "Skinning",
-            "skill": 173,
+            "skill": 186,
             "max": 225
           },
           {
             "name": "Herbalism",
-            "skill": 64,
+            "skill": 66,
             "max": 75
           },
           {
@@ -7026,7 +7026,7 @@
           },
           {
             "name": "Fishing",
-            "skill": 95,
+            "skill": 97,
             "max": 150
           },
           {
@@ -7035,23 +7035,23 @@
             "max": 150
           }
         ],
-        "level": 29,
+        "level": 30,
         "itemLevel": 25,
         "honorableKills": 495
       },
       "stats": {
         "skillsGained": {
-          "Skinning": 60,
-          "Herbalism": 60,
+          "Skinning": 73,
+          "Herbalism": 62,
           "Cooking": 174,
-          "Fishing": 93,
+          "Fishing": 95,
           "First Aid": 30
         },
-        "levelsGained": 13,
+        "levelsGained": 14,
         "itemLevelGained": 17,
         "honorableKillsGained": 495,
-        "daysTracked": 11.8,
-        "levelsPerDay": 1.1
+        "daysTracked": 12.06,
+        "levelsPerDay": 1.16
       },
       "snapshots": [
         {
@@ -7269,6 +7269,19 @@
             "Fishing": 95,
             "First Aid": 102
           }
+        },
+        {
+          "t": "2026-11-23T00:43:10.013Z",
+          "level": 30,
+          "itemLevel": 25,
+          "honorableKills": 495,
+          "skills": {
+            "Skinning": 186,
+            "Herbalism": 66,
+            "Cooking": 225,
+            "Fishing": 97,
+            "First Aid": 102
+          }
         }
       ],
       "person": "Dan",
@@ -7279,7 +7292,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-22T18:21:43.023Z",
+      "lastChecked": "2026-11-23T00:43:10.013Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -7325,11 +7338,16 @@
           "t": "2026-11-22T06:27:07.801Z",
           "level": 29,
           "path": "screenshots/ignivomous-defenestrata_us/20261122_ignivomous-defenestrata_LEVEL29.png"
+        },
+        {
+          "t": "2026-11-23T00:43:10.013Z",
+          "level": 30,
+          "path": "screenshots/ignivomous-defenestrata_us/20261123_ignivomous-defenestrata_LEVEL30.png"
         }
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-22T18:21:43.023Z",
+        "updatedAt": "2026-11-23T00:43:10.013Z",
         "completed": [
           {
             "id": 481,
@@ -7452,6 +7470,10 @@
             "name": "Camping 101: Cooking"
           },
           {
+            "id": 515,
+            "name": "Elixir of Agony"
+          },
+          {
             "id": 6323,
             "name": "Ride to the Undercity"
           },
@@ -7518,6 +7540,10 @@
           {
             "id": 6395,
             "name": "Marla's Last Wish"
+          },
+          {
+            "id": 7321,
+            "name": "Soothing Turtle Bisque"
           },
           {
             "id": 6321,
@@ -7642,6 +7668,10 @@
           {
             "id": 440,
             "name": "The Engraved Ring"
+          },
+          {
+            "id": 539,
+            "name": "Battle of Hillsbrad"
           },
           {
             "id": 6563,
@@ -7786,6 +7816,10 @@
           {
             "id": 460,
             "name": "Resting in Pieces"
+          },
+          {
+            "id": 555,
+            "name": "Soothing Turtle Bisque"
           },
           {
             "id": 98247,
@@ -8056,6 +8090,10 @@
             "name": "Fields of Grief"
           },
           {
+            "id": 98095,
+            "name": "Valuable Vantages"
+          },
+          {
             "id": 430,
             "name": "Return to Quinn"
           },
@@ -8162,6 +8200,10 @@
           {
             "id": 8427,
             "name": "Battle of Warsong Gulch"
+          },
+          {
+            "id": 655,
+            "name": "Hammerfall"
           },
           {
             "id": 95884,
@@ -9493,6 +9535,36 @@
             "id": 6922,
             "name": "Baron Aquanis",
             "firstSeen": "2026-11-22T06:27:07.801Z"
+          },
+          {
+            "id": 515,
+            "name": "Elixir of Agony",
+            "firstSeen": "2026-11-23T00:43:10.013Z"
+          },
+          {
+            "id": 7321,
+            "name": "Soothing Turtle Bisque",
+            "firstSeen": "2026-11-23T00:43:10.013Z"
+          },
+          {
+            "id": 539,
+            "name": "Battle of Hillsbrad",
+            "firstSeen": "2026-11-23T00:43:10.013Z"
+          },
+          {
+            "id": 555,
+            "name": "Soothing Turtle Bisque",
+            "firstSeen": "2026-11-23T00:43:10.013Z"
+          },
+          {
+            "id": 98095,
+            "name": "Valuable Vantages",
+            "firstSeen": "2026-11-23T00:43:10.013Z"
+          },
+          {
+            "id": 655,
+            "name": "Hammerfall",
+            "firstSeen": "2026-11-23T00:43:10.013Z"
           }
         ]
       }
@@ -9500,7 +9572,7 @@
     {
       "key": "us|ravzar-goldhorn",
       "firstSeen": "2026-11-11T06:28:13.565Z",
-      "lastSeen": "2026-11-22T18:21:43.023Z",
+      "lastSeen": "2026-11-23T00:43:10.013Z",
       "slot": 5,
       "profile": {
         "name": "Ravzar Goldhorn",
@@ -9545,8 +9617,8 @@
         "levelsGained": 10,
         "itemLevelGained": 8,
         "honorableKillsGained": 37,
-        "daysTracked": 11.5,
-        "levelsPerDay": 0.87
+        "daysTracked": 11.76,
+        "levelsPerDay": 0.85
       },
       "snapshots": [
         {
@@ -9678,7 +9750,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-22T18:21:43.023Z",
+      "lastChecked": "2026-11-23T00:43:10.013Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -9728,7 +9800,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-22T18:21:43.023Z",
+        "updatedAt": "2026-11-23T00:43:10.013Z",
         "completed": [
           {
             "id": 481,
@@ -11376,7 +11448,7 @@
     {
       "key": "us|holojack-natesdad",
       "firstSeen": "2026-11-12T22:59:23.163Z",
-      "lastSeen": "2026-11-22T18:21:43.023Z",
+      "lastSeen": "2026-11-23T00:43:10.013Z",
       "slot": 6,
       "profile": {
         "name": "Holojack Natesdad",
@@ -11421,8 +11493,8 @@
         "levelsGained": 11,
         "itemLevelGained": 13,
         "honorableKillsGained": 0,
-        "daysTracked": 9.81,
-        "levelsPerDay": 1.12
+        "daysTracked": 10.07,
+        "levelsPerDay": 1.09
       },
       "snapshots": [
         {
@@ -11626,7 +11698,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-22T18:21:43.023Z",
+      "lastChecked": "2026-11-23T00:43:10.013Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T22:59:23.163Z",
@@ -11681,7 +11753,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-22T18:21:43.023Z",
+        "updatedAt": "2026-11-23T00:43:10.013Z",
         "completed": [
           {
             "id": 94668,
@@ -18387,7 +18459,7 @@
     {
       "key": "us|vivamus-defenestrata",
       "firstSeen": "2026-11-16T06:41:44.518Z",
-      "lastSeen": "2026-11-22T18:21:43.023Z",
+      "lastSeen": "2026-11-23T00:43:10.013Z",
       "slot": 7,
       "profile": {
         "name": "Vivamus Defenestrata",
@@ -18395,11 +18467,11 @@
         "race": "Undead",
         "className": "Priest",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-21T23:13:09Z",
+        "lastUpdated": "2026-11-23T00:37:40Z",
         "professions": [
           {
             "name": "Tailoring",
-            "skill": 93,
+            "skill": 94,
             "max": 150
           },
           {
@@ -18424,7 +18496,7 @@
       },
       "stats": {
         "skillsGained": {
-          "Tailoring": 23,
+          "Tailoring": 24,
           "Enchanting": 10,
           "Cooking": 0,
           "First Aid": 0
@@ -18432,7 +18504,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 6.49,
+        "daysTracked": 6.75,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -18507,6 +18579,18 @@
             "Cooking": 1,
             "First Aid": 5
           }
+        },
+        {
+          "t": "2026-11-23T00:43:10.013Z",
+          "level": 10,
+          "itemLevel": 3,
+          "honorableKills": 0,
+          "skills": {
+            "Tailoring": 94,
+            "Enchanting": 23,
+            "Cooking": 1,
+            "First Aid": 5
+          }
         }
       ],
       "person": "Dan",
@@ -18517,9 +18601,9 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-22T18:21:43.023Z",
+      "lastChecked": "2026-11-23T00:43:10.013Z",
       "questLog": {
-        "updatedAt": "2026-11-22T18:21:43.023Z",
+        "updatedAt": "2026-11-23T00:43:10.013Z",
         "completed": [
           {
             "id": 382,
