@@ -1,3 +1,4 @@
+import { setupDungeons } from './dungeons.js';
 import { setupSleepingBag } from './sleeping-bag.js';
 import { setupAreaQuests } from './area-quests.js';
 import { setupQuestLog } from './quest-log.js';
@@ -493,7 +494,7 @@ function renderControls() {
 }
 
 function setupTabs() {
-  const tabs = [$('progress-tab'), $('leveling-tab'), $('quest-tab'), $('sleeping-bag-tab')];
+  const tabs = [$('progress-tab'), $('leveling-tab'), $('quest-tab'), $('sleeping-bag-tab'), $('dungeons-tab')];
   function select(tab) {
     for (const candidate of tabs) {
       const active = candidate === tab;
@@ -649,6 +650,7 @@ async function start() {
   const watched = state.characters.filter((character) => character.watched);
   setupQuestLog(watched);
   setupSleepingBag(watched);
+  setupDungeons(watched);
 
   let lastWidth = $('chart').clientWidth;
   new ResizeObserver(() => {
