@@ -588,3 +588,7 @@ footer {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+.dungeons-table tbody tr {
+  cursor: pointer;
+}
