@@ -88,7 +88,7 @@ export function setupDungeons(characters) {
       title.append(button);
       title.scope = 'row';
       const association = dungeonQuests(catalog, name);
-      button.addEventListener('click', () => openDungeon(name, association, filter.checked, button));
+      row.addEventListener('click', () => openDungeon(name, association, filter.checked, button));
       if (association.shared) title.append(node('span', 'Shared wing quest pool'));
       row.append(title);
       row.insertCell().textContent = `${low}–${high}`;
