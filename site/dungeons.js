@@ -1,3 +1,4 @@
+import { setupDungeonModal } from './dungeon-modal.js';
 import { dungeonRanges } from './leveling-data.js';
 import { loadQuestCatalog } from './quest-catalog.js';
 
@@ -62,6 +63,7 @@ export function setupDungeons(characters) {
   const table = document.getElementById('dungeons-table');
   const heading = document.getElementById('dungeons-head');
   const body = document.getElementById('dungeons-rows');
+  const openDungeon = setupDungeonModal(characters, dungeonCompletion);
   let catalog;
   let loading = false;
 
@@ -78,9 +80,15 @@ export function setupDungeons(characters) {
       .sort((a, b) => a.range[1] - b.range[1] || a.range[0].localeCompare(b.range[0]));
     for (const { range: [name, low, high], duration } of rows) {
       const row = body.insertRow();
-      const title = node('th', name);
+      const title = node('th');
+      const button = node('button', name);
+      button.type = 'button';
+      button.className = 'map-character-button';
+      button.setAttribute('aria-haspopup', 'dialog');
+      title.append(button);
       title.scope = 'row';
       const association = dungeonQuests(catalog, name);
+      button.addEventListener('click', () => openDungeon(name, association, filter.checked, button));
       if (association.shared) title.append(node('span', 'Shared wing quest pool'));
       row.append(title);
       row.insertCell().textContent = `${low}–${high}`;
