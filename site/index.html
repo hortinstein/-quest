@@ -22,6 +22,7 @@
       <button id="leveling-tab" type="button" role="tab" aria-selected="false" aria-controls="leveling" tabindex="-1">Where to quest</button>
       <button id="quest-tab" type="button" role="tab" aria-selected="false" aria-controls="quests" tabindex="-1">Quest log</button>
       <button id="sleeping-bag-tab" type="button" role="tab" aria-selected="false" aria-controls="sleeping-bag" tabindex="-1">Sleeping bag</button>
+      <button id="dungeons-tab" type="button" role="tab" aria-selected="false" aria-controls="dungeons" tabindex="-1">Dungeons</button>
     </div>
 
     <div id="progress" role="tabpanel" aria-labelledby="progress-tab">
@@ -155,7 +156,43 @@
       </div>
       <p id="sleeping-bag-empty" class="muted" hidden>No watched characters available.</p>
     </section>
+    <section id="dungeons" class="card" role="tabpanel" aria-labelledby="dungeons-tab" hidden>
+      <h2>Dungeon quest progress</h2>
+      <label><input id="dungeons-faction" type="checkbox" checked> Hide opposing-faction quests for each character</label>
+      <p class="muted">Completed / offered in the quest catalog. Shared wing pools repeat across wings. Unavailable means the catalog has no dungeon category.</p>
+      <p id="dungeons-status" role="status" class="muted"></p>
+      <button id="dungeons-retry" type="button" hidden>Retry catalog</button>
+      <div class="table-scroll">
+        <table id="dungeons-table" class="dungeons-table" hidden>
+          <thead><tr id="dungeons-head"><th scope="col">Dungeon</th><th scope="col">Recommended level</th><th scope="col">Estimated run time</th></tr></thead>
+          <tbody id="dungeons-rows"></tbody>
+        </table>
+      </div>
+      <p class="muted">Typical-group time estimates from <a href="https://mmonster.co/wow-forever/guides/dungeons">Mmonster</a>.
+        Level recommendations from <a href="https://mobalytics.gg/wow-forever/guides/dungeon-raid-map">Mobalytics</a>.
+        Quest catalog from <a href="https://github.com/Questie/QuestieDB">QuestieDB</a>.
+        Class, profession and prerequisite requirements may further limit available quests.</p>
+    </section>
   </main>
+  <dialog id="dungeon-dialog" aria-labelledby="dungeon-title">
+    <div class="gear-header"><h2 id="dungeon-title"></h2><button id="dungeon-close" type="button">Close</button></div>
+    <div class="controls">
+      <label>Character <select id="dungeon-character"></select></label>
+      <label><input id="dungeon-modal-faction" type="checkbox" checked> Hide opposing-faction quests</label>
+    </div>
+    <p id="dungeon-modal-note" class="muted"></p>
+    <div class="dungeon-modal-layout">
+      <div>
+        <svg viewBox="0 0 1497 855" role="img" aria-label="Quest pickup zones">
+          <image href="assets/world-map.jpg" width="1497" height="855" />
+          <g id="dungeon-pickup-markers"></g>
+        </svg>
+        <ul id="dungeon-pickup-legend"></ul>
+      </div>
+      <div id="dungeon-quests"></div>
+    </div>
+    <p class="muted">Pickup locations from <a href="https://github.com/Questie/QuestieDB">QuestieDB</a>.</p>
+  </dialog>
   <dialog id="gear-dialog" aria-labelledby="gear-title">
     <div class="gear-header">
       <h2 id="gear-title">Gear progression</h2>

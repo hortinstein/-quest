@@ -77,6 +77,36 @@ local function ids(values)
     return "[" .. table.concat(output, ",") .. "]"
 end
 
+
+local function entityData(filename, key)
+    return assert(load(assert(read(filename):match(key .. " = %[%[(.-)%]%]")), key, "t", {}))()
+end
+local npcs = entityData("data/Forever/foreverNpcDB.lua", "npcData")
+local objects = entityData("data/Forever/foreverObjectDB.lua", "objectData")
+local function pickups(quest)
+    local output = {}
+    for kind, starters in ipairs({(quest[2] or {})[1] or {}, (quest[2] or {})[2] or {}}) do
+        for _, id in ipairs(starters) do
+            local record = (kind == 1 and npcs or objects)[id]
+            if record then
+                for area, points in pairs(record[kind == 1 and 7 or 4] or {}) do
+                    for _, point in ipairs(points) do
+                        local name = zoneName(area)
+                        local x, y = tonumber(point[1]), tonumber(point[2])
+                        if name and x and y and x >= 0 and x <= 100 and y >= 0 and y <= 100 then
+                            output[#output + 1] = '{"name":' .. stringJson(record[1]) ..
+                                ',"zone":' .. stringJson(name) .. ',"x":' .. x .. ',"y":' .. y ..
+                                ',"type":' .. stringJson(kind == 1 and "npc" or "object") .. ',"id":' .. id .. '}'
+                        end
+                    end
+                end
+            end
+        end
+    end
+    table.sort(output)
+    return "[" .. table.concat(output, ",") .. "]"
+end
+
 local order = {}
 for id in pairs(quests) do order[#order + 1] = id end
 table.sort(order)
@@ -89,6 +119,7 @@ for _, id in ipairs(order) do
     end
     local zone = zoneName(q[17])
     local objectives = table.concat(q[8] or {}, "\n")
+    add("starts", pickups(q))
     add("zone", zone and stringJson(zone))
     add("objectives", objectives ~= "" and stringJson(objectives))
     add("minLevel", q[4] or 0)

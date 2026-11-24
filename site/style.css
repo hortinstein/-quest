@@ -532,3 +532,59 @@ footer {
     background: var(--surface);
   }
 }
+
+.dungeons-table th span,
+.dungeons-table td span {
+  display: block;
+  color: var(--ink-2);
+  font-size: .8rem;
+  font-weight: normal;
+}
+
+.dungeons-table thead th {
+  white-space: normal;
+  min-width: 110px;
+}
+
+.dungeons-table td {
+  text-align: center;
+}
+
+#dungeon-dialog {
+  width: min(1150px, 94vw);
+  max-height: 90vh;
+  overflow: auto;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+#dungeon-dialog::backdrop {
+  background: #000b;
+}
+
+.dungeon-modal-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 20px;
+}
+
+.dungeon-modal-layout svg {
+  width: 100%;
+}
+
+#dungeon-quests details {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+#dungeon-quests summary {
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .dungeon-modal-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
