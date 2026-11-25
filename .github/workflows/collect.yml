@@ -68,16 +68,51 @@ jobs:
       - name: Prepare quest catalog
         run: npm run prepare:quests
 
-      - uses: actions/upload-pages-artifact@v5
+      - id: pages-upload
+        uses: actions/upload-pages-artifact@v5
         with:
           # GitHub keeps artifacts from prior attempts of this run.
           name: github-pages-${{ github.run_attempt }}
           path: site
 
-      - id: deploy
-        uses: actions/deploy-pages@v5
+      - name: Deploy uploaded Pages artifact
+        id: deploy
+        uses: actions/github-script@v8
+        timeout-minutes: 12
+        env:
+          PAGES_ARTIFACT_ID: ${{ steps.pages-upload.outputs.artifact_id }}
         with:
-          artifact_name: github-pages-${{ github.run_attempt }}
+          script: |
+            const artifactId = process.env.PAGES_ARTIFACT_ID;
+            if (!/^\d+$/.test(artifactId ?? '')) {
+              throw new Error('Pages upload did not return an artifact ID');
+            }
+            const oidcToken = await core.getIDToken();
+            core.setSecret(oidcToken);
+            const { data: deployment } = await github.request(
+              'POST /repos/{owner}/{repo}/pages/deployments',
+              {
+                ...context.repo,
+                artifact_id: Number(artifactId),
+                pages_build_version: context.sha,
+                oidc_token: oidcToken,
+              },
+            );
+            core.setOutput('page_url', deployment.page_url);
+            for (let attempt = 0; attempt < 60; attempt++) {
+              const { data } = await github.request(
+                'GET /repos/{owner}/{repo}/pages/deployments/{deployment_id}',
+                { ...context.repo, deployment_id: deployment.id },
+              );
+              core.info('Pages deployment status: ' + data.status);
+              if (data.status === 'succeed') return;
+              if (['deployment_failed', 'deployment_content_failed', 'build_failed',
+                   'deployment_cancelled', 'cancelled', 'failed'].includes(data.status)) {
+                throw new Error('Pages deployment failed: ' + data.status);
+              }
+              await new Promise(resolve => setTimeout(resolve, 10000));
+            }
+            throw new Error('Timed out waiting for Pages deployment');
 
       - name: Report collection failure
         if: steps.collect.outcome == 'failure'
