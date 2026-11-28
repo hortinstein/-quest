@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-28T00:38:24.314Z",
+  "generatedAt": "2026-11-28T06:27:51.230Z",
   "characters": [
     {
       "key": "us|thè-demiurge",
       "firstSeen": "2026-11-10T00:57:24.989Z",
-      "lastSeen": "2026-11-28T00:38:24.314Z",
+      "lastSeen": "2026-11-28T06:27:51.230Z",
       "slot": 0,
       "profile": {
         "name": "Thè Demiurge",
@@ -55,8 +55,8 @@
         "levelsGained": 15,
         "itemLevelGained": null,
         "honorableKillsGained": 4,
-        "daysTracked": 17.99,
-        "levelsPerDay": 0.83
+        "daysTracked": 18.23,
+        "levelsPerDay": 0.82
       },
       "snapshots": [
         {
@@ -334,7 +334,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-28T00:38:24.314Z",
+      "lastChecked": "2026-11-28T06:27:51.230Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -389,7 +389,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-28T00:38:24.314Z",
+        "updatedAt": "2026-11-28T06:27:51.230Z",
         "completed": [
           {
             "id": 821,
@@ -2676,7 +2676,7 @@
     {
       "key": "us|scout-zknivez",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-28T00:38:24.314Z",
+      "lastSeen": "2026-11-28T06:27:51.230Z",
       "slot": 1,
       "profile": {
         "name": "Scout Zknivez",
@@ -2721,8 +2721,8 @@
         "levelsGained": 12,
         "itemLevelGained": 15,
         "honorableKillsGained": 0,
-        "daysTracked": 17.95,
-        "levelsPerDay": 0.67
+        "daysTracked": 18.19,
+        "levelsPerDay": 0.66
       },
       "snapshots": [
         {
@@ -2889,7 +2889,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-28T00:38:24.314Z",
+      "lastChecked": "2026-11-28T06:27:51.230Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -2929,7 +2929,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-28T00:38:24.314Z",
+        "updatedAt": "2026-11-28T06:27:51.230Z",
         "completed": [
           {
             "id": 821,
@@ -4649,7 +4649,7 @@
     {
       "key": "us|ravtar-bonejaw",
       "firstSeen": "2026-11-10T01:53:57.147Z",
-      "lastSeen": "2026-11-28T00:38:24.314Z",
+      "lastSeen": "2026-11-28T06:27:51.230Z",
       "slot": 2,
       "profile": {
         "name": "Ravtar Bonejaw",
@@ -4694,7 +4694,7 @@
         "levelsGained": 0,
         "itemLevelGained": 0,
         "honorableKillsGained": 0,
-        "daysTracked": 17.95,
+        "daysTracked": 18.19,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -4725,7 +4725,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-28T00:38:24.314Z",
+      "lastChecked": "2026-11-28T06:27:51.230Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -4735,7 +4735,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-28T00:38:24.314Z",
+        "updatedAt": "2026-11-28T06:27:51.230Z",
         "completed": [
           {
             "id": 95314,
@@ -5789,7 +5789,7 @@
     {
       "key": "us|atlasian-nwen",
       "firstSeen": "2026-11-10T01:54:28.327Z",
-      "lastSeen": "2026-11-28T00:38:24.314Z",
+      "lastSeen": "2026-11-28T06:27:51.230Z",
       "slot": 3,
       "profile": {
         "name": "Atlasian Nwen",
@@ -5834,8 +5834,8 @@
         "levelsGained": 12,
         "itemLevelGained": null,
         "honorableKillsGained": 1,
-        "daysTracked": 17.95,
-        "levelsPerDay": 0.67
+        "daysTracked": 18.19,
+        "levelsPerDay": 0.66
       },
       "snapshots": [
         {
@@ -6003,7 +6003,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-28T00:38:24.314Z",
+      "lastChecked": "2026-11-28T06:27:51.230Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -6048,7 +6048,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-28T00:38:24.314Z",
+        "updatedAt": "2026-11-28T06:27:51.230Z",
         "completed": [
           {
             "id": 97891,
@@ -7462,7 +7462,7 @@
     {
       "key": "us|ignivomous-defenestrata",
       "firstSeen": "2026-11-10T23:12:20.397Z",
-      "lastSeen": "2026-11-28T00:38:24.314Z",
+      "lastSeen": "2026-11-28T06:27:51.230Z",
       "slot": 4,
       "profile": {
         "name": "Ignivomous Defenestrata",
@@ -7470,16 +7470,16 @@
         "race": "Undead",
         "className": "Mage",
         "ruleset": "PvP",
-        "lastUpdated": "2026-11-27T03:45:23Z",
+        "lastUpdated": "2026-11-28T04:33:57Z",
         "professions": [
           {
             "name": "Skinning",
-            "skill": 207,
+            "skill": 211,
             "max": 225
           },
           {
             "name": "Herbalism",
-            "skill": 75,
+            "skill": 79,
             "max": 150
           },
           {
@@ -7498,23 +7498,23 @@
             "max": 150
           }
         ],
-        "level": 32,
+        "level": 34,
         "itemLevel": null,
-        "honorableKills": 503
+        "honorableKills": 504
       },
       "stats": {
         "skillsGained": {
-          "Skinning": 94,
-          "Herbalism": 71,
+          "Skinning": 98,
+          "Herbalism": 75,
           "Cooking": 174,
           "Fishing": 106,
           "First Aid": 39
         },
-        "levelsGained": 16,
+        "levelsGained": 18,
         "itemLevelGained": null,
-        "honorableKillsGained": 503,
-        "daysTracked": 17.06,
-        "levelsPerDay": 0.94
+        "honorableKillsGained": 504,
+        "daysTracked": 17.3,
+        "levelsPerDay": 1.04
       },
       "snapshots": [
         {
@@ -7797,6 +7797,19 @@
             "Fishing": 108,
             "First Aid": 111
           }
+        },
+        {
+          "t": "2026-11-28T06:27:51.230Z",
+          "level": 34,
+          "itemLevel": null,
+          "honorableKills": 504,
+          "skills": {
+            "Skinning": 211,
+            "Herbalism": 79,
+            "Cooking": 225,
+            "Fishing": 108,
+            "First Aid": 111
+          }
         }
       ],
       "person": "Dan",
@@ -7807,7 +7820,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-28T00:38:24.314Z",
+      "lastChecked": "2026-11-28T06:27:51.230Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -7868,11 +7881,16 @@
           "t": "2026-11-27T06:30:12.599Z",
           "level": 32,
           "path": "screenshots/ignivomous-defenestrata_us/20261127_ignivomous-defenestrata_LEVEL32.png"
+        },
+        {
+          "t": "2026-11-28T06:27:51.230Z",
+          "level": 34,
+          "path": "screenshots/ignivomous-defenestrata_us/20261128_ignivomous-defenestrata_LEVEL34.png"
         }
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-28T00:38:24.314Z",
+        "updatedAt": "2026-11-28T06:27:51.230Z",
         "completed": [
           {
             "id": 481,
@@ -7971,6 +7989,10 @@
             "name": "Deviate Hides"
           },
           {
+            "id": 92458,
+            "name": "Heart of Disruption"
+          },
+          {
             "id": 1144,
             "name": "Willix the Importer"
           },
@@ -7989,6 +8011,10 @@
           {
             "id": 354,
             "name": "Deaths in the Family"
+          },
+          {
+            "id": 557,
+            "name": "Bracers of Binding"
           },
           {
             "id": 421,
@@ -8047,6 +8073,10 @@
             "name": "Battle of Hillsbrad"
           },
           {
+            "id": 545,
+            "name": "Dalaran Patrols"
+          },
+          {
             "id": 3366,
             "name": "The Glowing Shard"
           },
@@ -8097,6 +8127,10 @@
           {
             "id": 97949,
             "name": "Camping 101: Skinning"
+          },
+          {
+            "id": 96986,
+            "name": "The Grave Knight"
           },
           {
             "id": 427,
@@ -8153,6 +8187,10 @@
           {
             "id": 1960,
             "name": "Investigate the Alchemist Shop"
+          },
+          {
+            "id": 544,
+            "name": "Prison Break In"
           },
           {
             "id": 428,
@@ -8311,12 +8349,12 @@
             "name": "The Adventurer"
           },
           {
-            "id": 4542,
-            "name": "Message to Freewind Post"
+            "id": 92434,
+            "name": "Blood in the Streets"
           },
           {
-            "id": 94281,
-            "name": "Craftsman's Writ: Advanced Target Dummy"
+            "id": 4542,
+            "name": "Message to Freewind Post"
           },
           {
             "id": 376,
@@ -8325,6 +8363,10 @@
           {
             "id": 97971,
             "name": "Camping 101: Skinning"
+          },
+          {
+            "id": 96294,
+            "name": "A Darker Truth"
           },
           {
             "id": 527,
@@ -8341,6 +8383,10 @@
           {
             "id": 96658,
             "name": "Camping 101: Cooking"
+          },
+          {
+            "id": 552,
+            "name": "Helcular's Revenge"
           },
           {
             "id": 478,
@@ -8369,6 +8415,10 @@
           {
             "id": 1884,
             "name": "Ju-Ju Heaps"
+          },
+          {
+            "id": 96984,
+            "name": "Heart of Disruption"
           },
           {
             "id": 370,
@@ -8467,6 +8517,10 @@
             "name": "A Recipe For Death"
           },
           {
+            "id": 1947,
+            "name": "Journey to the Marsh"
+          },
+          {
             "id": 498,
             "name": "The Rescue"
           },
@@ -8541,6 +8595,10 @@
           {
             "id": 5724,
             "name": "Returning the Lost Satchel"
+          },
+          {
+            "id": 96988,
+            "name": "Source of Power"
           },
           {
             "id": 79980,
@@ -8651,6 +8709,10 @@
             "name": "Talkin' bout Toxins, Mon"
           },
           {
+            "id": 96987,
+            "name": "Opportunistic Education"
+          },
+          {
             "id": 97290,
             "name": "Unending Torment"
           },
@@ -8669,6 +8731,10 @@
           {
             "id": 6324,
             "name": "Return to Podrig"
+          },
+          {
+            "id": 93680,
+            "name": "Key to the City"
           },
           {
             "id": 91920,
@@ -8835,6 +8901,10 @@
             "name": "As Above, So Below"
           },
           {
+            "id": 533,
+            "name": "Infiltration"
+          },
+          {
             "id": 97291,
             "name": "Unending Torment"
           },
@@ -8953,6 +9023,10 @@
           {
             "id": 362,
             "name": "The Haunted Mills"
+          },
+          {
+            "id": 556,
+            "name": "Stone Tokens"
           },
           {
             "id": 6922,
@@ -10333,6 +10407,81 @@
             "id": 95664,
             "name": "Elder Knowledge",
             "firstSeen": "2026-11-27T06:30:12.599Z"
+          },
+          {
+            "id": 92458,
+            "name": "Heart of Disruption",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 557,
+            "name": "Bracers of Binding",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 545,
+            "name": "Dalaran Patrols",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 96986,
+            "name": "The Grave Knight",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 544,
+            "name": "Prison Break In",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 92434,
+            "name": "Blood in the Streets",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 96294,
+            "name": "A Darker Truth",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 552,
+            "name": "Helcular's Revenge",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 96984,
+            "name": "Heart of Disruption",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 1947,
+            "name": "Journey to the Marsh",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 96988,
+            "name": "Source of Power",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 96987,
+            "name": "Opportunistic Education",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 93680,
+            "name": "Key to the City",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 533,
+            "name": "Infiltration",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 556,
+            "name": "Stone Tokens",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
           }
         ]
       }
@@ -10340,7 +10489,7 @@
     {
       "key": "us|ravzar-goldhorn",
       "firstSeen": "2026-11-11T06:28:13.565Z",
-      "lastSeen": "2026-11-28T00:38:24.314Z",
+      "lastSeen": "2026-11-28T06:27:51.230Z",
       "slot": 5,
       "profile": {
         "name": "Ravzar Goldhorn",
@@ -10385,8 +10534,8 @@
         "levelsGained": 10,
         "itemLevelGained": 8,
         "honorableKillsGained": 37,
-        "daysTracked": 16.76,
-        "levelsPerDay": 0.6
+        "daysTracked": 17,
+        "levelsPerDay": 0.59
       },
       "snapshots": [
         {
@@ -10518,7 +10667,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-28T00:38:24.314Z",
+      "lastChecked": "2026-11-28T06:27:51.230Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T03:35:12.156Z",
@@ -10568,7 +10717,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-28T00:38:24.314Z",
+        "updatedAt": "2026-11-28T06:27:51.230Z",
         "completed": [
           {
             "id": 481,
@@ -12216,7 +12365,7 @@
     {
       "key": "us|holojack-natesdad",
       "firstSeen": "2026-11-12T22:59:23.163Z",
-      "lastSeen": "2026-11-28T00:38:24.314Z",
+      "lastSeen": "2026-11-28T06:27:51.230Z",
       "slot": 6,
       "profile": {
         "name": "Holojack Natesdad",
@@ -12224,11 +12373,11 @@
         "race": "Undead",
         "className": "Paladin",
         "ruleset": "Normal",
-        "lastUpdated": "2026-11-24T03:46:17Z",
+        "lastUpdated": "2026-11-28T05:51:27Z",
         "professions": [
           {
             "name": "Mining",
-            "skill": 225,
+            "skill": 255,
             "max": 300
           },
           {
@@ -12248,21 +12397,21 @@
           }
         ],
         "level": 60,
-        "itemLevel": 49,
+        "itemLevel": null,
         "honorableKills": 0
       },
       "stats": {
         "skillsGained": {
-          "Mining": 26,
+          "Mining": 56,
           "Blacksmithing": 49,
           "Cooking": 0,
           "First Aid": 150
         },
         "levelsGained": 14,
-        "itemLevelGained": 14,
+        "itemLevelGained": null,
         "honorableKillsGained": 0,
-        "daysTracked": 15.07,
-        "levelsPerDay": 0.93
+        "daysTracked": 15.31,
+        "levelsPerDay": 0.91
       },
       "snapshots": [
         {
@@ -12480,6 +12629,18 @@
             "Cooking": 15,
             "First Aid": 300
           }
+        },
+        {
+          "t": "2026-11-28T06:27:51.230Z",
+          "level": 60,
+          "itemLevel": null,
+          "honorableKills": 0,
+          "skills": {
+            "Mining": 255,
+            "Blacksmithing": 205,
+            "Cooking": 15,
+            "First Aid": 300
+          }
         }
       ],
       "person": "Howard",
@@ -12490,7 +12651,7 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-28T00:38:24.314Z",
+      "lastChecked": "2026-11-28T06:27:51.230Z",
       "gearCaptures": [
         {
           "t": "2026-11-12T22:59:23.163Z",
@@ -12550,7 +12711,7 @@
       ],
       "captureError": null,
       "questLog": {
-        "updatedAt": "2026-11-28T00:38:24.314Z",
+        "updatedAt": "2026-11-28T06:27:51.230Z",
         "completed": [
           {
             "id": 94668,
@@ -12569,12 +12730,20 @@
             "name": "The Drowned City"
           },
           {
+            "id": 97175,
+            "name": "Due Sacrifice"
+          },
+          {
             "id": 97891,
             "name": "Prompt Potion Runner"
           },
           {
             "id": 92100,
             "name": "Anywhere But Here"
+          },
+          {
+            "id": 5251,
+            "name": "The Archivist"
           },
           {
             "id": 2440,
@@ -12629,6 +12798,10 @@
             "name": "Pay to Play"
           },
           {
+            "id": 93197,
+            "name": "Mending Communications"
+          },
+          {
             "id": 87492,
             "name": "Uncanny Crystal"
           },
@@ -12667,6 +12840,10 @@
           {
             "id": 855,
             "name": "Centaur Bracers"
+          },
+          {
+            "id": 92329,
+            "name": "Drum Up Trouble"
           },
           {
             "id": 2843,
@@ -12739,6 +12916,10 @@
           {
             "id": 8465,
             "name": "Speak to Salfa"
+          },
+          {
+            "id": 4729,
+            "name": "Kibler's Exotic Pets"
           },
           {
             "id": 97292,
@@ -12965,6 +13146,10 @@
             "name": "The Power to Destroy..."
           },
           {
+            "id": 5405,
+            "name": "Argent Dawn Commission"
+          },
+          {
             "id": 2945,
             "name": "Grime-Encrusted Ring"
           },
@@ -12991,6 +13176,14 @@
           {
             "id": 550,
             "name": "Battle of Hillsbrad"
+          },
+          {
+            "id": 97179,
+            "name": "Collection of Goods"
+          },
+          {
+            "id": 92335,
+            "name": "Ashes of the Legion Ascent"
           },
           {
             "id": 5203,
@@ -13257,6 +13450,14 @@
             "name": "A Vengeful Fate"
           },
           {
+            "id": 7637,
+            "name": "Emphasis on Sacrifice"
+          },
+          {
+            "id": 96003,
+            "name": "Drawing Down the Malevolent"
+          },
+          {
             "id": 96550,
             "name": "Battle Recall"
           },
@@ -13315,6 +13516,10 @@
           {
             "id": 95697,
             "name": "Changing Tastes"
+          },
+          {
+            "id": 97174,
+            "name": "A Worthy Endeavor"
           },
           {
             "id": 5088,
@@ -13417,6 +13622,10 @@
             "name": "Errand for Apothecary Zinge"
           },
           {
+            "id": 92011,
+            "name": "Rubble Rummage"
+          },
+          {
             "id": 371,
             "name": "At War With The Scarlet Crusade"
           },
@@ -13435,6 +13644,10 @@
           {
             "id": 635,
             "name": "Crystal in the Mountains"
+          },
+          {
+            "id": 90647,
+            "name": "The Staff of the Mountain"
           },
           {
             "id": 544,
@@ -13637,6 +13850,10 @@
             "name": "Ward Restocking"
           },
           {
+            "id": 93406,
+            "name": "Unfrozen Deliveries"
+          },
+          {
             "id": 1691,
             "name": "More Wastewander Justice"
           },
@@ -13647,6 +13864,10 @@
           {
             "id": 1362,
             "name": "The Kolkar of Desolace"
+          },
+          {
+            "id": 7670,
+            "name": "Lord Grayson Shadowbreaker"
           },
           {
             "id": 238,
@@ -13837,6 +14058,10 @@
             "name": "Snargl's Snout"
           },
           {
+            "id": 4296,
+            "name": "Tablet of the Seven"
+          },
+          {
             "id": 881,
             "name": "Echeyakee"
           },
@@ -13997,6 +14222,10 @@
             "name": "Helcular's Revenge"
           },
           {
+            "id": 97180,
+            "name": "Ott's Finest Work"
+          },
+          {
             "id": 7028,
             "name": "Twisted Evils"
           },
@@ -14037,12 +14266,20 @@
             "name": "Dangerous!"
           },
           {
+            "id": 92317,
+            "name": "Stolen Life"
+          },
+          {
             "id": 3901,
             "name": "Rattling the Rattlecages"
           },
           {
             "id": 4244,
             "name": "Chasing A-Me 01"
+          },
+          {
+            "id": 97177,
+            "name": "Acts of Mercy"
           },
           {
             "id": 1137,
@@ -14105,6 +14342,10 @@
             "name": "The Dying God"
           },
           {
+            "id": 92328,
+            "name": "Siegecraft"
+          },
+          {
             "id": 94441,
             "name": "A Lesson in Divinity"
           },
@@ -14153,6 +14394,10 @@
             "name": "Free at Last"
           },
           {
+            "id": 96616,
+            "name": "Herbs for the Bruised and Weary"
+          },
+          {
             "id": 94895,
             "name": "Lost Shipping Crate"
           },
@@ -14163,6 +14408,10 @@
           {
             "id": 3517,
             "name": "Stealing Knowledge"
+          },
+          {
+            "id": 5382,
+            "name": "Doctor Theolen Krastinov, the Butcher"
           },
           {
             "id": 4284,
@@ -14191,6 +14440,10 @@
           {
             "id": 97289,
             "name": "Unending Torment"
+          },
+          {
+            "id": 96025,
+            "name": "As the Crow Flies"
           },
           {
             "id": 4146,
@@ -14263,6 +14516,10 @@
           {
             "id": 5361,
             "name": "Family Tree"
+          },
+          {
+            "id": 5401,
+            "name": "Argent Dawn Commission"
           },
           {
             "id": 3541,
@@ -14437,6 +14694,10 @@
             "name": "Camping 101: First Aid"
           },
           {
+            "id": 97178,
+            "name": "Ott of Tarren Mill"
+          },
+          {
             "id": 4502,
             "name": "Volcanic Activity"
           },
@@ -14537,6 +14798,10 @@
             "name": "Parts for Kravel"
           },
           {
+            "id": 5503,
+            "name": "Argent Dawn Commission"
+          },
+          {
             "id": 5722,
             "name": "Searching for the Lost Satchel"
           },
@@ -14547,6 +14812,10 @@
           {
             "id": 96988,
             "name": "Source of Power"
+          },
+          {
+            "id": 4862,
+            "name": "En-Ay-Es-Tee-Why"
           },
           {
             "id": 7849,
@@ -14653,6 +14922,10 @@
             "name": "Gnoll Infestation"
           },
           {
+            "id": 7639,
+            "name": "To Show Due Judgment"
+          },
+          {
             "id": 95427,
             "name": "Twilight No More!"
           },
@@ -14739,6 +15012,10 @@
           {
             "id": 96605,
             "name": "The Great Outdoors"
+          },
+          {
+            "id": 7638,
+            "name": "Lord Grayson Shadowbreaker"
           },
           {
             "id": 79975,
@@ -14845,6 +15122,10 @@
             "name": "A Righteous Cause"
           },
           {
+            "id": 7642,
+            "name": "Collection of Goods"
+          },
+          {
             "id": 5151,
             "name": "Hypercapacitor Gizmo"
           },
@@ -14903,6 +15184,10 @@
           {
             "id": 92612,
             "name": "Aid from Moonglade"
+          },
+          {
+            "id": 93269,
+            "name": "Top of the Post"
           },
           {
             "id": 86577,
@@ -15023,6 +15308,10 @@
           {
             "id": 4002,
             "name": "The Eastern Kingdoms"
+          },
+          {
+            "id": 7648,
+            "name": "Grimand's Finest Work"
           },
           {
             "id": 4102,
@@ -15177,6 +15466,14 @@
             "name": "That Shadowvale Green Elixir"
           },
           {
+            "id": 7641,
+            "name": "The Work of Grimand Elmore"
+          },
+          {
+            "id": 93615,
+            "name": "Kits and Cats"
+          },
+          {
             "id": 96634,
             "name": "Camping 101: Cooking"
           },
@@ -15227,6 +15524,10 @@
           {
             "id": 91538,
             "name": "Sin'dorei Tome of Summoning"
+          },
+          {
+            "id": 5212,
+            "name": "The Flesh Does Not Lie"
           },
           {
             "id": 3505,
@@ -15307,6 +15608,10 @@
           {
             "id": 2904,
             "name": "A Fine Mess"
+          },
+          {
+            "id": 91794,
+            "name": "Flags of Our Forebears"
           },
           {
             "id": 95319,
@@ -15437,6 +15742,10 @@
             "name": "Hammerfall"
           },
           {
+            "id": 5281,
+            "name": "The Restless Souls"
+          },
+          {
             "id": 91569,
             "name": "Blue Gold"
           },
@@ -15465,12 +15774,20 @@
             "name": "The Ancient Egg"
           },
           {
+            "id": 92500,
+            "name": "A Bit of the Sky"
+          },
+          {
             "id": 3362,
             "name": "Thistleshrub Valley"
           },
           {
             "id": 2782,
             "name": "Rin'ji's Secret"
+          },
+          {
+            "id": 5214,
+            "name": "The Great Ezra Grimm"
           },
           {
             "id": 97907,
@@ -15541,6 +15858,10 @@
             "name": "The Disruption Ends"
           },
           {
+            "id": 93827,
+            "name": "Windswept Wards"
+          },
+          {
             "id": 2933,
             "name": "Venom Bottles"
           },
@@ -15609,6 +15930,10 @@
             "name": "Divino-matic Rod"
           },
           {
+            "id": 98325,
+            "name": "Blood and Thunder"
+          },
+          {
             "id": 865,
             "name": "Raptor Horns"
           },
@@ -15675,6 +16000,10 @@
           {
             "id": 3562,
             "name": "Magatha's Payment to Jediga"
+          },
+          {
+            "id": 5282,
+            "name": "The Restless Souls"
           },
           {
             "id": 1106,
@@ -15747,6 +16076,10 @@
           {
             "id": 5728,
             "name": "Hidden Enemies"
+          },
+          {
+            "id": 96622,
+            "name": "A Rest Without Pain"
           },
           {
             "id": 89001,
@@ -20023,6 +20356,221 @@
             "id": 6622,
             "name": "Triage",
             "firstSeen": "2026-11-24T06:29:46.335Z"
+          },
+          {
+            "id": 97175,
+            "name": "Due Sacrifice",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 5251,
+            "name": "The Archivist",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 93197,
+            "name": "Mending Communications",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 92329,
+            "name": "Drum Up Trouble",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 4729,
+            "name": "Kibler's Exotic Pets",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 5405,
+            "name": "Argent Dawn Commission",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 97179,
+            "name": "Collection of Goods",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 92335,
+            "name": "Ashes of the Legion Ascent",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 7637,
+            "name": "Emphasis on Sacrifice",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 96003,
+            "name": "Drawing Down the Malevolent",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 97174,
+            "name": "A Worthy Endeavor",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 92011,
+            "name": "Rubble Rummage",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 90647,
+            "name": "The Staff of the Mountain",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 93406,
+            "name": "Unfrozen Deliveries",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 7670,
+            "name": "Lord Grayson Shadowbreaker",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 4296,
+            "name": "Tablet of the Seven",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 97180,
+            "name": "Ott's Finest Work",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 92317,
+            "name": "Stolen Life",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 97177,
+            "name": "Acts of Mercy",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 92328,
+            "name": "Siegecraft",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 96616,
+            "name": "Herbs for the Bruised and Weary",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 5382,
+            "name": "Doctor Theolen Krastinov, the Butcher",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 96025,
+            "name": "As the Crow Flies",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 5401,
+            "name": "Argent Dawn Commission",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 97178,
+            "name": "Ott of Tarren Mill",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 5503,
+            "name": "Argent Dawn Commission",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 4862,
+            "name": "En-Ay-Es-Tee-Why",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 7639,
+            "name": "To Show Due Judgment",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 7638,
+            "name": "Lord Grayson Shadowbreaker",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 7642,
+            "name": "Collection of Goods",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 93269,
+            "name": "Top of the Post",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 7648,
+            "name": "Grimand's Finest Work",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 7641,
+            "name": "The Work of Grimand Elmore",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 93615,
+            "name": "Kits and Cats",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 5212,
+            "name": "The Flesh Does Not Lie",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 91794,
+            "name": "Flags of Our Forebears",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 5281,
+            "name": "The Restless Souls",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 92500,
+            "name": "A Bit of the Sky",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 5214,
+            "name": "The Great Ezra Grimm",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 93827,
+            "name": "Windswept Wards",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 98325,
+            "name": "Blood and Thunder",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 5282,
+            "name": "The Restless Souls",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
+          },
+          {
+            "id": 96622,
+            "name": "A Rest Without Pain",
+            "firstSeen": "2026-11-28T06:27:51.230Z"
           }
         ]
       }
@@ -20030,7 +20578,7 @@
     {
       "key": "us|vivamus-defenestrata",
       "firstSeen": "2026-11-16T06:41:44.518Z",
-      "lastSeen": "2026-11-28T00:38:24.314Z",
+      "lastSeen": "2026-11-28T06:27:51.230Z",
       "slot": 7,
       "profile": {
         "name": "Vivamus Defenestrata",
@@ -20075,7 +20623,7 @@
         "levelsGained": 0,
         "itemLevelGained": null,
         "honorableKillsGained": 0,
-        "daysTracked": 11.75,
+        "daysTracked": 11.99,
         "levelsPerDay": 0
       },
       "snapshots": [
@@ -20220,9 +20768,9 @@
       "watched": true,
       "status": "ok",
       "message": null,
-      "lastChecked": "2026-11-28T00:38:24.314Z",
+      "lastChecked": "2026-11-28T06:27:51.230Z",
       "questLog": {
-        "updatedAt": "2026-11-28T00:38:24.314Z",
+        "updatedAt": "2026-11-28T06:27:51.230Z",
         "completed": [
           {
             "id": 382,
